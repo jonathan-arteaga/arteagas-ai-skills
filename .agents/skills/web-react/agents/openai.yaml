@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web React"
+  short_description: "Write React and Next.js with performance rules"
+  default_prompt: "Use $web-react to write or review this React and Next.js code."

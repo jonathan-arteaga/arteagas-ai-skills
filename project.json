@@ -1,0 +1,32 @@
+{
+  "status": "active",
+  "purpose": [
+    "Keep a white-labeled personal skill library with little overlap",
+    "Share reusable agent skills for others to inspect, adapt, and use"
+  ],
+  "sourceOfTruth": ".agents/skills",
+  "provenance": [
+    "Original skills authored for personal and public use",
+    "MIT forks with stacked copyright notices, documented in origins/",
+    "design-pages forked from Nutlope/hallmark; edit-in-authentic-voice from petergyang/no-ai-slop; mobile-screens from Appllama's app-design method; hatch-pet Apache-2.0",
+    "design-reference-scout rewritten as an original",
+    "ux-heuristics is original; it cites Laws of UX (Jon Yablonski, CC BY-NC-ND 4.0) at runtime with no content copied",
+    "Generic Apple-platform review material migrated from Jonathan's private prompt archive",
+    "Original voice drafting workflow informed by Jonathan's writing preferences",
+    "Synthetic validation fixtures"
+  ],
+  "exclusions": [
+    "Employer or customer material",
+    "Credentials or private operational data",
+    "MCP-tied vendor skills (X, Gmail, Appllama usage, next-dev-loop)",
+    "System-managed Cursor skills",
+    "Redundant taste clones, second React/Next writing skills, and unused Dimillian extras"
+  ],
+  "evidence": [
+    "Portable installable skills under .agents/skills",
+    "origins/ notes with source, SHA, license, and delta",
+    "Dry-run-first synchronization command",
+    "Automated parser and validation tests",
+    "Documented Cursor symlink and backup workflow"
+  ]
+}

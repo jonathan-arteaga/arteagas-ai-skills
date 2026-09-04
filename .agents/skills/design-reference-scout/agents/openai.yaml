@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Reference Scout"
+  short_description: "Find grounded visual references before building"
+  default_prompt: "Use $design-reference-scout to ground this design in relevant references before proposing a direction."

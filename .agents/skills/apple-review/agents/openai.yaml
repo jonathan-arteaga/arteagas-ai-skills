@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple Review"
+  short_description: "Audit existing iOS and macOS codebases"
+  default_prompt: "Use $apple-review to audit this iOS or macOS repository."

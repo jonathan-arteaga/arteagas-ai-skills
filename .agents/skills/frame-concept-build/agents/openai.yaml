@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frame Concept Build"
+  short_description: "Bound a concept with evidence and limits"
+  default_prompt: "Use $frame-concept-build to turn this idea into a bounded, testable concept."

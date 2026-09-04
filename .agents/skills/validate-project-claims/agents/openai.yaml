@@ -1,0 +1,4 @@
+interface:
+  display_name: "Validate Project Claims"
+  short_description: "Match public claims to inspectable evidence"
+  default_prompt: "Use $validate-project-claims to check these project claims against the repository evidence."

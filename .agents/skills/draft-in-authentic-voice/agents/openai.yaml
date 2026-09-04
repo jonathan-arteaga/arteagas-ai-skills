@@ -1,0 +1,4 @@
+interface:
+  display_name: "Draft in Authentic Voice"
+  short_description: "Draft prose that sounds owned and specific"
+  default_prompt: "Use $draft-in-authentic-voice to draft this in my established voice without generic AI phrasing."

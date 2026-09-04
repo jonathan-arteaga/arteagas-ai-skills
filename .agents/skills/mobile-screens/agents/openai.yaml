@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mobile Screens"
+  short_description: "Build native-feeling Expo and RN screens"
+  default_prompt: "Use $mobile-screens to design this Expo or React Native screen."
