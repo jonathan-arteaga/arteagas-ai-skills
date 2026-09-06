@@ -1,0 +1,4 @@
+interface:
+  display_name: "Edit in Authentic Voice"
+  short_description: "Edit or detect AI patterns in drafts"
+  default_prompt: "Use $edit-in-authentic-voice to edit this draft or flag AI-slop patterns."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design MD"
+  short_description: "Extract a DESIGN.md from product evidence"
+  default_prompt: "Use $design-md to create or update DESIGN.md from the current evidence."

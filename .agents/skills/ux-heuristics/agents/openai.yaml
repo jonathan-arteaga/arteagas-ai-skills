@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX Heuristics"
+  short_description: "Review flows against named UX psychology laws"
+  default_prompt: "Use $ux-heuristics to review this flow against UX psychology laws."

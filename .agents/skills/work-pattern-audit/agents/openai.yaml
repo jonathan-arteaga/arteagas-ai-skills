@@ -1,0 +1,4 @@
+interface:
+  display_name: "Work Pattern Audit"
+  short_description: "Find recurring work worth safely codifying"
+  default_prompt: "Use $work-pattern-audit to inspect my recent AI work history and recommend what to codify without making changes."

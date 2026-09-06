@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple SwiftUI"
+  short_description: "Apply practical SwiftUI UI patterns"
+  default_prompt: "Use $apple-swiftui to design or refactor this SwiftUI UI with strong default patterns."

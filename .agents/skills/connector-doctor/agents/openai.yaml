@@ -1,0 +1,4 @@
+interface:
+  display_name: "Connector Doctor"
+  short_description: "Verify connector readiness without changing it"
+  default_prompt: "Use $connector-doctor to diagnose whether this connector works in the intended host and account."

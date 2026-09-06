@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Reproducible Demo"
+  short_description: "Create a small demo others can verify"
+  default_prompt: "Use $write-reproducible-demo to create a runnable proof path for this project."

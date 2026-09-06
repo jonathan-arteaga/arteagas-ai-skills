@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Style Synthesis"
+  short_description: "Turn shared project patterns into a new direction"
+  default_prompt: "Use $design-style-synthesis to compare my selected local projects and propose an original design direction for a new app."

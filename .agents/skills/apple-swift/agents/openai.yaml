@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple Swift"
+  short_description: "Write modern Swift with current language rules"
+  default_prompt: "Use $apple-swift to write or review this Swift with current language defaults."

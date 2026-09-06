@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Craft"
+  short_description: "Polish interface craft and motion details"
+  default_prompt: "Use $ui-craft to polish this interface with specific craft details."

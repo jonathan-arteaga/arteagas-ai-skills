@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design With Taste"
+  short_description: "Apply a flexible, distinctive design taste"
+  default_prompt: "Use $design-with-taste to shape this product into a distinct design that fits my taste."

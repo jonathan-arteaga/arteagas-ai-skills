@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frame Product Build"
+  short_description: "Agree the product before design or code"
+  default_prompt: "Use $frame-product-build to write the one-page brief for this build before designing or implementing."
