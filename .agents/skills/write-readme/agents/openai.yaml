@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write README"
+  short_description: "Write a README in the funnel format"
+  default_prompt: "Use $write-readme to write or update this repository README in the funnel format."

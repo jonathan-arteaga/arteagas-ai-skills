@@ -52,6 +52,12 @@ Ask the agent by the skill name in the first column.
 | [`web-react`](.agents/skills/web-react/SKILL.md) | Write and review React and Next.js. This is the only React/Next writing skill. |
 | [`mobile-screens`](.agents/skills/mobile-screens/SKILL.md) | Build Expo and React Native screens that feel native. |
 
+### Document a repo
+
+| Skill | What it does |
+| --- | --- |
+| [`write-readme`](.agents/skills/write-readme/SKILL.md) | Write or update a repository README in the centered-hero funnel format. |
+
 ### Prove it
 
 | Skill | What it does |

@@ -15,6 +15,7 @@
     "ux-heuristics is original; it cites Laws of UX (Jon Yablonski, CC BY-NC-ND 4.0) at runtime with no content copied",
     "Generic Apple-platform review material migrated from Jonathan's private prompt archive",
     "Original voice drafting workflow informed by Jonathan's writing preferences",
+    "write-readme is original; it distills the awesome-readme header funnel from public examples plus Art of README and Standard Readme conventions, with no content copied",
     "Synthetic validation fixtures"
   ],
   "exclusions": [

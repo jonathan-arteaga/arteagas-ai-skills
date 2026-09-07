@@ -87,6 +87,7 @@ test("repository skills are discoverable and valid", () => {
       "validate-project-claims",
       "web-react",
       "work-pattern-audit",
+      "write-readme",
       "write-reproducible-demo",
     ],
   );

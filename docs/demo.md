@@ -10,7 +10,7 @@ pnpm demo
 Expected validation:
 
 ```text
-Validated 22 skill(s).
+Validated 23 skill(s).
 ```
 
 The synchronization step stays in dry-run mode and prints the destination of
