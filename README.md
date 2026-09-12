@@ -64,7 +64,7 @@ Some workflows are Jonathan's. Attributed forks keep credit in [`origins/`](orig
 </details>
 
 <details>
-<summary>Decide what to build</summary>
+<summary>Clarify an idea or plan a build</summary>
 
 | Skill | What it does |
 | --- | --- |
