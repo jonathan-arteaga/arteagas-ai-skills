@@ -1,25 +1,11 @@
-# Product language and terminology
+# Apple product-language checks
 
-## Inspect user-facing text
+`product-language` owns cross-platform wording, terminology, glossary, and broad rename mapping. Use it when those concerns are in scope; keep this reference as the Apple-specific overlay. If it is unavailable, state the missing handoff and complete the platform checks supported by evidence.
 
-- Navigation, tabs, sidebars, buttons, calls to action, and settings
-- Feature and object names, onboarding, tooltips, and permissions
-- Loading, empty, error, success, alert, and dialog copy
-- Localization files and strings assembled in code
+- Check platform terminology for the actual control/action and supported OS against current Apple guidance when uncertain. Preserve intentional product terms that do not misrepresent system behavior.
+- Inspect permission explanations and usage-description resources against actual requested capabilities and optional/required behavior. Copy must not invent a reason, imply optional permission is mandatory, or promise unsupported recovery.
+- Trace string catalogs, strings/stringsdict, interpolation, plural branches, translator comments, and call sites. A visible wording correction must not silently change resource keys or behavior.
+- Inspect localized navigation, menus, keyboard shortcut labels, alerts, and system presentations in the relevant iOS/macOS context. Leave accessible names, hints, announcements, and reading order to the accessibility reference.
+- For English/Spanish journeys, verify relevant resources and identify native-language/render checks still needed. A build does not establish linguistic quality or fit at large Dynamic Type sizes.
 
-## Audit
-
-- Consistency for the same concept across screens
-- Clarity for the intended user and avoidance of implementation language
-- Specific, action-led calls to action
-- Calm, recoverable error messages and useful empty states
-- Voice, capitalization, punctuation, and localization readiness
-
-Fix small, high-confidence inconsistencies directly when authorized. For broad
-naming changes, propose a glossary and migration map before editing code.
-
-## Report
-
-Include preferred and deprecated terms, naming rules, representative
-before-and-after copy, files changed, validation, and decisions still requiring
-product ownership.
+Report platform-specific findings and validation alongside the shared language findings once. Do not maintain a second glossary or repeat general writing rules here.

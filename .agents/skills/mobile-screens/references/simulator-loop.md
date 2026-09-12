@@ -1,8 +1,6 @@
 # The simulator loop — verification checklist & device matrix
 
-A screen is finished when it survives this checklist on a real simulator, not
-when the code compiles. Budget as many loop iterations as it takes; the goal
-is "cannot find a flaw", not "looks fine".
+Use this checklist for broad screen/flow verification. For a small change, select the affected checks and supported devices. Once they pass, broaden or repeat only for a new failure, change, or unresolved concern. Source/compile results and runtime observations are separate evidence.
 
 ## Loop mechanics
 
@@ -70,7 +68,7 @@ re-verify for free.
 - [ ] Kill and relaunch: persisted state restores, ephemeral state resets
 - [ ] Offline: actions queue or fail loudly — never silently
 
-## Device matrix (minimum)
+## Example device matrix (adapt to supported platforms)
 
 | Profile | Why |
 |---|---|
@@ -79,5 +77,4 @@ re-verify for free.
 | Latest Pixel (Android) | Material behaviors, back gesture, font metrics |
 | One tablet/iPad IF the app claims support | Otherwise explicitly letterbox |
 
-Run the full checklist on the primary; on the others, verify layout,
-safe areas, and the hero flow.
+For a broad release review, run the relevant checklist on the primary target and representative layout/interaction checks on other supported targets. Do not require unsupported platforms.

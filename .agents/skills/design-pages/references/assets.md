@@ -1,5 +1,19 @@
 # Assets — sourcing canon for icons, logos, illustrations, photography, video
 
+## Contents
+
+- Placeholder strategy
+- Icons
+- Brand / company logos
+- Generated illustration (Tier C in the enrichment hierarchy)
+- Library illustrations (Tier D — not first choice)
+- App mockups / device frames
+- Hero / demo video
+- Photography
+- Abstract backgrounds
+- Lottie / Rive (Tier F — last resort)
+- Quick-reference: which source for which job
+
 This file is loaded when an enrichment archetype actually needs an external asset (load-on-demand). It catalogues the *3–5 canonical sources per category*, the licence terms, the import patterns, the rules for using them, and the sources to avoid.
 
 **The reflex.** Before reaching here, ask two questions in order: (1) Does the brief actually need imagery at all? See [`hero-enrichment.md` § Image-need detection](hero-enrichment.md). (2) If yes, can it be hand-built? See [`custom-craft.md`](custom-craft.md). The assets in this file are for the moments when both answers send you here.

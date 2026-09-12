@@ -1,5 +1,16 @@
 # Icon transitions
 
+## Contents
+
+- Contextual icon animations
+- Motion example
+- CSS transition approach (no Motion)
+- Choosing between Motion and CSS
+- When to animate icons
+
+Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
+
+
 Cross-fading an icon when it changes contextually or by state, with and without a motion library. Icon weight, color and direction live in [icons.md](icons.md).
 
 ## Contextual icon animations
@@ -94,9 +105,9 @@ Check the project's `package.json`. Import from `"motion/react"` when `motion` i
 | Icons in contextual toolbars | Icons that are always visible |
 | Loading/success state indicators | Icon labels (text next to icon) |
 
-Use exactly these values for contextual icon animations. Do not deviate:
-- `scale`: `0.25` → `1` (never use `0.5` or `0.6`)
+Fallback values for contextual icon animations when no project convention exists:
+- `scale`: `0.25` → `1`
 - `opacity`: `0` → `1`
 - `filter`: `"blur(4px)"` → `"blur(0px)"`
-- `transition`: `{ type: "spring", duration: 0.3, bounce: 0 }`; **bounce must always be `0`**, never `0.1` or any other value
+- `transition`: `{ type: "spring", duration: 0.3, bounce: 0 }`; prefer no bounce unless the established motion language calls for it
 

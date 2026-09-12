@@ -1,5 +1,14 @@
 # Component cookbook
 
+## Contents
+
+- Archetype index — load ONLY the picks you need
+- Within-archetype variation knobs
+- Routing — which footer fits which genre
+- Routing — which nav fits which genre / theme
+- Picking from this file
+- Mobile collapse — per archetype
+
 Fifty component archetypes you can compose into any macrostructure. Every entry: a *shape*, a one-line "use when", a one-line "don't confuse with", and a short structural sketch (DOM + minimal CSS). Pick from this file when you're building a section and don't know which shape to reach for.
 
 The same macrostructure (e.g., Bento Grid) can be built from many different combinations of these archetypes. The macrostructure picks the *page shape*; this file picks the *components inside it*.
@@ -261,5 +270,3 @@ Below 60 rem the archetype must still feel like itself — same hierarchy, same 
 - Disable any scroll-linked animation below 40 rem (mobile scroll has its own physics; layered animations fight it).
 - Image `loading="lazy"` always below the fold; **never on the LCP element regardless of viewport.**
 - Auto-play video respects `data-saver` (`navigator.connection.saveData`) — replaces with poster when set.
-
-

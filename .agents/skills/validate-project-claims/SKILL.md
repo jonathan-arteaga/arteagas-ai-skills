@@ -1,6 +1,6 @@
 ---
 name: validate-project-claims
-description: "Check that public project claims and status labels are supported by inspectable repository evidence. Use when the user invokes validate-project-claims, or before publishing a project description."
+description: "Check that project descriptions and status claims are supported by repository or runtime evidence, especially before publication."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -20,3 +20,11 @@ metadata:
 
 Return a table with: claim, evidence, status, needed change, and verification
 command. Do not upgrade a status because the copy sounds finished.
+
+## Example
+
+| Claim | Evidence | Status | Needed change | Verification |
+| --- | --- | --- | --- | --- |
+| “CI runs validation” | Workflow configuration calls the validator | Configuration supported; execution unverified | Distinguish configured checks from a passing run | Inspect the latest run for the claimed revision |
+| “Sync writes safely” | Only preview behavior was exercised | Not yet verified | Qualify the claim | Test writes against a disposable destination |
+| “Complete” | No agreed acceptance evidence | Not established | State completed capabilities and remaining checks | Verify the project’s actual acceptance criteria; a tag alone is insufficient |

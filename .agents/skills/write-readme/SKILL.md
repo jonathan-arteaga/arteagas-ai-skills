@@ -1,6 +1,6 @@
 ---
 name: write-readme
-description: "Write or update a repository README.md in the awesome-readme funnel format: centered hero, badges, anchor nav, screenshot, then features, quick start, and license last. Use when the user invokes write-readme, asks to update a README, or wants the README format. Do not use to verify claims (validate-project-claims) or author a runnable demo (write-reproducible-demo)."
+description: "Create or substantially update a repository README using an evidence-backed funnel from introduction to quick start and license. Preserve the requested scope for small edits."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -12,12 +12,14 @@ metadata:
 
 Write or update `README.md` so a stranger can tell what the project is, try it, and leave with a license. Follow the cognitive funnel: broad first, license last.
 
+For a small correction or a requested section edit, change that scope in place. Do not restructure the whole README, add a logo task, or audit unrelated project claims. The funnel below applies to creation and substantial updates.
+
 ## Choose the mode
 
 - **Create** when there is no `README.md`. Fill [references/template.md](references/template.md) from repository evidence.
 - **Update** when `README.md` exists. Run [references/audit-checklist.md](references/audit-checklist.md), keep accurate prose and voice, then restructure into the funnel.
 
-Read [references/section-guide.md](references/section-guide.md) before writing any section.
+Read the relevant part of [references/section-guide.md](references/section-guide.md) when authoring or restructuring sections.
 
 ## Workflow
 
@@ -38,7 +40,7 @@ Read [references/section-guide.md](references/section-guide.md) before writing a
 - Nav: add a centered anchor row when there are four or more `##` sections. Slug anchors the way GitHub does.
 - Quick start: name prerequisites, then three to five copy-paste commands taken from real scripts. Never invent commands.
 - Footer identity links: take handles from the existing README, `package.json` author, or repo metadata. Never invent them.
-- Every reader-facing claim needs repository evidence. If a claim is shaky, stop and use `validate-project-claims`.
+- Every reader-facing claim needs repository evidence. If a material claim is shaky, verify it with `validate-project-claims` when available, or qualify/omit it while completing independent edits.
 - Update mode rewrites structure, not personality. Keep accurate content. Move long detail to `docs/` instead of deleting it.
 - A runnable proof path is `write-reproducible-demo`, not this skill.
 

@@ -1,5 +1,17 @@
 # Scroll-reveal detail surfaces
 
+## Contents
+
+- Intent
+- Core pattern
+- Minimal structure
+- Design choices to keep
+- Morphing a shared control
+- Haptics and affordances
+- Interaction guards
+- Pitfalls
+- Concrete example
+
 ## Intent
 
 Use this pattern when a detail screen has a primary surface first and secondary content behind it, and you want the user to reveal that secondary layer by scrolling or swiping instead of tapping a separate button.

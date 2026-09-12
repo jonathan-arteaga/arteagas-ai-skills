@@ -1,5 +1,22 @@
 # Typography
 
+## Contents
+
+- Principles
+- The 2+1 rule — three faces is the ceiling
+- Banned defaults
+- The font catalog
+- Wordmark / logo typography
+- Scale
+- Weights
+- Required features
+- Body text rules
+- Headings rules
+- Bans
+
+Established product identity and platform/accessibility needs override aesthetic defaults in this reference. During review, flag evidence of user impact or unintended drift, not a technique in isolation. Italic headings, single-family typography, compact density, and readable wrapped controls are valid when they serve the product.
+
+
 Type carries the design. If the type is wrong, nothing else matters.
 
 ## Principles
@@ -235,7 +252,7 @@ Use no more than five sizes on a single page. If you need more hierarchy, use we
 
 - No Inter, no Roboto, no Open Sans. No system stack as the *only* stack.
 - No gradient text on headings (`background-clip: text` with a gradient fill).
-- No single-font pages.
+- A single-family system is valid; verify distinct roles, hierarchy, and readability rather than adding a second font by default.
 - No all-caps paragraphs.
 - No font-size below 14px for body copy, below 10px anywhere.
 - No hard-synthesised bold or italic.

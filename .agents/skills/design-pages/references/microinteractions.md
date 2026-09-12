@@ -1,5 +1,17 @@
 # Microinteractions
 
+## Contents
+
+- Principles
+- When to ship motion by default
+- The timing canon
+- The easing canon
+- Recipes
+- The named tells (what AI defaults produce)
+- Theme-aware microinteractions
+- Accessibility ground truth
+- When in doubt, cut
+
 The single biggest gap in 2026's anti-slop canon. Most skills correct typography and colour; very few correct *the small, repeated moments where an interface either feels designed or feels generated.* This file is the correction.
 
 A microinteraction is one event with four parts: trigger → rules → feedback → loops/modes (Saffer). Get any of those wrong and the interface feels uncrafted. Ship them all right and the interface feels *made* — even when nothing else is unusual.

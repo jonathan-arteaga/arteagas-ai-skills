@@ -1,4 +1,18 @@
+# README output template
+
+Adapt this example to the destination repository. Links inside the template are resolved in that repository, not in this skill.
+
+````markdown
 # README template
+
+## Contents
+
+- Features
+- How To Use
+- Resources
+- Contributing
+- License
+- Optional swaps
 
 Copy this shape into `README.md`. Delete any optional block that lacks evidence. Replace `[bracket]` tokens. Do not leave brackets in the published file.
 
@@ -105,3 +119,5 @@ Secondary material that would clutter the funnel:
 ```
 
 Omit the logo image, badge row, nav row, screenshot, Features, Resources, Contributing, or footer when the repository has no evidence for that block. Keep title, tagline, How To Use, and License.
+
+````

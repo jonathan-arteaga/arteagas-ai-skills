@@ -1,6 +1,6 @@
 ---
 name: web-react
-description: "Write, review, and refactor React and Next.js using performance-first patterns (waterfalls, bundles, server/client data, re-renders). Use when the user invokes web-react, or is writing React or Next.js. This is the only React/Next writing skill. Do not use for visual UX review (ux-review) or page design (design-pages)."
+description: "Write, review, or refactor React and Next.js code with attention to data flow, rendering, bundles, and performance. Use for implementation, not visual design direction."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -11,6 +11,8 @@ metadata:
 # Write React and Next.js
 
 Write and review React and Next.js using performance-first rules across waterfalls, bundles, server and client data, and re-renders.
+
+Use the project’s installed framework versions, compiler, data layer, and component conventions. Apply the relevant rules to the changed paths. Do not introduce a helper dependency, caching layer, memoization, or state-library migration solely to follow a reference example. Measure uncertain performance claims and keep correctness and authorization ahead of speed.
 
 ## Rule Categories by Priority
 

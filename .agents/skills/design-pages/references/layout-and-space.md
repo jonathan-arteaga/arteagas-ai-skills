@@ -1,5 +1,16 @@
 # Layout and space
 
+## Contents
+
+- Principles
+- The spacing scale
+- Grids
+- Asymmetry techniques
+- Depth
+- Bans
+- Page-edge clipping
+- When in doubt
+
 Layout is where "AI-generated" gets caught. Equal columns, everything centred, every card identical — these are the tells.
 
 ## Principles

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Fundamentals Review"
+  short_description: "Review visual clarity without changing identity"
+  default_prompt: "Use $visual-fundamentals-review to review this screen for visual clarity and evidence-backed corrections."

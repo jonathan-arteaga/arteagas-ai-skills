@@ -1,0 +1,26 @@
+{
+  "context": "The product calls its objects Projects. Archive is reversible; Delete is permanent. Save failures supply an error code only; no cause is known. Notification permission is optional. The English and Spanish strings below are approved except where an inconsistency is demonstrable.",
+  "web": {
+    "nav": "Projects",
+    "archive_button": "Archive project",
+    "archive_toast": "Workspace removed",
+    "save_error": "Oops! Server is broken. Your data is safe.",
+    "empty": "No projects yet. Create a project to begin.",
+    "delete_confirm": "Delete this project permanently?",
+    "delete_action": "Yes",
+    "delete_cancel": "No"
+  },
+  "ios": {
+    "nav": "Projects",
+    "archive_button": "Archive project",
+    "archive_toast": "Project archived",
+    "permission_intro": "Allow notifications or you cannot use Harbor.",
+    "notification_reality": "Projects remain usable when notifications are denied."
+  },
+  "spanish": {
+    "nav": "Proyectos",
+    "archive_button": "Archivar proyecto",
+    "archive_toast": "Proyecto archivado"
+  },
+  "string_builder": "\"You have \" + count + \" project\""
+}

@@ -1,0 +1,488 @@
+[
+  {
+    "host": "codex",
+    "skill": "apple-review",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "apple-swift",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "apple-swiftui",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "connector-doctor",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "design-md",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "design-pages",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "design-reference-scout",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "design-style-synthesis",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "design-system-consolidator",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "design-with-taste",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "draft-in-authentic-voice",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "edit-in-authentic-voice",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "frame-concept-build",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "frame-product-build",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "hatch-pet",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "mobile-screens",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "product-language",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "think-with-me",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "ui-craft",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "ux-heuristics",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "ux-review",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "validate-project-claims",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "visual-fundamentals-review",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "web-react",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "work-pattern-audit",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "write-readme",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "codex",
+    "skill": "write-reproducible-demo",
+    "status": "different",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "apple-review",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "apple-swift",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "apple-swiftui",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "connector-doctor",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "design-md",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "design-pages",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "design-reference-scout",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "design-style-synthesis",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "design-system-consolidator",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "design-with-taste",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "draft-in-authentic-voice",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "edit-in-authentic-voice",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "frame-concept-build",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "frame-product-build",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "hatch-pet",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "mobile-screens",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "product-language",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "think-with-me",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "ui-craft",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "ux-heuristics",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "ux-review",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "validate-project-claims",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "visual-fundamentals-review",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "web-react",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "work-pattern-audit",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "write-readme",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "claude",
+    "skill": "write-reproducible-demo",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "apple-review",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "apple-swift",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "apple-swiftui",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "connector-doctor",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "design-md",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "design-pages",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "design-reference-scout",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "design-style-synthesis",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "design-system-consolidator",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "design-with-taste",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "draft-in-authentic-voice",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "edit-in-authentic-voice",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "frame-concept-build",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "frame-product-build",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "hatch-pet",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "mobile-screens",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "product-language",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "think-with-me",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "ui-craft",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "ux-heuristics",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "ux-review",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "validate-project-claims",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "visual-fundamentals-review",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "web-react",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "work-pattern-audit",
+    "status": "missing",
+    "symlink": false
+  },
+  {
+    "host": "cursor",
+    "skill": "write-readme",
+    "status": "different",
+    "symlink": true
+  },
+  {
+    "host": "cursor",
+    "skill": "write-reproducible-demo",
+    "status": "different",
+    "symlink": true
+  }
+]

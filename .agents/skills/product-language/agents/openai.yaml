@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Language"
+  short_description: "Write clear, consistent interface language"
+  default_prompt: "Use $product-language to review these interface strings and propose consistent, truthful copy."

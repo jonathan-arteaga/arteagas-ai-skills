@@ -1,8 +1,15 @@
 # Custom theme — protocol
 
-Loaded only when the user has opted into the **custom** theme route in Step 1 of the Design flow. Custom is **made-to-measure for one brief**, written inline into the page's `:root`, never a permanent catalog entry. It spans a **spectrum of depth**: at its lightest, a complete OKLCH palette + free-font pairing tuned to the brief while keeping design-pages' structures (the *combination* is per-brief); at its fullest — **bespoke** — the page's *structure and composition* are designed from first principles too, bound to no catalog theme, genre, or macrostructure. One route, chosen depth.
+## Contents
 
-**The freedom is the combination — and, at the bespoke depth, the whole structure — but never the floor.** Every constraint in [`color.md`](color.md), [`typography.md`](typography.md), and [`anti-patterns.md`](anti-patterns.md) still applies, and **every slop-test gate fires unchanged at every depth** — the gates are the floor that never moves. The Step 5 preview surfaces the palette + pairing (plus the bespoke structure, when there is one) in plain text *before* any code is emitted, so the user can redirect.
+- Two routes, plain English
+- Choose a custom direction when it fits
+- § Bespoke depth — custom that designs the whole page
+- § B · Palette construction
+- § C · Font pairing
+- Integrate with the project
+- § G · Three worked examples
+- Verify the resulting design
 
 ## Two routes, plain English
 
@@ -13,39 +20,9 @@ Loaded only when the user has opted into the **custom** theme route in Step 1 of
 
   Either way, custom does **not** extend the catalog with a permanent theme.
 
-## When to surface this fork — Step 1 trigger signals
+## Choose a custom direction when it fits
 
-design-pages must **not** offer catalog-vs-custom on every prompt. That's friction, not discipline. Surface the fork only when the brief carries one of these signals:
-
-1. **Explicit ask** — the user types `custom`, "custom theme", "tailored to our brand", "make it ours", "something unique", "play around with the colors and fonts", "I want my own palette".
-2. **Named brand colour** — the user gives a specific anchor colour as a hex / OKLCH / brand name. Example: "use our terracotta", "the brand red is hex #c0392b", "anchor on sea-blue".
-3. **Multi-attribute aesthetic the catalog can't carry** — three or more vibe words pointing at a specific, off-catalog feel. Examples: "moss, lichen, soft pink, herbal" / "sun-drenched, market-day, carbon-black" / "late-night, neon, brutalist deli". Compare against the 20 catalog themes; if no single catalog theme is within one axis-step of the vibe, fire the fork. **One adjective ("warm", "technical", "playful") is not a signal — that's a tone, the catalog already carries it.**
-4. **Brand-mood reference attached** — the user attaches a colour swatch, a moodboard, a Pantone chip. (If they attach a *page* screenshot, route to `study` instead; custom is for brand colour / mood, study is for design DNA.)
-5. **A singular structural vision** (→ the *bespoke* depth) — the brief names a *structure or composition*, not just a palette/mood: "no theme / from scratch / fully bespoke / ignore the catalog / art-direct it", or a one-of-a-kind page-shape the macrostructure catalog has no entry for (a scroll-assembling poem, a ticket-shaped page, an interactive periodic table). Routes to custom's **bespoke depth** (§ Bespoke depth below). A palette or mood that's merely off-catalog is *tuned* custom, not bespoke.
-
-If any signal fires, ask one short follow-up before picking a theme:
-
-> *"This brief reads like a custom palette would fit better than the 21 named themes. Want me to construct a custom OKLCH palette + free-font pairing tuned to <one-line summary of the vibe>, or stay on the catalog for variety + speed?"*
-
-Wait for the user to answer. If they say custom (or yes / go) → continue this protocol from § A. If they say catalog (or no / stay catalog) → drop the fork and proceed with the catalog route. **Default to catalog** — silence routes to catalog, not custom.
-
-If **none** of the signals fires, do not mention the fork at all. Continue silently with the catalog flow.
-
----
-
-## § A · The one follow-up question
-
-Once the user names `custom` as the theme route, ask **one** thing in **one** message:
-
-> *"Custom needs one input — describe the brand's vibe in 4–8 words. Examples: 'archival warmth, hand-set, no varnish' · 'industrial precision, cool, technical' · 'moss, lichen, soft pink, herbal' · 'sun-drenched, market-day, carbon black' · 'late-night, neon, brutalist deli'.*
->
-> *Optional second input: an anchor colour — hex, OKLCH, or a name like 'terracotta', 'sea-blue', 'forest-green', 'dusty-pink'. If you skip it, I'll pick one from the vibe."*
-
-**Do not ask anything else.** Audience / use / tone (Step 1) plus the brand vibe is already enough signal. The model has no business asking the user to nominate paper lightness or font weights — that's the model's job.
-
-If the user gives just two or three words ("sun-drenched"), proceed; the recipe below extracts enough. If the user gives a paragraph, accept it but compress to 4–8 words for the stamp.
-
----
+Use a custom palette/type direction when requested or when it serves the brief better than a catalog. Infer routine choices from supplied context; ask only for a consequential missing decision. No mandatory opt-in question or fixed interview is required.
 
 ## § Bespoke depth — custom that designs the whole page
 
@@ -172,90 +149,9 @@ If any answer is no, redirect — pick a different body face or shift the displa
 
 ---
 
-## § D · Custom-axis computation
+## Integrate with the project
 
-A custom theme must declare its three diversification-rule axis values explicitly so [`SKILL.md`](../SKILL.md) § "Theme-diversification rule" fires the same way as it does on catalog themes.
-
-### D.1 · Paper band
-
-- **dark** — paper L < 30 %
-- **mid** — paper L 30–85 %
-- **light** — paper L > 85 %
-
-### D.2 · Display style
-
-Pick one based on the chosen display face:
-
-- **italic-serif** — Fraunces italic, Newsreader italic, EB Garamond italic, Cormorant italic
-- **roman-serif** — Source Serif 4, Newsreader, Crimson Pro, Bitter, Cardo
-- **geometric-sans** — Geist, Bricolage Grotesque, Inter Tight, Manrope, Sora
-- **mono** — Geist Mono, JetBrains Mono, IBM Plex Mono, Space Mono
-- **display-condensed-italic** — Migra italic, Tobias italic
-- **display-condensed-bold** — Anton, Bebas Neue, Oswald, Barlow Condensed
-- **display-heavy** — Inter Tight 900, Bricolage 800, Druk-class
-- **slab-serif** — Roboto Slab, Bitter heavy, Zilla Slab
-- **system-native** — system-ui, Inter Tight 400 (austere)
-- **risograph-bold** — bold sans with hand-crafted feel
-- **handwritten** — Caveat, Sacramento, Patrick Hand (rare; only when brand demands)
-
-### D.3 · Accent hue band
-
-- **warm** — hue 10–60° (red, orange, amber)
-- **cool** — hue 200–300° (blue, indigo, cyan)
-- **neutral** — no chromatic accent (austere; chroma < 0.05)
-- **chromatic-other** — anything outside warm/cool/neutral. Sub-tag the specific anchor: `chromatic-green ~145°` · `chromatic-sage ~120°` · `chromatic-phosphor ~150°` · `chromatic-terracotta ~30°` · `chromatic-dusty-pink ~350°` · `chromatic-moss ~140°` · `chromatic-amber ~75°`.
-
-### D.4 · Where these go
-
-Write all three into the macrostructure stamp (§ E below) and the `.design-pages/log.json` entry (§ F below). They are the durable record. The next run reads them.
-
----
-
-## § E · Stamp format
-
-The CSS comment at the top of the produced stylesheet (per [`SKILL.md`](../SKILL.md) Step 6 § "Stamp the output"):
-
-```css
-/* design-pages · macrostructure: <name> · <hero archetype + knobs>
- * theme: custom · vibe: "<4–8 words>" · paper: oklch(<L>% <C> <H>) · accent: oklch(<L>% <C> <H>)
- * display: <font name> · body: <font name> · axes: <paper-band> / <display-style> / <accent-hue>
- * studied: no · context: <user-provided | inferred> · v0.6.x
- */
-```
-
-Concrete example:
-
-```css
-/* design-pages · macrostructure: Long Document · H5 hero knobs: salutation=time-stamp, body=2 paragraphs, signoff=initials
- * theme: custom · vibe: "archival warmth, hand-set, no varnish" · paper: oklch(94% 0.020 65) · accent: oklch(58% 0.16 35)
- * display: Fraunces italic · body: Source Serif 4 · axes: light / italic-serif / chromatic-terracotta
- * studied: no · context: explicit · v0.8.0
- */
-```
-
-The stamp is the durable record. `audit` reads it. The next run reads it. The user reads it.
-
----
-
-## § F · `.design-pages/log.json` entry shape
-
-Custom runs extend the existing schema with a `theme_axes` field and an optional `vibe` field:
-
-```json
-{ "date": "2026-05-01",
-  "macrostructure": "Stat-Led",
-  "theme": "custom",
-  "theme_axes": "light / italic-serif / chromatic-terracotta",
-  "vibe": "archival warmth, hand-set, no varnish",
-  "enrichment": "none",
-  "brief": "Coffeebox · subscription" }
-```
-
-Catalog entries continue to record `theme: <name>` and skip `theme_axes` (the catalog's axes are looked up from [`tokens.css`](../../../site/css/tokens.css)). Step 2.5 logic uses the same diversification check on both — for catalog entries it reads the axes from tokens.css; for custom entries it reads them from the entry.
-
-When rotating, **a custom run that follows another custom run must differ on at least one axis from the previous custom** — same rule as catalog-vs-catalog. A custom run that follows a catalog run must differ on at least one axis from the catalog's axes. The diversification rule is theme-route-blind.
-
----
+Use the existing token source and naming. If documentation is requested, hand the supported values and decisions to design-md. Do not rotate themes, record a design log, add stamps, or force axis changes between related pages. Do not create a second token source.
 
 ## § G · Three worked examples
 
@@ -356,12 +252,6 @@ The vibe names two hues: *moss* (greenish, ~140°) and *soft pink* (warm, ~350°
 
 ---
 
-## What custom does **not** do (worth restating)
+## Verify the resulting design
 
-1. **Does not invent themes that ignore the rules.** Every paper L band, accent chroma cap, neutral-tinting requirement, font ban, and slop-test gate carries forward. The freedom is the *combination* — not the rules.
-2. **Does not save themes for reuse.** A custom run is per-output. The skill does not write back to [`tokens.css`](../../../site/css/tokens.css). If the user wants a permanent theme, they paste the custom palette into tokens.css themselves and name it.
-3. **Does not ask multiple follow-up questions.** One vibe answer (+ optional anchor) is enough. The audience/use/tone from Step 1 plus the brief plus the macrostructure pick already give the model 80 % of the signal.
-4. **Does not relax the diversification rule.** Custom entries declare their three axes the same way catalog entries do; the rotation rule fires on both, theme-route-blind.
-5. **Does not bypass the Step 5 preview.** The custom palette + pairing surface in plain text *before* any code is emitted, so the user can redirect early.
-
-If any of those five lines is bent, the custom output is over-invented. Audit it; redirect.
+Check actual readability, accessibility, responsiveness, and product fit. Palette bands, typography pairings, and worked examples above are optional starting points. Respect the project's approved design, including pure white, system fonts, single-family type, or multiple accents when appropriate. A preview may help resolve an open choice, but an already-authorized build does not need a new approval round.

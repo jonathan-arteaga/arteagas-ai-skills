@@ -1,0 +1,326 @@
+[
+  {
+    "id": "apple-review-positive",
+    "prompt": "Audit this existing iOS app for release readiness.",
+    "skill": "apple-review",
+    "polarity": "positive"
+  },
+  {
+    "id": "apple-review-negative",
+    "prompt": "Write one new Swift helper that parses a date.",
+    "skill": "apple-review",
+    "polarity": "negative"
+  },
+  {
+    "id": "apple-swift-positive",
+    "prompt": "Refactor these Swift types and fix their actor isolation.",
+    "skill": "apple-swift",
+    "polarity": "positive"
+  },
+  {
+    "id": "apple-swift-negative",
+    "prompt": "Design the tab bar and sheet presentation in SwiftUI.",
+    "skill": "apple-swift",
+    "polarity": "negative"
+  },
+  {
+    "id": "apple-swiftui-positive",
+    "prompt": "Build a SwiftUI settings screen with a detail sheet.",
+    "skill": "apple-swiftui",
+    "polarity": "positive"
+  },
+  {
+    "id": "apple-swiftui-negative",
+    "prompt": "Audit signing and release readiness for the whole iOS app.",
+    "skill": "apple-swiftui",
+    "polarity": "negative"
+  },
+  {
+    "id": "connector-doctor-positive",
+    "prompt": "The Drive connector says connected but reads fail. Diagnose its readiness without changes.",
+    "skill": "connector-doctor",
+    "polarity": "positive"
+  },
+  {
+    "id": "connector-doctor-negative",
+    "prompt": "Reconnect my Drive account and change the OAuth configuration.",
+    "skill": "connector-doctor",
+    "polarity": "negative"
+  },
+  {
+    "id": "design-md-positive",
+    "prompt": "Document the governing design tokens in DESIGN.md.",
+    "skill": "design-md",
+    "polarity": "positive"
+  },
+  {
+    "id": "design-md-negative",
+    "prompt": "Merge duplicated button variants and migrate their consumers.",
+    "skill": "design-md",
+    "polarity": "negative"
+  },
+  {
+    "id": "design-pages-positive",
+    "prompt": "Redesign the landing page composition for this business.",
+    "skill": "design-pages",
+    "polarity": "positive"
+  },
+  {
+    "id": "design-pages-negative",
+    "prompt": "Check a form’s keyboard focus order and accessible labels.",
+    "skill": "design-pages",
+    "polarity": "negative"
+  },
+  {
+    "id": "design-reference-scout-positive",
+    "prompt": "Find a few current visual references before choosing our new app direction.",
+    "skill": "design-reference-scout",
+    "polarity": "positive"
+  },
+  {
+    "id": "design-reference-scout-negative",
+    "prompt": "Study this one screenshot I already selected.",
+    "skill": "design-reference-scout",
+    "polarity": "negative"
+  },
+  {
+    "id": "design-style-synthesis-positive",
+    "prompt": "Compare these two selected local apps to derive shared craft principles for a third app.",
+    "skill": "design-style-synthesis",
+    "polarity": "positive"
+  },
+  {
+    "id": "design-style-synthesis-negative",
+    "prompt": "Search the web for three new visual references.",
+    "skill": "design-style-synthesis",
+    "polarity": "negative"
+  },
+  {
+    "id": "design-system-consolidator-positive",
+    "prompt": "Consolidate duplicate spacing tokens and button variants without changing the visual identity.",
+    "skill": "design-system-consolidator",
+    "polarity": "positive"
+  },
+  {
+    "id": "design-system-consolidator-negative",
+    "prompt": "Write a document describing the tokens without changing code.",
+    "skill": "design-system-consolidator",
+    "polarity": "negative"
+  },
+  {
+    "id": "design-with-taste-positive",
+    "prompt": "Define Design DNA so these unrelated products have distinct identities.",
+    "skill": "design-with-taste",
+    "polarity": "positive"
+  },
+  {
+    "id": "design-with-taste-negative",
+    "prompt": "Correct the optical alignment and press feedback of this existing button.",
+    "skill": "design-with-taste",
+    "polarity": "negative"
+  },
+  {
+    "id": "draft-in-authentic-voice-positive",
+    "prompt": "Draft a new email in my voice using these writing examples.",
+    "skill": "draft-in-authentic-voice",
+    "polarity": "positive"
+  },
+  {
+    "id": "draft-in-authentic-voice-negative",
+    "prompt": "Edit this existing paragraph to remove artificial wording.",
+    "skill": "draft-in-authentic-voice",
+    "polarity": "negative"
+  },
+  {
+    "id": "edit-in-authentic-voice-positive",
+    "prompt": "Review this existing draft for specific AI-writing patterns.",
+    "skill": "edit-in-authentic-voice",
+    "polarity": "positive"
+  },
+  {
+    "id": "edit-in-authentic-voice-negative",
+    "prompt": "Write a first draft of a personal note from my examples.",
+    "skill": "edit-in-authentic-voice",
+    "polarity": "negative"
+  },
+  {
+    "id": "frame-concept-build-positive",
+    "prompt": "Frame a small experiment to see whether retrieval can find the correct invoice.",
+    "skill": "frame-concept-build",
+    "polarity": "positive"
+  },
+  {
+    "id": "frame-concept-build-negative",
+    "prompt": "Define the audience and complete core flows for a product we intend to ship.",
+    "skill": "frame-concept-build",
+    "polarity": "negative"
+  },
+  {
+    "id": "frame-product-build-positive",
+    "prompt": "Clarify the audience, core flows, and success criteria for our new mobile product.",
+    "skill": "frame-product-build",
+    "polarity": "positive"
+  },
+  {
+    "id": "frame-product-build-negative",
+    "prompt": "Change the existing button radius from 6 to 8 pixels.",
+    "skill": "frame-product-build",
+    "polarity": "negative"
+  },
+  {
+    "id": "hatch-pet-positive",
+    "prompt": "Package this sprite atlas as a Codex v2 pet.",
+    "skill": "hatch-pet",
+    "polarity": "positive"
+  },
+  {
+    "id": "hatch-pet-negative",
+    "prompt": "Create a static illustrated logo for a bakery.",
+    "skill": "hatch-pet",
+    "polarity": "negative"
+  },
+  {
+    "id": "mobile-screens-positive",
+    "prompt": "Implement an Expo React Native onboarding screen.",
+    "skill": "mobile-screens",
+    "polarity": "positive"
+  },
+  {
+    "id": "mobile-screens-negative",
+    "prompt": "Build this screen in native SwiftUI.",
+    "skill": "mobile-screens",
+    "polarity": "negative"
+  },
+  {
+    "id": "product-language-positive",
+    "prompt": "Improve the UI labels and error messages in English and Spanish.",
+    "skill": "product-language",
+    "polarity": "positive"
+  },
+  {
+    "id": "product-language-negative",
+    "prompt": "Write a personal thank-you email in my voice.",
+    "skill": "product-language",
+    "polarity": "negative"
+  },
+  {
+    "id": "ui-craft-positive",
+    "prompt": "Polish this existing interface’s radii, optical alignment, and motion feedback.",
+    "skill": "ui-craft",
+    "polarity": "positive"
+  },
+  {
+    "id": "ui-craft-negative",
+    "prompt": "Create a wholly new landing-page visual direction.",
+    "skill": "ui-craft",
+    "polarity": "negative"
+  },
+  {
+    "id": "ux-heuristics-positive",
+    "prompt": "Explain why this checkout feels mentally demanding using UX psychology laws.",
+    "skill": "ux-heuristics",
+    "polarity": "positive"
+  },
+  {
+    "id": "ux-heuristics-negative",
+    "prompt": "Check that all form fields have accessible labels and keyboard focus.",
+    "skill": "ux-heuristics",
+    "polarity": "negative"
+  },
+  {
+    "id": "ux-review-positive",
+    "prompt": "Audit this web form for keyboard, semantics, and accessibility problems.",
+    "skill": "ux-review",
+    "polarity": "positive"
+  },
+  {
+    "id": "ux-review-negative",
+    "prompt": "Choose the brand palette and page composition for a new website.",
+    "skill": "ux-review",
+    "polarity": "negative"
+  },
+  {
+    "id": "validate-project-claims-positive",
+    "prompt": "Check whether our README claims about production readiness are supported.",
+    "skill": "validate-project-claims",
+    "polarity": "positive"
+  },
+  {
+    "id": "validate-project-claims-negative",
+    "prompt": "Rewrite this README introduction for clearer wording without assessing status.",
+    "skill": "validate-project-claims",
+    "polarity": "negative"
+  },
+  {
+    "id": "visual-fundamentals-review-positive",
+    "prompt": "Review the existing screen for readability, hierarchy, and visual grouping.",
+    "skill": "visual-fundamentals-review",
+    "polarity": "positive"
+  },
+  {
+    "id": "visual-fundamentals-review-negative",
+    "prompt": "Design an entirely new page and brand identity.",
+    "skill": "visual-fundamentals-review",
+    "polarity": "negative"
+  },
+  {
+    "id": "web-react-positive",
+    "prompt": "Fix this Next.js data waterfall and React rerender problem.",
+    "skill": "web-react",
+    "polarity": "positive"
+  },
+  {
+    "id": "web-react-negative",
+    "prompt": "Choose a distinctive visual identity for the product.",
+    "skill": "web-react",
+    "polarity": "negative"
+  },
+  {
+    "id": "work-pattern-audit-positive",
+    "prompt": "Audit the supplied AI work history for recurring steps worth automating.",
+    "skill": "work-pattern-audit",
+    "polarity": "positive"
+  },
+  {
+    "id": "work-pattern-audit-negative",
+    "prompt": "Create a new hourly scheduled job now.",
+    "skill": "work-pattern-audit",
+    "polarity": "negative"
+  },
+  {
+    "id": "write-readme-positive",
+    "prompt": "Create an evidence-backed README with quick start and license.",
+    "skill": "write-readme",
+    "polarity": "positive"
+  },
+  {
+    "id": "write-readme-negative",
+    "prompt": "Evaluate whether our existing production-readiness claims are supported.",
+    "skill": "write-readme",
+    "polarity": "negative"
+  },
+  {
+    "id": "write-reproducible-demo-positive",
+    "prompt": "Create a reproducible demo of one behavior using synthetic inputs.",
+    "skill": "write-reproducible-demo",
+    "polarity": "positive"
+  },
+  {
+    "id": "write-reproducible-demo-negative",
+    "prompt": "Write a marketing tagline for the project.",
+    "skill": "write-reproducible-demo",
+    "polarity": "negative"
+  },
+  {
+    "id": "think-with-me-positive",
+    "prompt": "I have competing ideas and cannot yet tell what I want to accomplish. Help me think through the direction.",
+    "skill": "think-with-me",
+    "polarity": "positive"
+  },
+  {
+    "id": "think-with-me-negative",
+    "prompt": "I have chosen the design. Change this heading to the exact text I supplied and leave the rest alone.",
+    "skill": "think-with-me",
+    "polarity": "negative"
+  }
+]

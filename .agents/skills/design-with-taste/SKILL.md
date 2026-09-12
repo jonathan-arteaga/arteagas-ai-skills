@@ -1,6 +1,6 @@
 ---
 name: design-with-taste
-description: "Keep unrelated products visually distinct by separating craft constants from identity variables (Design DNA). Use when the user invokes design-with-taste, asks for Design DNA, or wants two products not to share one interchangeable look. Do not use for greenfield page builds (design-pages), synthesizing a direction from selected local projects (design-style-synthesis), micro-polish (ui-craft), DESIGN.md files (design-md), or reference research (design-reference-scout)."
+description: "Define or review a product’s visual identity and Design DNA, especially when unrelated products should feel distinct."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -29,7 +29,7 @@ Apply a consistent standard of craftsmanship without applying a consistent appea
 
 ## Protect uniqueness
 
-- Change at least three major identity variables between unrelated projects: typeface, palette, composition, imagery, density, shape language, motion metaphor, navigation, or voice.
+- For unrelated projects, choose a product-specific combination of identity variables: typeface, palette, composition, imagery, density, shape language, motion metaphor, navigation, or voice.
 - Run the logo-swap test: if another product could use the design unchanged after replacing the name and logo, the direction is not specific enough.
 - Do not reuse the same font, palette, layout, surface treatment, and motion pattern as one bundled recipe.
 - Prefer product-specific metaphors, content, and interaction ideas over generic “modern SaaS” decoration.

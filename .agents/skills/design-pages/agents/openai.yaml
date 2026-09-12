@@ -1,4 +1,4 @@
 interface:
   display_name: "Design Pages"
   short_description: "Design pages that look made, not generated"
-  default_prompt: "Use $design-pages to design or audit this interface against anti-slop rules."
+  default_prompt: "Use $design-pages to design this web page around its product brief and established identity."

@@ -1,5 +1,20 @@
 # Theme - Grid
 
+## Contents
+
+- Axes (diversification)
+- Reference register
+- Typography
+- The marks kit
+- The plate
+- Material
+- Motion
+- Do-nots (this theme's own failure modes)
+- Voice range
+- How Grid differs from its neighbours
+- When the brief routes here
+- Build hint
+
 Swiss neo-grotesque systems design: the object-poster and transit-signage school, executed on a **near-white cool sheet with an exposed 12-column hairline grid, one heavy grotesk, and exactly one signal ink spent entirely on geometry**. Giant lowercase Archivo slams to the left margin, the column rules stay visible behind the content, and every section carries a constructed object: a plate, a figure, a giant numeral, a mark from the kit. It reads like a wayfinding manual a poster designer got hold of: rational, gridded, and unafraid of one loud move per band.
 
 The material, in one line: **a visible column grid, one grotesk, one signal ink, and geometry doing the talking.**

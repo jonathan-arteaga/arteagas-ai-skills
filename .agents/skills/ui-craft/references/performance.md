@@ -1,5 +1,8 @@
 # Performance
 
+Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
+
+
 Transition specificity and GPU compositing hints.
 
 ## Transition only what changes

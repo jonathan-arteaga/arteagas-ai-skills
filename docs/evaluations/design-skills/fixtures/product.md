@@ -1,0 +1,3 @@
+# Harbor fixtures
+Harbor is a fictional project workspace. The approved identity uses a single Georgia family, italic editorial headings, navy actions, and compact tables for expert users. Sentence case is the approved UI capitalization policy. Preserve functionality and approved identity.
+Supported surfaces: web at 360 and 1280 CSS pixels and 200% zoom; iOS with Dynamic Type. Existing motion uses a 0.98 press scale and 120ms ease-out. These files are synthetic source fixtures. No rendered screenshots, running service, or empirical user study is supplied. Do not claim rendered or assistive-technology verification.

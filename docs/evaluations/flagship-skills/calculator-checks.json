@@ -1,0 +1,186 @@
+[
+  {
+    "run": "claude-baseline-combined-build-2",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "Tip Calculator\nBill amount\n$\nTip percentage\n15%\n18%\n20%\n25%\nCustom percentage\n%\nResults\nTip\n$15.00\nTotal\n$115.00\nReset"
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "Tip Calculator\nBill amount\n$\nTip percentage\n15%\n18%\n20%\n25%\nCustom percentage\n%\nResults\nTip\n$2.00\nTotal\n$22.00\nReset"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "run": "claude-revised-combined-build-2",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "Tip Calculator\nBill amount\n$\n\nTip percentage\n15%\n18%\n20%\n25%\nCustom percentage\n%\n\nTip (15%)\n$15.00\nTotal\n$115.00\nClear"
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "Tip Calculator\nBill amount\n$\n\nTip percentage\n15%\n18%\n20%\n25%\nCustom percentage\n%\n\nTip (10%)\n$2.00\nTotal\n$22.00\nClear"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "run": "codex-baseline-combined-build-1",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "Tip calculator\n\nEnter the bill and tip percentage. Your total updates as you type.\n\nBill amount (USD)\nTip percentage (%)\n\nEnter any percentage, including 0 for no tip.\n\nTip amount\n$15.00\nTotal\n$115.00\n\nTip rounded to the nearest cent. Total includes tip.\n\nWorks offline. Nothing is saved."
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "Tip calculator\n\nEnter the bill and tip percentage. Your total updates as you type.\n\nBill amount (USD)\nTip percentage (%)\n\nEnter any percentage, including 0 for no tip.\n\nTip amount\n$2.00\nTotal\n$22.00\n\nTip rounded to the nearest cent. Total includes tip.\n\nWorks offline. Nothing is saved."
+      }
+    ],
+    "errors": []
+  },
+  {
+    "run": "codex-revised-combined-build-1",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "Tip calculator\n\nEnter the bill and tip percentage. Your total updates as you type.\n\nBill amount (USD)\nTip percentage (%)\nTip\n$15.00\nTotal\n$115.00\nUSD \u00b7 Rounded to the nearest cent\nWorks offline. Nothing is saved."
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "Tip calculator\n\nEnter the bill and tip percentage. Your total updates as you type.\n\nBill amount (USD)\nTip percentage (%)\nTip\n$2.00\nTotal\n$22.00\nUSD \u00b7 Rounded to the nearest cent\nWorks offline. Nothing is saved."
+      }
+    ],
+    "errors": []
+  },
+  {
+    "run": "cursor-fable-baseline-combined-build-2",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "Tip Calculator\nBill amount\n$\nTip percentage\n15%\n18%\n20%\n25%\nCustom percentage\n%\n\nTip\n$15.00\nTotal\n$115.00\nReset"
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "Tip Calculator\nBill amount\n$\nTip percentage\n15%\n18%\n20%\n25%\nCustom percentage\n%\n\nTip\n$2.00\nTotal\n$22.00\nReset"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "run": "cursor-fable-revised-combined-build-2",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "Tip Calculator\n\nEnter the bill and a tip percentage. Tip and total update as you type.\n\nBill amount\n$\n\nTip percentage\n15%\n18%\n20%\n25%\nCustom tip percentage\n%\n\nTip\n$15.00\nTotal\n$115.00\nReset"
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "Tip Calculator\n\nEnter the bill and a tip percentage. Tip and total update as you type.\n\nBill amount\n$\n\nTip percentage\n15%\n18%\n20%\n25%\nCustom tip percentage\n%\n\nTip\n$2.00\nTotal\n$22.00\nReset"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "run": "cursor-grok-baseline-combined-build-1",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "TIP CALCULATOR\n\nBill in, tip and total out. Nothing is saved.\n\nBILL AMOUNT (USD)\nTIP PERCENT\n15%\n18%\n20%\n25%\nTIP\n$15.00\nTOTAL\n$115.00"
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "TIP CALCULATOR\n\nBill in, tip and total out. Nothing is saved.\n\nBILL AMOUNT (USD)\nTIP PERCENT\n15%\n18%\n20%\n25%\nTIP\n$2.00\nTOTAL\n$22.00"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "run": "cursor-grok-revised-combined-build-1",
+    "pass": true,
+    "observations": [
+      {
+        "bill": "100",
+        "percent": "15",
+        "expectedTip": 15,
+        "expectedTotal": 115,
+        "pass": true,
+        "text": "CHECK\nFLOOR\n\nTip calculator\n\nEnter the check total and tip percent. Tip and guest total update as you type.\n\nCHECK TOTAL\n\nDollars, before tip.\n\nTIP PERCENT\n15%\n18%\n20%\n25%\n\nHouse rate, or type your own.\n\nTIP\n$15.00\nGUEST TOTAL\n$115.00"
+      },
+      {
+        "bill": "20",
+        "percent": "10",
+        "expectedTip": 2,
+        "expectedTotal": 22,
+        "pass": true,
+        "text": "CHECK\nFLOOR\n\nTip calculator\n\nEnter the check total and tip percent. Tip and guest total update as you type.\n\nCHECK TOTAL\n\nDollars, before tip.\n\nTIP PERCENT\n15%\n18%\n20%\n25%\n\nHouse rate, or type your own.\n\nTIP\n$2.00\nGUEST TOTAL\n$22.00"
+      }
+    ],
+    "errors": []
+  }
+]

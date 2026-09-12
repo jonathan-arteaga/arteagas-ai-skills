@@ -1,5 +1,23 @@
 # Responsive
 
+## Contents
+
+- Mobile — non-negotiable
+- Principles
+- Breakpoints
+- Fluid scaling
+- Pointer and hover queries
+- Control text under growth
+- Viewport units
+- Safe areas
+- Tables on small screens
+- Images
+- Internationalisation
+- Bans
+
+Established product identity and platform/accessibility needs override aesthetic defaults in this reference. During review, flag evidence of user impact or unintended drift, not a technique in isolation. Italic headings, single-family typography, compact density, and readable wrapped controls are valid when they serve the product.
+
+
 Mobile-first. Content-driven breakpoints. No desktop-only interactions.
 
 ## Mobile — non-negotiable
@@ -7,7 +25,7 @@ Mobile-first. Content-driven breakpoints. No desktop-only interactions.
 Every design-pages output must render flawlessly at **320 px, 375 px, 414 px, and 768 px** CSS-pixel widths. Eyeball each viewport before marking the output complete:
 
 - No horizontal scroll (slop-test gate 34)
-- No clickable text wrapping to two lines (gate 49)
+- Control labels remain readable and operable under text growth (gate 49)
 - No image-bearing grid pushing the layout past viewport — use `minmax(0, 1fr)`, never bare `1fr`, on tracks containing images (gate 50)
 - Root carries `overflow-x: clip` on both `html` and `body` — never `hidden` (gate 34)
 - Display headers wrap inside long words via `overflow-wrap: anywhere; min-width: 0` (gate 51)
@@ -56,38 +74,11 @@ h1 { font-size: clamp(2.5rem, 4vw + 1rem, 6rem); }
 
 Never build a mouse-hover interaction that has no touch equivalent.
 
-## Clickable text — never wraps
+## Control text under growth
 
-Buttons, primary nav links, footer links, tab labels, breadcrumbs, and CTAs must read as **single-line affordances at every viewport between 320 px and 1920 px**. A button or nav link wrapping to two lines looks broken — visitors read it as a styling error, not as intentional. The shortest fix is almost always to shorten the label.
+Test labels at supported widths, zoom, and relevant locales. Allow multi-line buttons, links, tabs, or breadcrumbs when grouping, full meaning, and hit areas remain clear. Preserve compact native/platform patterns where they remain usable.
 
-```css
-/* Affordances are single-line — let the parent reflow, not the label. */
-.btn,
-.nav__link,
-.foot__link,
-.cta {
-  white-space: nowrap;
-}
-```
-
-```css
-/* When the row can't fit, collapse the row, not the labels. */
-@media (max-width: 40rem) {
-  .nav__rail { display: none; }      /* desktop nav hides */
-  .nav__sheet-toggle { display: grid; } /* mobile menu shows */
-}
-```
-
-**Order of fixes**, when something does wrap:
-
-1. **Shorten the label.** *"Get started free"* → *"Start free"*. *"Read the documentation"* → *"Read docs"*. *"Schedule a demo"* → *"Book demo"*. Most CTA labels are 30–40 % longer than they need to be.
-2. **`white-space: nowrap`** on the affordance, let the parent flex/grid reflow.
-3. **`hidden=until-found`** the lowest-priority nav item at narrow widths (it remains in DOM for find-in-page and SEO).
-4. **Collapse the nav** into a sheet / off-canvas / disclosure menu below a content-driven breakpoint.
-
-**Never:** let a primary CTA or top-level nav link wrap. Long footer-link labels can wrap *only* in a footer column where wrapping is part of the column's rhythm — not in the inline footer link strip (Ft2).
-
-This is gate **49** in [`slop-test.md`](slop-test.md). Audit any output that ships interactive affordances and confirm none wrap at the breakpoints listed above.
+Prefer flexible containers, wrapping, and an accessible navigation adaptation to clipping or shrinking text. Keep the full label available if truncation is necessary. Use no-wrap only when the surrounding layout can accommodate the longest supported label. Do not hide useful navigation or shorten approved wording merely to satisfy a line-count rule.
 
 ## Viewport units
 

@@ -1,10 +1,29 @@
 # Theme — Lumen
 
+## Contents
+
+- Axes (diversification)
+- Reference register
+- Palette drops
+- The apparatus family
+- The seven signature moves
+- Motion direction
+- Required dependencies
+- Macrostructure affinity
+- Macrostructure rejection
+- Voice fixtures
+- Anti-patterns (theme-specific)
+- Macrostructure pitfalls
+- How Lumen differs from neighbouring themes
+- Test brief expectations
+- Build hint
+- What Lumen refuses (restated)
+
 Premium AI-tool register, built around a **hand-engineered apparatus** rather than a glowing orb. One precision SVG/CSS object per page, with leader-line callouts in mono micro-type, set against dead space alongside a **lowercase classical-serif headline** and a technical mono eyebrow. Three font families. Two palette drops (Night Foundry / Day Foundry) with different physics — Night emits, Day refracts — and entirely different visual languages, not the same shape in two colours.
 
 Lumen runs a strict **two-register typography system**: all prose is **lowercase** (hero titles, section titles, lede, body, buttons, nav, brand, footer copy — even acronyms when they appear in body text); all mono labels are **UPPERCASE** (eyebrows, callouts, meter labels, stat labels). The contrast between quiet lowercase prose and loud UPPERCASE machine-readout is the typographic signature.
 
-Loaded eagerly by SKILL.md Step 3 whenever the catalog pick is `lumen`. Palettes + font stack live in [`site/css/tokens.css`](../../../../site/css/tokens.css) under `[data-theme="lumen"]` (Night, default) and `[data-theme="lumen"][data-drop="day"]` (Day). This file carries the drops + apparatus family + signature moves + motion + anti-patterns.
+Loaded eagerly by SKILL.md Step 3 whenever the catalog pick is `lumen`. Palettes + font stack live in [`site/css/tokens.css`](https://github.com/Nutlope/hallmark/blob/13ac0ec7e148655948100b6396439e481361d690/site/css/tokens.css) under `[data-theme="lumen"]` (Night, default) and `[data-theme="lumen"][data-drop="day"]` (Day). This file carries the drops + apparatus family + signature moves + motion + anti-patterns.
 
 ## Axes (diversification)
 
@@ -57,7 +76,7 @@ Cool-bone canvas with a violet pull. Deep indigo accent that *refracts*. The app
 
 ### Drop rotation rule
 
-The diversification log records `"theme": "lumen", "drop": "night"` (or `"day"`). Two consecutive Lumen builds must use different drops unless the brief contains a strong drop signal.
+Choose the variation that fits the brief. Reuse it for related pages; no log or rotation rule is required.
 
 ### Why two drops, not five
 

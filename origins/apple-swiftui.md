@@ -5,3 +5,7 @@
 - **License:** MIT (stacked notice: Jonathan Arteaga / Thomas Ricouard)
 - **Copyright:** Thomas Ricouard (2026)
 - **What changed:** Renamed `swiftui-ui-patterns` to `apple-swiftui`. House frame: owned description, sentence-case H1, owner-voice opening, `## Report`. Stacked MIT copyright. References unchanged.
+
+## Flagship-model revision (2026-09-12)
+
+Inlined direct component routing; removed reference-authoring instructions and compulsory tab/router scaffolding.

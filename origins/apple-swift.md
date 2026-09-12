@@ -5,3 +5,7 @@
 - **License:** MIT (stacked notice: Jonathan Arteaga / Emil Kowalski)
 - **Copyright:** Emil Kowalski (2026)
 - **What changed:** Renamed `write-swift` to `apple-swift`. House frame: owned description, sentence-case H1, owner-voice opening, `## Report`. Stacked MIT copyright. Body rules unchanged.
+
+## Flagship-model revision (2026-09-12)
+
+Split language guidance into selective references; made concurrency flag-dependent and preserved project architecture/test conventions.

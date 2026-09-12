@@ -1,6 +1,6 @@
 ---
 name: design-md
-description: "Create or update a DESIGN.md from a product repository or public website. Use when the user invokes design-md, or asks to document an interface's design language or extract tokens into DESIGN.md. Do not use for design-pages study/redesign, or open-ended reference research (design-reference-scout)."
+description: "Create or update DESIGN.md from repository evidence or an inspected website. Documents the design system; does not migrate components or tokens."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -18,6 +18,8 @@ Create a `DESIGN.md` for one product or coherent website. Record the design lang
 - Use the DESIGN.md format contract below. Do not invent a competing schema.
 - Do not copy every discovered token or component into the document.
 - Do not convert repetition, local styling, or visual preference into product intent.
+
+For a request to unify duplicate styles, components, or consumers, use `design-system-consolidator`. This skill documents only the governing system established by the source and accepted decisions; proposed migrations are not current truth. It is also the document owner for handoffs from `design-pages`. Those handoffs do not change the schema, evidence gates, or documentation-only boundary below.
 
 ## 1. Choose the mode
 
@@ -56,11 +58,11 @@ role → value → source → scope → recurrence → confidence
 3. Normalize candidates into the DESIGN.md schema.
 4. Omit candidates that are uncertain, local without a contract, or not implementation-relevant.
 5. Validate frontmatter shape and export compatibility.
-6. Write Markdown only after the normalized frontmatter passes.
+6. Write Markdown from the normalized evidence; label it unvalidated if the required tooling is unavailable.
 
 Never let repository or URL evidence introduce a second token schema. The same flat token names, mapping-shaped typography, omission rules, and export gates apply to both modes.
 
-The generated document is private until validation passes. Never return, display, or summarize a DESIGN.md draft before lint and export succeed. If validation reports an invalid shape or missing export category, rewrite the frontmatter and rerun; if the category cannot be repaired, remove it and report it as omitted.
+Attempt the available structural and compatibility checks before claiming a validated document. If tooling or dependencies are unavailable, return the useful evidence-backed draft labeled **Unvalidated**, with the attempted command and precise limitation. If a check actually runs and fails, fix supported errors and rerun the affected check; if it remains unresolved, deliver it only as an explicitly invalid/incomplete draft. Preserve supported design information rather than deleting it to satisfy a tool.
 
 ## 2. Trace the evidence
 
@@ -165,7 +167,7 @@ Start with the smallest valid frontmatter:
 ---
 version: alpha
 name: <string>
-description: <string>
+description: "Create or update DESIGN.md from repository evidence or an inspected website. Documents the design system; does not migrate components or tokens."
 ---
 ```
 
@@ -234,7 +236,7 @@ Then run one compatibility export using the target selected above:
 npx @google/design.md export --format <format> DESIGN.md
 ```
 
-Inspect the output. Every populated frontmatter category supported by the target must emit its corresponding token category; an empty or missing category is a schema failure even when the command exits successfully. Rewrite the frontmatter and rerun validation until the category is emitted, unless the target genuinely cannot represent it. Do not report success while any populated category is missing from the export. Do not return the document while lint or export fails. Do not remove supported design information solely to satisfy an exporter limitation; report that limitation instead. Do not create or retain exported files.
+Inspect the output. Every populated frontmatter category supported by the target must emit its corresponding token category; an empty or missing category is a schema failure even when the command exits successfully. Rewrite the frontmatter and rerun validation until the category is emitted, unless the target genuinely cannot represent it. Do not report success while any populated category is missing from the export. Do not label the document validated while lint or export fails. Report an unavailable tool separately from a schema failure. Do not remove supported design information solely to satisfy an exporter limitation; report that limitation instead. Do not create or retain exported files.
 
 For `css-tailwind`, verify these output families: `colors` → `--color-*`, `typography.<name>.fontFamily` → `--font-*`, `typography.<name>.fontSize` → `--text-*`, `rounded` → `--radius-*`, and `spacing` → `--spacing-*`. If `typography` is populated but the export contains neither `--font-*` nor `--text-*`, the document is invalid and must be rewritten before reporting.
 
