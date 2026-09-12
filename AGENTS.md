@@ -55,6 +55,19 @@ project. It applies to the entire repository unless a more specific
 - Third-party skills belong here only as owned, attributed forks or copies
   with an `origins/` note and no redundant job already covered by the stack.
 - Preserve unrelated working-tree changes and avoid broad mechanical rewrites.
+- Treat a skill as guidance for its phase, not a mandatory pause for the whole
+  task. Continue already-authorized stages; keep review-only requests read-only.
+- Descriptions should be short and discriminating. Detailed examples and
+  conditional procedures belong in selectively loaded references. Line counts
+  are review signals, not a reason to remove useful domain constraints.
+- Validator issues distinguish format, packaging, host compatibility, and
+  editorial advice. Fix errors; assess warnings. `--strict` promotes warnings
+  to failures. Codex-only exceptions name the exact token and reason in tooling.
+- Tests use disposable fixtures with no production access. Run relevant checks
+  without asking again; add tests for real behavior rather than instruction text.
+- Model trials are opt-in and use subscriptions. Keep their fixtures isolated,
+  record exact host/model/settings, and never substitute an unavailable model
+  or treat routing/source checks as proof of rendered or deployed behavior.
 
 ## Commands
 

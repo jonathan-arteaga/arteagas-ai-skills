@@ -1,6 +1,6 @@
 ---
 name: visual-fundamentals-review
-description: "Review existing screens for visual hierarchy, spacing, alignment, typography, color, composition, and adaptive layout. Use when asked for a visual fundamentals review or to diagnose readability and visual grouping. Review-only; not new page design, brand direction, motion polish, flow strategy, or accessibility compliance."
+description: "Review existing screens for readability, hierarchy, spacing, typography, color, and adaptive layout while preserving their identity. Review-only."
 license: MIT
 metadata:
   owner: jonathan-arteaga

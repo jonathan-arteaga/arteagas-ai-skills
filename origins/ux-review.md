@@ -9,3 +9,9 @@
 ## Design ownership revision (2026-09-08)
 
 Scoped remotely fetched guidelines to accessibility, semantics, focus, forms, and interaction. Existing capitalization/voice policy wins over generic copy defaults; product-language owns interface wording and terminology. Resolve named target surfaces before asking for file paths.
+
+## Flagship-model revision (2026-09-12)
+
+Added the dated offline snapshot without losing current scope/identity precedence; reports live versus snapshot use.
+
+The offline Web Interface Guidelines snapshot was selected from Claude audit PR #2 (`c7e1cc1ada0fd38de95f15653e6cf703cbce1382`), pinning Vercel commit `e3d624baaf29dc1fc645aff3e38f03e564d2d6b1` (2026-08-18), MIT. The stacked LICENSE is retained.

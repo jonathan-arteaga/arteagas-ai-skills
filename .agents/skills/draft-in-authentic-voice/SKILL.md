@@ -1,6 +1,6 @@
 ---
 name: draft-in-authentic-voice
-description: "Draft new user-facing prose in the user's or an organization's authentic voice from examples. Use when the user invokes draft-in-authentic-voice, or asks to sound like themselves on a first draft. Do not use to edit an existing draft (edit-in-authentic-voice), or for factual/technical material where voice is not requested."
+description: "Draft new prose in the user’s or an organization’s voice from context and writing examples. Use for first drafts; use edit-in-authentic-voice for existing drafts."
 license: MIT
 metadata:
   owner: jonathan-arteaga

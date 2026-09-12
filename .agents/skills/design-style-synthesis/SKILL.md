@@ -1,6 +1,6 @@
 ---
 name: design-style-synthesis
-description: "Analyze two or more user-selected local app or website projects and turn recurring visual evidence into a concise, original design direction for a new app. Use when the user invokes design-style-synthesis, or asks to synthesize visual patterns across their local projects. Do not use for external reference research (design-reference-scout), one-product design documentation (design-md), a general taste lens without selected projects (design-with-taste), work-history analysis (work-pattern-audit), or implementation."
+description: "Compare two or more user-selected local app or website projects to derive an original design direction from shared craft principles."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -34,7 +34,7 @@ Preserve the references' standard of craft while making the target's identity or
 
 ## Boundaries and handoff
 
-This workflow reads and reports. Stop before asset retrieval, file edits, concepts, mockups, Figma work, or implementation. Saving a direction brief requires a separate explicit request. Never modify reference projects or turn the analysis into a new permanent taste profile.
+The synthesis stage reads and reports. A synthesis-only request does not authorize asset retrieval, mockups, or implementation. Save a brief when requested; never modify reference projects or create a permanent taste profile. For a combined request, complete the synthesis and continue with the already-authorized next stage through its appropriate workflow.
 
 Keep the method portable: no required Computer History, GitHub, browser service, or other connector. Use the tools available to inspect the selected evidence.
 

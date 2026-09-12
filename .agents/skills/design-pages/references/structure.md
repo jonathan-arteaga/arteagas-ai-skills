@@ -1,10 +1,18 @@
 # Structure
 
+## Contents
+
+- The six axes
+- Picking a fingerprint
+- Theme-suggested fingerprints
+- Anti-patterns of structural sameness
+- When you don't know
+
 Most AI-generated UIs are visually distinct but structurally identical: hero → three features → CTA → footer. Same heading positions, same column counts, same component vocabulary. **Structural sameness is the AI fingerprint, not visual sameness.** design-pages' job is to break it.
 
 This file catalogues the **primitive axes** of structural variety. For most builds you should NOT compose a fingerprint axis-by-axis from this file — instead pick a named whole-page shape from [`macrostructures.md`](macrostructures.md), which is faster and prevents default-attractor sameness. Use this file when you need to deviate from a macrostructure's defaults on one or two axes, or when you're auditing an existing page and need vocabulary for what you see.
 
-The axes below are still the building blocks. Pick one option from each to form a *structural fingerprint*. Two pages should never share the same fingerprint.
+The axes below are still the building blocks. Pick one option from each to form a *structural fingerprint*. Related pages may share a composition when it supports consistency and their tasks.
 
 ## The six axes
 
@@ -80,14 +88,9 @@ What happens on page-load and on scroll?
 - **Typewriter.** Character-by-character; honest about the medium. Terminal only. **Decorative-graphics constraint:** Terminal output must NOT include standalone scanlines, detached blinking cursors, or random ASCII art. The terminal cursor (`▮`) is allowed only when it sits *inside* a typed command (install code block, N8 Terminal command nav) and signals an honest "you'd type next" affordance. A floating cursor in a hero corner is set decoration; remove it. See [`microinteractions.md`](microinteractions.md) Caret blink row.
 - **None.** Everything is just there at load. Some sites should not move. Pentagram, brutalist sites.
 
-## Picking a fingerprint
+## Choosing a coherent composition
 
-A fingerprint = one choice per axis. There are 8 × 7 × 5 × 5 × 5 × 6 = **42 000** fingerprints. You will never run out.
-
-Two rules govern choices:
-
-1. **Coherence.** A Newsprint page with multi-column justified body should have a typographic CTA, not an oversized solid button — those don't share a voice. Pick choices that belong to the same *world*.
-2. **Anti-repetition.** Across consecutive pages built in the same session, no two should share more than three of the six axes. If the previous page used left-margin headings + single column + hairline divider + outlined button, this page should differ on at least three of those.
+Choose the axes that help the page’s content and primary task. Existing product consistency takes precedence over novelty. For unrelated new products, avoid reusing a complete visual recipe without examining fit; no minimum number of changed axes is required.
 
 ## Theme-suggested fingerprints
 

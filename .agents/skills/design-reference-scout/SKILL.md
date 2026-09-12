@@ -1,6 +1,6 @@
 ---
 name: design-reference-scout
-description: "Research and distill at most three current visual references before a new visual direction. Use when the user invokes design-reference-scout, or visual direction is still open and they want references researched. Do not use when a reference is already chosen, for synthesizing a direction from selected local projects (design-style-synthesis), DESIGN.md writing (design-md), design-pages study of a supplied URL or screenshot, or routine implementation inside a locked system."
+description: "Research a few current visual references when a new design direction is open. Skip when the user has already selected the references."
 license: MIT
 metadata:
   owner: jonathan-arteaga

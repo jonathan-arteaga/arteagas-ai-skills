@@ -1,6 +1,6 @@
 ---
 name: connector-doctor
-description: "Diagnose whether an existing connector is available, authenticated, authorized, and usable in the intended host and account using read-only evidence. Use when the user invokes connector-doctor, asks whether a connector, plugin, MCP, or app connection works, or sees a connected badge but the intended action fails. Do not use to install, connect, reauthenticate, change settings, or repair the connection."
+description: "Diagnose whether an existing connector works in the intended host and account using read-only checks. Use for connection failures or readiness checks, not repairs."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -71,9 +71,7 @@ permissions, schedule work, create or edit records, send or contact anyone,
 commit, push, or delete anything. Do not expose secrets, tokens, private
 content, or unnecessary account identifiers in the report.
 
-When repair requires one of those actions, stop after the diagnosis and state
-the smallest next action that would require explicit user authorization. Do
-not perform the repair under this skill.
+For a diagnosis-only request, stop after the diagnosis and state the smallest next action. If repair is already explicitly authorized, hand off to the appropriate repair workflow after reporting the diagnosis; do not ask for the same authorization again. This diagnostic stage itself stays read-only.
 
 ## Report
 

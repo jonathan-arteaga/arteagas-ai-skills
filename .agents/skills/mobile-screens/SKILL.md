@@ -1,6 +1,6 @@
 ---
 name: mobile-screens
-description: "Build native-feeling Expo and React Native screens — flows, onboarding, paywalls, tabs, sheets, settings, empty states, motion, and dark mode. Use when the user invokes mobile-screens, or is implementing Expo/RN UI. Do not use for SwiftUI (apple-swiftui), web pages (design-pages, web-react), or Appllama MCP research playbooks."
+description: "Build or refactor Expo and React Native screens, navigation, states, and native interactions. Use apple-swiftui for SwiftUI apps."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -16,29 +16,13 @@ You are building screens that will sit on a phone next to the best-designed apps
 in the world. The user will compare your output to those apps within seconds of
 launching it. This skill defines the bar and the method for clearing it.
 
-## The Prime Directive: study before you draw
+## Start from the actual screen
 
-Never design a screen from imagination when you can study how top apps solved
-the same screen. Real, shipping, revenue-ranked apps encode thousands of hours
-of design iteration and A/B testing. Your first move on any screen is research:
-
-1. If an app-research MCP (such as Appllama) is connected, pull real screens
-   for the category and screen type you are building, following that tool's
-   own instructions. Study 10 or more screens before writing UI code.
-2. Extract the **pattern, not the pixels**: layout skeleton, information
-   hierarchy, control choices, spacing rhythm, where the primary CTA sits, what
-   gets an illustration vs. plain text, how progress is communicated.
-   Note: every Appllama image and video carries a small Appllama watermark in
-   the top-left corner. It is provenance, not design — ignore it when reading
-   a screen (it may sit over the status bar or a back button) and never
-   reproduce it in anything you build.
-3. Then design **your** screen: same proven skeleton, your product's voice.
-   Copying a competitor's screen 1:1 is both lazy and legally risky; shipping a
-   screen that ignores every convention users already know is worse.
+Inspect nearby screens, the existing design system, navigation, supported platforms, and the requested behavior. Preserve explicit product choices. Research a few relevant references only when a new direction is open or a flow needs evidence; do not require ten external screens for a scoped edit. Use an available research tool’s own instructions, extract abstract principles, and never copy its watermarks or another product’s assets.
 
 ## Platform baseline
 
-Default stack assumptions (override only if the project already differs):
+For a new project, these are candidate tools. In an existing app, use its installed versions and architecture; do not add or migrate dependencies unless the requested behavior needs it:
 
 - **Expo + Expo Router**, React Native, TypeScript.
 - `react-native-reanimated` for motion, `react-native-gesture-handler` for
@@ -51,12 +35,12 @@ Default stack assumptions (override only if the project already differs):
 ## Native fidelity laws
 
 These are the details that separate "web page in a wrapper" from "native app".
-Violating any of them is a finding, not a style preference.
+Apply relevant platform constraints and distinguish actual usability defects from aesthetic preferences.
 
 1. **Semantic colors, both themes, day one.** Use system/semantic color tokens
    (e.g. `Color` from `expo-router` on iOS: `Color.ios.label`,
    `Color.ios.secondarySystemBackground`; Material dynamic colors on Android).
-   Every screen must render correctly in light AND dark before it is "done".
+   Verify the themes the product supports; add dark mode only when in scope.
    Never pass semantic color objects into Reanimated animated styles — resolve
    to strings first.
 2. **Native controls over rebuilt ones.** Switch, Slider, SegmentedControl,
@@ -76,7 +60,7 @@ Violating any of them is a finding, not a style preference.
 6. **Shadows via CSS `boxShadow`**, not legacy `shadow*`/`elevation` props.
    Shadows are for elevation logic, not decoration — one elevation system per
    app.
-7. **Spacing rhythm.** Pick a base unit (4 or 8) and never leave it. Prefer
+7. **Spacing rhythm.** Use the project’s spacing scale; allow justified optical or content-driven exceptions. Prefer
    flexbox `gap` over margin stacking. ScrollView padding goes in
    `contentContainerStyle`, never on the ScrollView itself.
 8. **Safe areas and the Dynamic Island are part of the design.** Screens must
@@ -90,7 +74,7 @@ Violating any of them is a finding, not a style preference.
     light impact when something snaps home, notification success/error for
     outcomes — on the same frame as the visual, one per user action, never
     the only feedback. Never on scroll, never in loops.
-11. **Format numbers like a product, not a database**: 1.4M, 38k, $4.99. Trim
+11. **Format numbers like a product, not a database**: 1.4M, 38k, \$4.99. Trim
     trailing zeros. Localize dates.
 12. **Root scroll behavior**: screens that can ever overflow wrap content in a
     ScrollView (first component in the route) with
@@ -145,42 +129,13 @@ destination to here, must the user be able to come back, and what does back
    Appllama, note what each step *is* — push, modal, sheet — and copy that
    consistency.
 
-## Anti-slop laws
+## Product identity and states
 
-AI-built apps share a look, and users file it under "template" within seconds.
-Each of these is a *default ban* — there is always an override when the brand
-explicitly asks for the thing AND you can articulate why it fits this product.
+Keep the established palette, typography, icon family, density, and shape system. Multiple accents, semantic status colors, expressive typography, and emoji can be valid product choices. Diagnose incoherence or poor readability rather than enforcing a color/radius count.
 
-1. **No AI-default styling.** Purple/indigo gradient CTAs with a glow,
-   glassmorphism on every card, mesh-gradient heroes, confetti for minor
-   events, sparkles in headings — that is the model's house style, not
-   design. Your palette, materials, and layout come from the reference
-   screens you studied, never from the priors you'd reach for unprompted.
-2. **One accent, locked.** Pick one accent color and it is THE accent on
-   every screen — no blue CTA on one screen and teal on the next, no new hue
-   appearing in screen seven. Neutrals carry the app; the accent is spent
-   where the money is (primary action, active state, progress).
-3. **One grey family.** Warm greys or cool greys — never both in one app.
-4. **Shape lock.** One corner-radius scale, stated as a rule ("actions are
-   pills, cards 16, inputs 8") and never violated. Mixed radii without a
-   stated rule read as assembled-from-parts.
-5. **No emoji as iconography.** Icons are SF Symbols / Material Symbols
-   (fidelity law 3). Emoji appear only when the product's voice is genuinely
-   chat-native or playful — sparingly, in content, never in chrome.
-6. **One label per intent.** "Get started", "Start now", and "Begin" are the
-   same intent — pick one phrasing and use it everywhere it appears.
-7. **Emphasis stays in the family.** Emphasize a word with weight or italic
-   of the same typeface; injecting a serif word into a sans headline (or vice
-   versa) for visual interest is amateur.
-8. **Ship full state cycles, not the happy path.** Static-successful-state-
-   only is the default failure mode: skeletons must match the final layout's
-   shape, empty states are composed (and say how to fill them), errors are
-   inline and specific.
-9. **The slop pre-flight is mechanical.** Before any flow reaches the
-   simulator pass, count: distinct accent hues (must be 1), distinct corner
-   radii (all from the stated scale), emoji in UI chrome (0), gradients
-   without a brand reason (0), duplicate labels for one intent (0). A failed
-   count is a fix, not a judgment call.
+Use consistent terminology for the same intent; preserve distinctions and approved localization. Implement loading, empty, error, disabled, and success states only where the changed feature exposes them. Do not add unrelated state APIs to a static element.
+
+When the task includes a new visual direction, make it specific to the product’s job and audience rather than defaulting to generic decoration.
 
 ## Motion laws
 
@@ -228,13 +183,11 @@ Decide in this order:
 Screens that feel great are screens whose state is boring:
 
 - **Server state** in TanStack Query (or the project's equivalent): caching,
-  retries, optimistic updates. Never `useEffect`+`fetch`.
-- **Client state** in a small atomic store (Zustand/Jotai). Broad "app state"
-  contexts cause the re-render cascades that make UIs feel heavy.
+  retries, optimistic updates. Keep an established fetch pattern for scoped work; introduce a query library only when needed.
+- Keep client state in the narrowest existing owner. Use a store only when sharing requirements justify it; avoid broad context subscriptions that invalidate unrelated views.
 - **Ephemeral UI state** (open/closed, focus, scroll) stays local to the
   component.
-- **Optimistic by default**: taps reflect instantly, reconcile in the
-  background, roll back loudly on failure.
+- Give immediate interaction feedback. Use optimistic updates only when the operation has safe reconciliation and recovery; wait for confirmation on consequential or non-reversible actions.
 - Uncontrolled `TextInput`s for high-frequency typing surfaces; controlled
   inputs are a top-3 cause of typing jank.
 - Persist tiny client state in MMKV, not AsyncStorage, when latency shows.
@@ -243,7 +196,7 @@ Screens that feel great are screens whose state is boring:
 
 - Skeletons only for content whose shape you know; otherwise progressive
   reveal. Never a full-screen spinner for a partial update.
-- FlashList for every list; give stable keys.
+- Use the existing list component with stable keys; introduce virtualization or a new library when size or measured cost warrants it.
 - Preload the next screen's data on press-in, not on navigation-complete.
 - Images: right-size sources, `expo-image` with `recyclingKey` in lists,
   thumbhash/blurhash placeholders.
@@ -268,67 +221,13 @@ beyond the symbol set:
 - Full asset pipeline and prompt patterns:
   [references/image-assets.md](references/image-assets.md).
 
-## The simulator loop
+## Verify the changed behavior
 
-A screen does not exist until you have seen it running. The loop:
+Build and inspect affected screens in the available simulator or emulator. Check supported sizes/themes, text growth, focus, touch targets, safe areas, and relevant error/loading states. Exercise navigation or gestures when changed; recordings help inspect motion but are not required for a copy-only edit.
 
-1. Implement → launch in the iOS Simulator (or Android emulator).
-2. Screenshot and **actually look**: alignment, optical centering, spacing
-   rhythm, truncation with long content, dark mode, Dynamic Type at XL.
-3. Run the **full-motion pass** below — screenshots prove layout; they prove
-   nothing about motion.
-4. Fix, relaunch, re-verify, then run the checklist in
-   [references/simulator-loop.md](references/simulator-loop.md).
+For broad flow work, use [the simulator checklist](references/simulator-loop.md). For performance claims, measure a representative release build and report the device. Fix observed failures introduced by the change, then rerun affected checks. Do not repeat full-device or full-motion passes after unrelated small edits.
 
-A screen is finished when it has been seen running and the checklist passes,
-not when the code reads correctly.
-
-### The full-motion pass (per flow)
-
-Every flow is evaluated as **moving pictures in the simulator, never as
-stills**. Screen-record the entire flow end to end
-(`xcrun simctl io booted recordVideo flow.mov`), exercising ALL of it:
-
-- every screen transition, push/pop, tab switch
-- every back path — chevron, edge swipe, Android hardware back — and, after
-  each one-way door (sign-in, onboarding done, purchase, finished session),
-  an attempt to go back that must fail to re-enter the old state
-- every modal and sheet: present, drag, dismiss — and cancel mid-drag
-- the keyboard, both directions: appear (does the layout glide, is the
-  focused input visible?) and dismiss (does anything jump-cut?)
-- every user interaction: press states, gesture follow-through, interrupted
-  gestures, rapid taps, scroll flings at the extremes
-
-Scrub the recording frame by frame. You are hunting:
-
-- dropped or stuttered frames
-- one-frame flashes: white/unstyled first paint, wrong-theme frames mid-
-  transition, color pops where a surface briefly renders the wrong token
-- layout jumps, double-render pops, springs that clip or overshoot into
-  content, elements that reflow after appearing
-
-The whole recording must play like one native piece — smooth end to end,
-zero UX glitches. One glitchy frame means the flow is not done.
-
-## Definition of done, per screen
-
-- [ ] Studied 10+ real reference screens for this screen type (via Appllama
-      MCP when available) and can name the pattern you adopted
-- [ ] Navigation answered: what this screen *is* (push / modal / sheet /
-      overlay / replace), what back does from it on iOS and Android, and —
-      behind a one-way door — that back cannot re-enter the old state
-- [ ] Light + dark mode verified in the simulator
-- [ ] Safe areas / Dynamic Island / home indicator verified
-- [ ] Long-content, empty, loading, and error states designed — not defaulted
-- [ ] Motion: the full flow screen-recorded and scrubbed — entrances,
-      presses, transitions, modals, keyboard — native feel, zero glitch or
-      wrong-color frames; Reduce Motion respected; 60 fps measured on a
-      release build on the slowest supported device
-- [ ] Dynamic Type XL doesn't break layout; text is selectable where useful
-- [ ] All tap targets ≥ 44pt; contrast passes in both themes
-- [ ] Assets: single style family, crisp at @3x, no compositing halos
-- [ ] List surfaces virtualized; no controlled-input jank; no re-render storms
-      (profiled, not guessed)
+When the required runtime is unavailable, finish independent source work and state which device checks remain. Do not claim visual or performance success from compilation alone. Return the requested implementation and verification results; do not stop at a proposal when implementation is already authorized.
 
 ## References
 

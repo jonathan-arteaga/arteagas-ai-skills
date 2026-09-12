@@ -1,5 +1,18 @@
 # Hero enrichment — when, what, and how much
 
+## Contents
+
+- Image-need detection — does this brief need imagery at all?
+- The enrichment hierarchy
+- Eyeball or ask — the decision protocol
+- Eight enrichment archetypes
+- Hero shape polish — patterns beyond enrichment
+- Hero space discipline
+- Animation discipline (hero specifically)
+- Quality bar — eight pre-flight questions
+- Output stamp
+- Common mistakes — and the fixes
+
 This file is loaded after the macrostructure pick (Step 3 in the design flow), when you reach Step 4: "Decide on hero enrichment." It tells you whether to enrich the hero with media at all, and if so, which archetype and how to build it.
 
 **The promise.** Enrichment is an option, not a default. A typographic-only hero is *always* an acceptable answer. Visual enrichment — demo video, illustration, mockup, animated loop, abstract background, photography — has to *earn its place*. If the hero can be deleted of its enrichment and still works, the enrichment earned its place. If the hero collapses without the enrichment, you propped weak typography on a crutch.
@@ -99,7 +112,7 @@ A display headline left, a demo video right, and the rightmost ~10–20 % of the
 - Aspect ratio (16/10 · 16/9 · 4/3)
 - Frame treatment (hairline 1 px frame · browser chrome · none)
 
-**Example.** Tracejam (SaaS observability — see [`site/_tests/05-tracejam-saas/`](../../../site/_tests/05-tracejam-saas/)). Display headline left ("Distributed tracing that explains itself."); hand-built CSS-art trace waterfall right, tilted -0.4°, extending 12 vw past the viewport's right edge. Aspect 16/10. Hairline frame. **Not a real video** — the mockup is custom-built CSS at Tier A (rectangles on a percentage grid simulating a flame chart). Mobile (< 60 rem): drop the clip, stack vertically.
+**Example.** Tracejam (SaaS observability — see [`site/_tests/05-tracejam-saas/`](https://github.com/Nutlope/hallmark/tree/13ac0ec7e148655948100b6396439e481361d690/site/_tests/05-tracejam-saas/)). Display headline left ("Distributed tracing that explains itself."); hand-built CSS-art trace waterfall right, tilted -0.4°, extending 12 vw past the viewport's right edge. Aspect 16/10. Hairline frame. **Not a real video** — the mockup is custom-built CSS at Tier A (rectangles on a percentage grid simulating a flame chart). Mobile (< 60 rem): drop the clip, stack vertically.
 
 ```html
 <section class="hero hero--clipped">
@@ -204,7 +217,7 @@ A hand-built SVG (the default, Tier B) or a generated raster (Tier C, when chara
 - Animation (none · loop · scroll-linked)
 - Scale (small accent · dominant)
 
-**Example.** Maple Street Bread (bakery — see [`site/_tests/03-maple-bakery/`](../../../site/_tests/03-maple-bakery/)). Letter-style hero copy left ("Saturday, 6:14 a.m. The dough went in at midnight."), 60-line hand-built SVG loaf right, 3 paths (body, shade, score-marks). Animated with `@property --rise` for a subtle 4 px breathing-loop over 6 s, alternating; the score-marks draw themselves on first paint via `stroke-dasharray`. Tier B, dominant scale, animation: loop. Reduced-motion fallback is a static keyframe.
+**Example.** Maple Street Bread (bakery — see [`site/_tests/03-maple-bakery/`](https://github.com/Nutlope/hallmark/tree/13ac0ec7e148655948100b6396439e481361d690/site/_tests/03-maple-bakery/)). Letter-style hero copy left ("Saturday, 6:14 a.m. The dough went in at midnight."), 60-line hand-built SVG loaf right, 3 paths (body, shade, score-marks). Animated with `@property --rise` for a subtle 4 px breathing-loop over 6 s, alternating; the score-marks draw themselves on first paint via `stroke-dasharray`. Tier B, dominant scale, animation: loop. Reduced-motion fallback is a static keyframe.
 
 For *how* to build a hand-drawn loaf in 60 lines of SVG and animate its breath with `@property`, see [`custom-craft.md`](custom-craft.md) — there's a full bakery worked example, plus four more recipes (workflow diagram, mascot, architectural diagram, botanical accent).
 
@@ -441,7 +454,7 @@ Every question must answer *yes* before the enrichment ships. If any answer is *
 7. Does it survive being deleted? (If the hero still works without it, it earned its place. If the hero collapses without it, you propped weak typography on a crutch.)
 8. Does its tone match the page's tone? (Risograph illustration on a Brutal page = wrong. Hand-drawn doodle on a Workbench developer-tool page = wrong. Three.js bloom on a Coral page = wrong.)
 
-The slop test ([`SKILL.md`](../SKILL.md) §5) carries four binary gates that mirror these questions; the audit verb runs them.
+Use the relevant questions in the [review reference](slop-test.md) when this imagery affects the requested review.
 
 ---
 

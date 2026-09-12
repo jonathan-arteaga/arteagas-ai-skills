@@ -1,6 +1,6 @@
 ---
 name: ui-craft
-description: "Polish an existing interface's craft details — concentric radii, optical alignment, surface depth, icons, hit-feel, and motion values. Use when the user invokes ui-craft or asks to refine those specifics. Do not use for greenfield page design (design-pages), accessibility audits (ux-review), or identity direction (design-with-taste)."
+description: "Polish an existing interface’s alignment, radii, surfaces, icons, hit feedback, and motion. Use for targeted craft work, not a new visual direction."
 license: MIT
 metadata:
   owner: jonathan-arteaga

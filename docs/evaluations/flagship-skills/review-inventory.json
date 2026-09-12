@@ -1,0 +1,2156 @@
+[
+  {
+    "path": ".agents/skills/apple-review/SKILL.md",
+    "bytes": 4818,
+    "sha256": "92ce201de982d0634c3072505dbd93d398752d4552d62fe912f624e835363ddb",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/apple-review/agents/openai.yaml",
+    "bytes": 181,
+    "sha256": "532ae0b13496a52557595535d1e2e38d4219b5256bdef3215ad6c486b80bcba0",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/accessibility.md",
+    "bytes": 1156,
+    "sha256": "e933d19c772447b9fcf4581e37381d606d722515e6022b4f497ddd820eb0b9a6",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/build-release.md",
+    "bytes": 1236,
+    "sha256": "788b3c05eba761ca29ffc7f2ae21ba8ba1307ca2fa7dc35fd937c793fa618f2f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/cleanup.md",
+    "bytes": 910,
+    "sha256": "f884263754874915cd1df6bbd55eae7553b46cd68d07dea7123ce98efeb37c28",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/code-quality.md",
+    "bytes": 1010,
+    "sha256": "aef315de21b56f111c14efd517376dba73973488c5b3565f9507aebf2edc7d8d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/documentation.md",
+    "bytes": 934,
+    "sha256": "a36861cd10d27fd6b023685e8ea9238c407cc3aca7dc9aa842bd99d13f1fd47d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/performance-stability.md",
+    "bytes": 1221,
+    "sha256": "8d78f3defff48002c8e848d6eac7cfa0b633cef4c674ae5eed0988be46b7817a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/product-language.md",
+    "bytes": 1556,
+    "sha256": "83436eccbc3379be733de8281480d8315577069be6f4ed0c43e2c37473e57a08",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/security-privacy.md",
+    "bytes": 1210,
+    "sha256": "196f017bab1b11186c7cf9227be54508f85ba9c11cf65d821d1f9c5f4cefea7d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/swiftui-architecture.md",
+    "bytes": 1128,
+    "sha256": "98c4302d7686002197edc5c23445ce6e21d23950333e3c1be624b40a517f77a2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/testing.md",
+    "bytes": 923,
+    "sha256": "73d329a7cce15f2227aa1b2004f9f0f424fdbd3be4bc02f279fd940b15221059",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-review/references/ui-ux.md",
+    "bytes": 1218,
+    "sha256": "da86c8042a23e5335c7df6dc1f129eb43c6ec8f761de7a75e72a6a8d0e162f64",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/LICENSE",
+    "bytes": 1165,
+    "sha256": "e8ad73c72da9c4b16c6ff3221f5ba2835e16137f9d216a6109ddb5f16f66b8ba",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/apple-swift/SKILL.md",
+    "bytes": 3391,
+    "sha256": "6e0abbbbaff6058f4d7fa77bcd771bd46239534e063d4fe6a07cf78013e7938d",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/apple-swift/agents/openai.yaml",
+    "bytes": 237,
+    "sha256": "6104ad18107826e49ef046a3ccd3ead89010c6dfa90efe42e0d3aa2c694c7967",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/api-and-interop.md",
+    "bytes": 5031,
+    "sha256": "1fc4634a3daa16cf03e865e59ef517f7dad4b054a62d6438edac472c81d3e119",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/concurrency.md",
+    "bytes": 9296,
+    "sha256": "1af28cfc7022e7776bb228c61d31ffa7d8f26f1be737aba6fa47f82553057e33",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/migration.md",
+    "bytes": 1664,
+    "sha256": "74deb03fbac4b44b19eea54d8e5bb7d1bee9988a2475d128cdf09c040bd9e837",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/modern-syntax.md",
+    "bytes": 4321,
+    "sha256": "a3f42f8199b61382d6323ccb609cf94eeeb53ddf3d4bb3c827a33b977f9ee481",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/performance.md",
+    "bytes": 5665,
+    "sha256": "3a62e84e5ce005d5e071836d79dc678631d56f69b995e275b5900c9d269a6e6b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/protocols-and-generics.md",
+    "bytes": 3361,
+    "sha256": "65c380764fb6134ae8b35145bcf4258eda6384ae4f8139959b8c15e838c2dbd0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/testing.md",
+    "bytes": 3001,
+    "sha256": "ff829903675de4bbaa053e7ae443336640771d8e0b7283314aec02f18092d90b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swift/references/values-and-errors.md",
+    "bytes": 3822,
+    "sha256": "124ff90194c4a4522ae019caa3c1175bc2bfc07f8ed67a728ec46973ea65b7ff",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/LICENSE",
+    "bytes": 1175,
+    "sha256": "418fc66dba0187a61da3668a223545f8a279a969ca6abcc044e299852f32e98c",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/SKILL.md",
+    "bytes": 10026,
+    "sha256": "e9b82e83389935f7dc264b1122c44cb25c3ff338a5e9e154021d693f363f3749",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/agents/openai.yaml",
+    "bytes": 209,
+    "sha256": "d62b2773628d6b4ad1a1e1114cec0fb53e62f7cad962145420a921ead964e573",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/app-wiring.md",
+    "bytes": 6859,
+    "sha256": "fdffbc8fa8618a133ef391e562dc16995e9caa6a4c95a63480799d113f026b54",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/async-state.md",
+    "bytes": 2833,
+    "sha256": "32fda340cf74042c14b41ea06edd0df6bb595c0a61a3061615bd9c5f7220fcb2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/controls.md",
+    "bytes": 1682,
+    "sha256": "7cf464a6ebc7ed2fbccd6dda4e0580ec737be1e0125ab7373b95470018371950",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/deeplinks.md",
+    "bytes": 1703,
+    "sha256": "eb9317a02c38b941d51c0e724537942ea26af1f6a1b65f55e0aad0bbf5b4fe63",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/focus.md",
+    "bytes": 2390,
+    "sha256": "918c9b5d66c096c790f713f94682f0516e41ebf6f1ea8cfbe3a1691c160641d7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/form.md",
+    "bytes": 3062,
+    "sha256": "d340d0df5b785570154f508aa116ea1b1a6de3555a8cc813fe2ef72a5b7c10c5",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/grids.md",
+    "bytes": 1851,
+    "sha256": "6156536603c0e1d47123941a7dabcd146558094d3481153c475b075ff2afb9fc",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/haptics.md",
+    "bytes": 2049,
+    "sha256": "b24eb42d469be2547471417923b211a2567c1b10fcf1936fda08d05bfe33d89e",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/input-toolbar.md",
+    "bytes": 1451,
+    "sha256": "4704b09633f24fa0b8f5f1be31f887ca5d03d32f7a885d17c11010631b406c1d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/lightweight-clients.md",
+    "bytes": 2524,
+    "sha256": "8ab515d516c1ee6ba34a72b377127c189bfd48095ac698c281679d97e914709c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/list.md",
+    "bytes": 2732,
+    "sha256": "08252610bb7379da7151e54ad6248bcdc39244db85ff08fdb7c0e841ffd324d8",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/loading-placeholders.md",
+    "bytes": 1274,
+    "sha256": "d8e181e3e59c4e6b440be7615c1384f6a18eff7942680add7c548edbbb6ab391",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/macos-settings.md",
+    "bytes": 1997,
+    "sha256": "f86a86bfbf2aa6aee99fca111b4a62cbc37949cea558f40bbdeb795a0f5212b3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/matched-transitions.md",
+    "bytes": 1674,
+    "sha256": "06e45d1c4143900b81882c8ba6c0e53e59ea8efee8dbe50c92b22ded2cc60899",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/media.md",
+    "bytes": 2040,
+    "sha256": "055b26c2ae925c16de71cdbc46ef9466185eb9004398cd065318e574d85eda83",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/menu-bar.md",
+    "bytes": 2407,
+    "sha256": "a631477dd94832cb4bd397aee70c6d26b510f82a0d7a848db05708babc4adcdc",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/navigationstack.md",
+    "bytes": 4621,
+    "sha256": "68f1087dac2fff171bec67c3a9ca0aa42bce3808f6c0bbae57ef6ad39d0142f1",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/overlay.md",
+    "bytes": 1238,
+    "sha256": "74863d81b7ef60abd13a65b621b2199358adfc49b07e769b8b796a430c995fe2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/performance.md",
+    "bytes": 1990,
+    "sha256": "616ec9e7e475fdef34089e87e0abae2765d79e3edd99cb101b1e0f618fd12ac0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/previews.md",
+    "bytes": 1688,
+    "sha256": "ef4684e27b0e398b7b3d0a50ea17509db499d749041448975aa661ca00711b14",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/scroll-reveal.md",
+    "bytes": 5487,
+    "sha256": "9f97a4a49d422ff7f56ed8998096cab909ae430493da9da16126fe40f1de6018",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/scrollview.md",
+    "bytes": 2364,
+    "sha256": "fe30a174fd58408523b9321a25dd155389e1d0fbb45c0d4c2834fcd6f69d6040",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/searchable.md",
+    "bytes": 1727,
+    "sha256": "9265654c1b4651aeb89fa73735c94fcf6e8923d89053dbb309c3fb65a11ce716",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/sheets.md",
+    "bytes": 4602,
+    "sha256": "b46d253d9dcbe9925b670ec06d6c811418c4c3ea432f509d565e75967c28ccd9",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/split-views.md",
+    "bytes": 2027,
+    "sha256": "b2076e1094f8c4ed54e4e5b0fb9b5029daf39bfc72c61dc478721d0e6b5872f0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/tabview.md",
+    "bytes": 3679,
+    "sha256": "19c65537ed12b5a700827988dcebf19422cb11bac9074417b8b918e27c645a57",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/theming.md",
+    "bytes": 1776,
+    "sha256": "cbf2bac6a2e115fe0d2ef55e943736e74d5652baef620ac10cd6cbc689e07981",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/title-menus.md",
+    "bytes": 2115,
+    "sha256": "64dc98d720d848b49423adc8960116e225a28a0a527bc9c3b16b10a1268d2765",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/apple-swiftui/references/top-bar.md",
+    "bytes": 1359,
+    "sha256": "3b98471adcb3f5b13dff4a35bf2cebcd5c36b1f0cafa9f12ad149178998ce1d7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/connector-doctor/SKILL.md",
+    "bytes": 5026,
+    "sha256": "a3446e62c3b6abfd41becf0ac90aca65f6c927e87a9bbf2ce1e06c158c00cbfc",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/connector-doctor/agents/openai.yaml",
+    "bytes": 233,
+    "sha256": "586112ee6c9913cdf20cd4ae0ced7473e4d0bbc45116ed10c2bc24e0fe06f6bb",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-md/LICENSE",
+    "bytes": 1172,
+    "sha256": "fe82fe7f0618f2b99ded5bce5041ff24f98014870605b6e42cb9fe2570107c2f",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-md/SKILL.md",
+    "bytes": 16869,
+    "sha256": "043a44f3c3409f7be524cdb98f9cfedafb0a919411106faec8b1bc732138db2c",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/design-md/agents/openai.yaml",
+    "bytes": 196,
+    "sha256": "f4e48bfdd3d3c6e825e452243efe6a7e1ef75e6efea85e26ec2e2089e7a011a9",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-pages/LICENSE",
+    "bytes": 1170,
+    "sha256": "70df3f0540e22592a57e7048ded5946821a90d5d9fc847d46e701a53829df84b",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-pages/SKILL.md",
+    "bytes": 5858,
+    "sha256": "b269cf379962ef7ab9071570a1d9b1035e9e9ed3daa02c208032d3b3f608b9bb",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/design-pages/agents/openai.yaml",
+    "bytes": 221,
+    "sha256": "80c9b9d96f602ae951fdc1f17442a03d53d328abb753536dde1d85a6de9e2b46",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/anti-patterns.md",
+    "bytes": 24856,
+    "sha256": "ba60fa812209e59068ab882296064230c201a11c9753433cd92aedd50878b62d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/assets.md",
+    "bytes": 25695,
+    "sha256": "894b9eb202bbfbb47577fc845a6b37ccda61e5fa26821d071230d3a1153d7bdf",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/color.md",
+    "bytes": 4343,
+    "sha256": "1a1406767ad2cb514d9edeacb769041886a9d0132f04b947b6370b3dfe2ef0ca",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/component-cookbook.md",
+    "bytes": 31252,
+    "sha256": "414c332acb21bfced616b76e6ce5aa7e3968e62a06e6097faef0a7dbb7852218",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/c1-outlined-chip.md",
+    "bytes": 464,
+    "sha256": "bfc3bcef6e23062710845dd8986dbf98574c6c46ffade1db255dbe13a3203262",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/c2-inline-form-as-cta.md",
+    "bytes": 672,
+    "sha256": "1a6e3d564f49a1d3345117bf2f8af5aea46938c6974bf7eb86cf890e5068bc95",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/c3-typographic-link.md",
+    "bytes": 280,
+    "sha256": "59362c6d9f683ec15c3e09862f2ea6cd8e2a84574738ece98e479c58607d0d69",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/c4-sticky-bottom-bar.md",
+    "bytes": 671,
+    "sha256": "67234a8d8722bf0685d00a64ac737748c82af7e0c25271d0c50f418739bd03c6",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/f1-bento-grid.md",
+    "bytes": 782,
+    "sha256": "d696a5ab7d6258cff0d2d9527fe07651bfbda6a725a4dfd8de00f678e1fb2bbc",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/f2-sticky-scroll-stack.md",
+    "bytes": 899,
+    "sha256": "0079ce8c01e8d008882411ed807aa367276cc67af9b956c4f06da1714007ae83",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/f3-tabular-spec-sheet.md",
+    "bytes": 419,
+    "sha256": "16331628cf441c7b570055c8edd60693d0aa793d1bc5eb2bfd145da700d9f072",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/f4-step-sequence.md",
+    "bytes": 448,
+    "sha256": "d3ca2aa99f7e639b8ccda20f5e263f3a33b03830f8c93d666f469b8e629975e2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/f5-annotated-screenshot.md",
+    "bytes": 410,
+    "sha256": "58f9f4811ea60f923b2f44e0f3e9bac95c40929f8b1af4fdeedd1eae424051ec",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/f6-product-card-grid.md",
+    "bytes": 2729,
+    "sha256": "22ebc07b00d71c950be8d1a0fdad2cc0e7340cfbbf2cd62c43804bfcfaaf106a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft1-mast-headed.md",
+    "bytes": 501,
+    "sha256": "7f5671b583e9991f9a4671c223d6c15efdee5c1161dc616cbe2b398eb8d1b6db",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft2-inline-rule-single-line.md",
+    "bytes": 362,
+    "sha256": "de13bf7d9bfaddb42a84fc8584646e914f2273abdb34aa98ea9bd2f5d7ff0493",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft3-index-style-category-list.md",
+    "bytes": 483,
+    "sha256": "9f70608d62872be05af910a6168017c872ee1c17b2dbb8329128569231aa3cce",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft4-dense-typographic.md",
+    "bytes": 505,
+    "sha256": "5e43bead9ad7f2b19f4ebc26a42d8e719022380af554a4d93719e25c34a4d333",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft5-statement.md",
+    "bytes": 1303,
+    "sha256": "71be63a51def6a3b59badcd481e49d4d5c5d9f3d63a3b4a5b9c05482110f4000",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft6-letter-close.md",
+    "bytes": 1119,
+    "sha256": "8119d22fbbfb3efa83d0bdc41acbfc5037f2c80cb7c39659623d5216eb16c03e",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft7-newsletter-first.md",
+    "bytes": 1755,
+    "sha256": "2cd766761a8e18bff7bc473b3303392b806a15e461187ac325138f77a308dd48",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/ft8-marquee-scroll.md",
+    "bytes": 1500,
+    "sha256": "32b8d38df984b0db385e9ce2251bbf6bb8df279e3933c441b97a0b703961e9f0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h1-marquee.md",
+    "bytes": 507,
+    "sha256": "8258b25e27232994126701a4f72bf05267fc9c5dfdc14bcf186efaf96a7dbb10",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h2-split-diptych.md",
+    "bytes": 600,
+    "sha256": "f6077864f5c58414d7a10648aa8a3162767f2e356d0701d01953181a83cf3364",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h3-quote-led.md",
+    "bytes": 420,
+    "sha256": "4b1427750c5041ab9201cd18fcdd3dd7a93622644eff518d9ad300339f9a46b7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h4-stat-led.md",
+    "bytes": 509,
+    "sha256": "9ada00461ea12be83dec2fba58e19fffd2c559925e68eb72ec18e0ec434f6cec",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h5-letter-hero.md",
+    "bytes": 361,
+    "sha256": "afcd7bb6b4c888d7e8460e7af5e86dc50149ca253419757bed2834bf66083321",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h6-photographic-fold.md",
+    "bytes": 586,
+    "sha256": "59e046afd5648bfe2737966f1203c0212e7311fbf0e1edee448e3f68f45aa0d0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h7-demo-video-clipped-by-viewport-edge.md",
+    "bytes": 1613,
+    "sha256": "12b6f32a47a0b2e73547a0ac8b641cc19b1caa05dda4ffde424defb53afaa0de",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h8-mockup-split-browser-framed.md",
+    "bytes": 1309,
+    "sha256": "954b0a3aebfe6de8a3be70fedda669099125dd2ebc9c07948fbdb457fd8dc166",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/h9-custom-illustration-centerpiece.md",
+    "bytes": 1479,
+    "sha256": "1d3d32859e6e451a67bfc38a403bd80115a42b6898a4d8788e4cfadb8c83e8d6",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n1-wordmark-2-links.md",
+    "bytes": 388,
+    "sha256": "8504774127e33f24a09844eb4c678e91b09ed513690fce51f7863d7cf3fdeab1",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n10-floating-on-scroll-morph.md",
+    "bytes": 1395,
+    "sha256": "bdbdb999c4148172814504ad6e78f03e2adbd62d1c2554a0c4cc0f242babd8c8",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n11-mega-menu.md",
+    "bytes": 3155,
+    "sha256": "b715421012d0997d25d5739c209be6129132fc91add677d75a8ad82d8672e1d4",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n12-banner-retract.md",
+    "bytes": 2858,
+    "sha256": "2d52ecb8725b1991d4f6b78301cd6f112464f7b17315bdf0febbff67bca50a56",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n13-inline-cmdk-pill.md",
+    "bytes": 3314,
+    "sha256": "6375fa0a1bbc92cba9a435159aa46cb084fc030c63e1abf8f073688959d7be75",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n1b-saas-three-section.md",
+    "bytes": 3047,
+    "sha256": "c2631c7807e33eea9b02faa9121a0f9e64861467b57b8635ee97f5fa52bb60ae",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n2-floating-chip.md",
+    "bytes": 617,
+    "sha256": "70ea848537c5fe29be30f5e4b7478ecc39f86d0089f207549dc98a873b6c8fc1",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n3-side-rail.md",
+    "bytes": 536,
+    "sha256": "20ed8a06a599d73190502a4801a3be2933b8e06874371167196b7d32dae66111",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n4-hidden-behind-k.md",
+    "bytes": 373,
+    "sha256": "bccddb3a25a6afd457163b71e09de07ac23bf5d922fdeb9561e25d825bb97dcf",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n5-floating-pill.md",
+    "bytes": 1418,
+    "sha256": "6dc8ffb9628fd7ee3669208091e11497864cecea69becc6b513ebdc1f3a737a3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n6-newspaper-masthead.md",
+    "bytes": 1619,
+    "sha256": "243a28d1165328c3479a1b75a3ae05dbfe2a6b8c9f867df8e35873b391f8edd5",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n7-brutal-slab.md",
+    "bytes": 1380,
+    "sha256": "6c58d29129f7fd89b9fc755143648397749cdd06043ae0c0b51e6f07e7e6dcb5",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n8-terminal-command.md",
+    "bytes": 1651,
+    "sha256": "c88d787bd2e5cf8bf6fb2c4121602dc0289760b41235d437468322821ee4334b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/n9-edge-aligned-minimal.md",
+    "bytes": 868,
+    "sha256": "cc20c76a5abe7099ed2bde3480c81f75f02a760a4c0d2ac79de1503dca9f9ee3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/s1-left-margin-numbered.md",
+    "bytes": 495,
+    "sha256": "074ed68eafb03ca775b0593d0599fe20c7891356f473f04996f42425e6586585",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/s2-hanging.md",
+    "bytes": 357,
+    "sha256": "7b6d04cb896051006fe41b041a67ed77d25010edb579c60b03d88f68ae471462",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/s3-sticky-pinned.md",
+    "bytes": 1179,
+    "sha256": "4101cd7a28fe21a9b8094848ac6cc13c89f9e6f9bf801f04ac69b986c76727b4",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/s4-inline-no-break.md",
+    "bytes": 438,
+    "sha256": "4b6d36da05383df1b29afe17b96645b816de07373016deb667efca340bb61ac6",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/s5-bottom-anchored.md",
+    "bytes": 358,
+    "sha256": "55c159e2d8299501f14ac97468404dc8cad35695c2b7eaad2e972d314620eca0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/t1-pull-quote-with-marginalia.md",
+    "bytes": 465,
+    "sha256": "c7139796972c5f47d723742cbff02916a1ee0f2496456b86ac05d8839542be38",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/t2-logo-wall-hairline.md",
+    "bytes": 733,
+    "sha256": "942121342a61bb4650722f7ba1b605347c6178d69ebeb740139b0bfb5c810e7f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/t3-single-huge-quote.md",
+    "bytes": 490,
+    "sha256": "7bca56e2cd630da3669f7cf8befd1bd654a5b249cf38b6d9af5a7c62e33b9239",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/components/t4-numbered-stat-strip.md",
+    "bytes": 470,
+    "sha256": "a5fb5615902f9c4026f4ae7b0c96b536bb3cbb2fb4259031342d1cd190dab729",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/contract.md",
+    "bytes": 1040,
+    "sha256": "e8f257c6439288de3e6ce01091c930c0816acf65e12dcac615a0bb5d28d767e2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/copy.md",
+    "bytes": 12501,
+    "sha256": "16f4bff4fd7a935eb0b4b0cfa326a25c53d1ffa182e0f68e6cb08f9a24331ad0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/custom-craft.md",
+    "bytes": 34519,
+    "sha256": "7db75db13cb18dde09ac2cbb3a5764ef859fda6935bb3325510ffcd90e0d4971",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/custom-theme.md",
+    "bytes": 15641,
+    "sha256": "8097401d5442d32965f0ead2a94f6d5121b529f18cb283c510517d3665f66960",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/design-md.md",
+    "bytes": 1334,
+    "sha256": "b4f0d688a8137f9ff6c0a6d4c9bd8e154e2b861af182951c5136cbabd00caff7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/export-formats.md",
+    "bytes": 14537,
+    "sha256": "592fc3bfa39c4f39d50603c8261de974df6f71471f0e921b8eec4960ca6ebef2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/floating-nav.md",
+    "bytes": 5274,
+    "sha256": "66a70be79a9d9d69a5028513f06412936944358ff623a3fc194fc9b74a499688",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/genres/atmospheric.md",
+    "bytes": 5079,
+    "sha256": "fa68164288e01ee3ecdbe3f68fce6a63177fd48fd320b895518d445f48f31be0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/genres/editorial.md",
+    "bytes": 4133,
+    "sha256": "7b89d16077a28dcea033ef0d05acbfeb00509df8d620905e85eac13d895e4731",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/genres/modern-minimal.md",
+    "bytes": 4840,
+    "sha256": "16b8db0a0ae2eb550eb677dc038a263761a3afc9563a65eda77a73978bca48aa",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/genres/playful.md",
+    "bytes": 5222,
+    "sha256": "b7a67c8d0450a8e6b8ec21bfc8789896cbbab9a44115cc04eae2226a616d5051",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/hero-enrichment.md",
+    "bytes": 32701,
+    "sha256": "145c74b0813d6995af00edd46b7cad4d2e24a8f373277dda079d5bfc2ed50461",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/imagery-kit.md",
+    "bytes": 8756,
+    "sha256": "37910ace2ee41376c175465b70868d563c23ea1773bbb10844a5870a91a98841",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/interaction-and-states.md",
+    "bytes": 13810,
+    "sha256": "3cb5550fad383c2d427eebf5389399f69e7f44a3ff85208dbf3d6ff839c5babd",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/layout-and-space.md",
+    "bytes": 6896,
+    "sha256": "31291a2c683a90d534b727a2435ea4302fd106330e3dbdfe87f1f8a1c700e852",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/01-bento-grid.md",
+    "bytes": 1836,
+    "sha256": "aa268415862188414f8db94715e20ae7d29df3dc7c494083683378705f3f8493",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/02-long-document.md",
+    "bytes": 1722,
+    "sha256": "8ca81106396f2bd00eb9ef5d5d1f00c3aab0500394e706d6a2b3221a6c0d910f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/03-marquee-hero.md",
+    "bytes": 1653,
+    "sha256": "1ca40557f58e67b3724961a59ec6ce5a6d83f0942c955a1584d4cc21f62125d5",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/04-stat-led.md",
+    "bytes": 2120,
+    "sha256": "a6930b4ba6377c8ef5fcb7af6bf4393cd924292cf03871a37636dd4b77de22b7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/05-workbench.md",
+    "bytes": 1690,
+    "sha256": "0cbe92772c7b2ffd9b24b9e446b1e1cd9ed22930b39030ef5a6e9cba5512d31f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/06-conversational-faq.md",
+    "bytes": 1621,
+    "sha256": "373473bed23d055164edc04b16344fcd3861c1ab39ff73f3c75dc1719663d488",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/07-manifesto.md",
+    "bytes": 1711,
+    "sha256": "dc1327bad300179c1b233d02d20137776dc98c9affcfd3942b9f3f796ca67b93",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/08-photographic.md",
+    "bytes": 1491,
+    "sha256": "e5c77bb6ca6d82616c9c63bb6e68ee17c6af7bbca935f9ff29481294d7d1f74c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/09-quote-led.md",
+    "bytes": 1821,
+    "sha256": "8fd30cae5705d8e698819366a99fc7ac31356d83b9caefa5b29dcdf6c5cb75f2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/10-specimen.md",
+    "bytes": 1618,
+    "sha256": "68733ca77bbb580bf38391752e7cb82381c98a6d1f266fedfc96b3750c9f2acf",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/11-catalogue.md",
+    "bytes": 1186,
+    "sha256": "99ff614600f18cfc80dfa3b9a2158dbea3b3674f76f40b70e721b9255796c265",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/12-letter.md",
+    "bytes": 1257,
+    "sha256": "56be7d7f7e8065907b77a2d479ba355aac94f4ccb8174ffe68bb5017fd851dae",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/13-index-first.md",
+    "bytes": 1208,
+    "sha256": "25c832844a1b5e6ce17a335ac98e81d98d9e3372f514d83dc26ac299cc077865",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/14-narrative-workflow.md",
+    "bytes": 1428,
+    "sha256": "e604a1106131fe3a65721066a304922e757a78c997c197227840931079c780fd",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/15-split-studio.md",
+    "bytes": 1340,
+    "sha256": "0379fdaa79794a931506ab508270b12332d96aaaab34c9ccd2a4c0473955287a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/16-feature-stack.md",
+    "bytes": 1386,
+    "sha256": "a389fae7fe39550352bdf1ce68cdaa3965a434fa1154f67d3c276e550d1d165a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/17-type-specimen.md",
+    "bytes": 1271,
+    "sha256": "a1487fde891f73bf34a2ca38a631a2cb5c71d3a7b2ccd940114354e291ea8034",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/18-portfolio-grid.md",
+    "bytes": 1057,
+    "sha256": "af5d0f34a7ef7b81d6f4c8c845497ae553d44f418526d7e503346c9243b034e3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/19-map-diagram.md",
+    "bytes": 1269,
+    "sha256": "5a576f25f4c8d58c14f574e3413560118343df9a9669db80c6c452daf509c3c3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/20-ecosystem-index.md",
+    "bytes": 1209,
+    "sha256": "fe206580a39ffc4b3534f3a7414155aa626fe16b82b608a0b8b415c1510f17ad",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures/21-component-playground.md",
+    "bytes": 1171,
+    "sha256": "ad3cbdbe9181e9472cb7b7fffbbe35021dc9b5b99ea86adc026f34d6b2c2f01f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/macrostructures.md",
+    "bytes": 11568,
+    "sha256": "bc278e47f7d84df7e29188da7891381d2b5ae38b74cb1c848de7f0c8c8acfdb2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/microinteractions.md",
+    "bytes": 20264,
+    "sha256": "aea492e1d27b2af7d4872b8bcbd812a719ccae95367ebac22440cb4a2e6a236c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/motion.md",
+    "bytes": 4482,
+    "sha256": "58ebe6d24a3f610600c73a26821ce7dcf3b7c7bc652f936d03a3a313c351964a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/preview-examples.md",
+    "bytes": 2713,
+    "sha256": "4ec336f40cf25a98a716d82883805d5a5564ce13f0cb57e96a2f126ab1199f1e",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/responsive.md",
+    "bytes": 5449,
+    "sha256": "f819a053877545592c61f8d3aa61e5b35eb7dd0745c73ec401816da1f640eb78",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/slop-test.md",
+    "bytes": 29165,
+    "sha256": "941c338356d653b51275b8ddf462d29349d4a6f85d4f3431970a17050fb896da",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/structure.md",
+    "bytes": 15541,
+    "sha256": "61ebfa7710999995b1606c3e0730bbc93bbc92638cc718272302ef3cf94a50ad",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/study.md",
+    "bytes": 28553,
+    "sha256": "1cd2726a044ad0d8b910b934253195c3ee9116f01fe1c7eb1ddc82af99d495da",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/themes/carnival.md",
+    "bytes": 19655,
+    "sha256": "e8cbf0d8eb8e920fc2a8998d33232e364f071fb81da95ef8325f38416168320a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/themes/cobalt.md",
+    "bytes": 11772,
+    "sha256": "393fefa8103a0b75e1d3669c567738ab38455ae6b36c6565ff81007b478661b8",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/themes/grid.md",
+    "bytes": 14823,
+    "sha256": "1bbf0f7b88b195d5297011d522ff5b08a090da9c3f45789c41e10ef9d81e4628",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/themes/hum.md",
+    "bytes": 32854,
+    "sha256": "b1f485e4301e97d921d207c9d278e2f8f61c810f31f7619feec4dd8870225a38",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/themes/lumen.md",
+    "bytes": 28453,
+    "sha256": "b6bfde20ab32e39f1d7d7678034a5bcbf86d01b5ef90e8aaa696c2692eed6ddd",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/typography.md",
+    "bytes": 19059,
+    "sha256": "1aab3c30d62c92ae7e432134cfde8db7b8bc72a9873f683069714ae60a0b3da1",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/verbs/audit.md",
+    "bytes": 1405,
+    "sha256": "bf04b7befed0643023f61cc4815c83f51f2e1fa177c435a99e48eb195e28a09b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/verbs/component.md",
+    "bytes": 988,
+    "sha256": "2e15168487d76e4c421fcb585e2b49ddd9789fafb83fd8d5ffae49f08ca7e8c7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/verbs/redesign.md",
+    "bytes": 2003,
+    "sha256": "c2ed65b4c384761840dabebf1aabd2e9c38d9c07f5b9795a9438744ff283c6bf",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-pages/references/verbs/study.md",
+    "bytes": 1180,
+    "sha256": "581d6b27cf2363e202536b23dfc402cf3929033e6c0e8be713a794f15322521c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-reference-scout/SKILL.md",
+    "bytes": 4119,
+    "sha256": "d3793ad706cc68ac8aaecbce1607d04818b74f575e64927e6d6f23886df84bfa",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/design-reference-scout/agents/openai.yaml",
+    "bytes": 246,
+    "sha256": "763fb8c7ece546f16a73610e70e2c1b71ddd1ee3acb5d9379ebb8ad40e79f295",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-reference-scout/references/brand-type.md",
+    "bytes": 1627,
+    "sha256": "ba3272d601043b9623e09f8afa0f9a9e4f019300170d555cd82e53ddb6a529e4",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-reference-scout/references/mobile-cross-platform.md",
+    "bytes": 1119,
+    "sha256": "15fd3ab38227cdc8bf78342603b808f1f1e75f9603675cdf7e461ef52072e887",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-reference-scout/references/motion-icons.md",
+    "bytes": 1222,
+    "sha256": "26bdf8d2f0f75f2736611513efba91f1b91f2ab8a0d68207776044771fbbad66",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-reference-scout/references/native-apple.md",
+    "bytes": 1333,
+    "sha256": "a540bdb6ffaae141f31644f9dc7281d6f3e89df85f8012c30c9b1248a7daee55",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-reference-scout/references/web-product.md",
+    "bytes": 1791,
+    "sha256": "5ece853a73926c7a3ec8fece255696355a1100fba68160b186c90482e2ded5c0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-style-synthesis/SKILL.md",
+    "bytes": 5572,
+    "sha256": "f41de7e0700ff94041b70c70605db1b06cc6d454e95243174607aad5407fe39f",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/design-style-synthesis/agents/openai.yaml",
+    "bytes": 267,
+    "sha256": "744f0e03a10a57ec9da8fa41d6cc5e5b517327b65a0c21be803255244f8033c8",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-system-consolidator/LICENSE",
+    "bytes": 1134,
+    "sha256": "f5fb5b72c0596529d102ac9aa761b8b2c5a76d085ea2d654d8b7d226bc599dc4",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-system-consolidator/SKILL.md",
+    "bytes": 4219,
+    "sha256": "421642a906c8f4cca834758d80adc22d139f98e45089163637c965891a269645",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/design-system-consolidator/agents/openai.yaml",
+    "bytes": 258,
+    "sha256": "feda78b6bb66e64c11a9622f16fae6cfc0fd6d97be28438402bca4e712427fa3",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-system-consolidator/references/drift-classification.md",
+    "bytes": 1521,
+    "sha256": "be74261628bea31b8ad720d915f11c219c9632053ce8fad03e8d0714c04b7aa3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-system-consolidator/references/incremental-migration.md",
+    "bytes": 1739,
+    "sha256": "4c7be92d1a5b7bc58fe514c36fad8ecc15c08e584cb68da008a5f29900332f5a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/design-with-taste/SKILL.md",
+    "bytes": 3282,
+    "sha256": "fbeeb58e2f88caddf475b52f2863e150565d5202f2d9156a4158dccbe6c47bf9",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/design-with-taste/agents/openai.yaml",
+    "bytes": 221,
+    "sha256": "9d4edf8e98ac0438cdb3209b8613a289072f84a835417bac8f2a27a9ce0292a2",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/design-with-taste/references/design-dna.md",
+    "bytes": 6427,
+    "sha256": "6a5def6dd28b898dfb6df4995b629f2cc08b0d8743993db483873ebc5c0a2934",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/draft-in-authentic-voice/SKILL.md",
+    "bytes": 2906,
+    "sha256": "65e051c9bcb2e95ffc3e664e2b5201090ac46e47b6eef0563b997934cfe95f4f",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/draft-in-authentic-voice/agents/openai.yaml",
+    "bytes": 237,
+    "sha256": "5cbb0b4278b72c221594a0a7115547ba27e35e0a117ea6c1df3a81609c9723f3",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/draft-in-authentic-voice/references/voice-modeling.md",
+    "bytes": 1945,
+    "sha256": "84a8ce6e12d9995b2bea8b6ef1dd662634918a69fe1fda04a50f89bb89c8af6d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/edit-in-authentic-voice/LICENSE",
+    "bytes": 1161,
+    "sha256": "1fb857808c3ade36c13a338ffbdb78e6acafa651270bee34278383a4f50dffcb",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/edit-in-authentic-voice/SKILL.md",
+    "bytes": 11424,
+    "sha256": "bd2d36a0367a49045f19c96ab2c553397c3a7251ddae432db920f5119b03e48a",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/edit-in-authentic-voice/agents/openai.yaml",
+    "bytes": 207,
+    "sha256": "2e3daeb5d130d6282ab3f42a21ec039410048345e6028720e910e4a69a5202b7",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/edit-in-authentic-voice/references/eval.md",
+    "bytes": 3337,
+    "sha256": "b90e1bfeb98fb6e9d3ff53a9048080187fb5a48738fcdd742fb714ec6b682d08",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/frame-concept-build/SKILL.md",
+    "bytes": 1403,
+    "sha256": "cb05416805dd4f186fe67b39cde6707e07a4260b5d04382237a547f46726e1cd",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/frame-concept-build/agents/openai.yaml",
+    "bytes": 210,
+    "sha256": "d8d9bd55c6e3b6ea44c24c0e7e415a714a4188b098044148da0630fbd0cd75f9",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/frame-product-build/SKILL.md",
+    "bytes": 2758,
+    "sha256": "e4c352234ee54b277438a64bec7504749cff72f17de0c98eaf35ab4323190b48",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/frame-product-build/agents/openai.yaml",
+    "bytes": 234,
+    "sha256": "baa1fb39859902e04010adb747d06e34d6587282e41126ba6c3f2838868844ca",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/frame-product-build/references/apple-desktop.md",
+    "bytes": 1464,
+    "sha256": "f063796d66c609178c6a99c0c907b2d22642ceed97745f6e913461fa06e9b2cd",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/frame-product-build/references/mobile.md",
+    "bytes": 1846,
+    "sha256": "afe337ea8e3c779d9cd13f757ed424cbee0cae7de088a2d269f348609eef094f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/frame-product-build/references/web.md",
+    "bytes": 1443,
+    "sha256": "f619f28baf29632113055c36e941df19cce0a886c6978fb86e6d9ac2f5c0f973",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/LICENSE.txt",
+    "bytes": 10776,
+    "sha256": "4dd13869245e356246a5b770723247bbb80a8f07a181d1d3d873a1734297cdb9",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/SKILL.md",
+    "bytes": 4067,
+    "sha256": "5db1a431f40e19bed3b41058bf34be0d26a280b985d7732dd6a59300ff8b5bd4",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/agents/openai.yaml",
+    "bytes": 218,
+    "sha256": "74cd5fd50fa787527ff971ff1ad520ddb61a07e0e28bd44639eda5aabe6110bb",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/animation-rows.md",
+    "bytes": 2583,
+    "sha256": "d27b08d599e73cf6a65a03d2b8ad49e9ad408e18292636164e7b2d2f1815615f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/codex-pet-contract.md",
+    "bytes": 1294,
+    "sha256": "8f9c271e0a8269e57cd27cedeff1317975ea5f772f2549572aeefa580d9d58d3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/generation.md",
+    "bytes": 14942,
+    "sha256": "1c393d9c45e723049426c4b16723f9ce589f5330b83bfa6500e4637abfcf4883",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/look-directions.md",
+    "bytes": 28305,
+    "sha256": "4e0682b80c7865d472745c361462e6d92f7ab7acc6473fa1453178145f76dd8a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/production.md",
+    "bytes": 16692,
+    "sha256": "6b141a8e71023700d9508acff72914a323251aeaadca8819abe3690c1ffe8205",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/qa-rubric.md",
+    "bytes": 2579,
+    "sha256": "46bd447611d101cca0d89692ee566cfd58abfea30d4cfb7749b2c930e0b7deaf",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/repair-and-acceptance.md",
+    "bytes": 9981,
+    "sha256": "c91f63481a146cc42b24273b80b8a75015ba07b8c34fdd214dd2fb9fd31ef7cd",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/references/workers.md",
+    "bytes": 13952,
+    "sha256": "5a17c22cb3f73f4883c4ed8b04050dc6914e2aaa889b23d61d633a7581d154ea",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/assemble_extended_atlas.py",
+    "bytes": 21877,
+    "sha256": "ca50b13d62858a660e1ae2d15649a1ccb565d03ee185539d22df0e121075eadc",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/combine_direction_blind_verdicts.py",
+    "bytes": 1962,
+    "sha256": "4dad56adaad032a4e6d070494b0ab2ca316429cf69363450f9fbf7135d1c2d42",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/compose_atlas.py",
+    "bytes": 5750,
+    "sha256": "a76d7c8b81033353004f5cafab8fa174c314f1d79158b69bc83a2f0bd6047fdf",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/compose_cardinal_anchor_strip.py",
+    "bytes": 1401,
+    "sha256": "e67ac9816a909cad136189bf23eddf8b16e0fcb430ade2262556bbd12db2bca5",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/derive_running_left_from_running_right.py",
+    "bytes": 5183,
+    "sha256": "ae42859720220fe8a407fc0dfff06e8344e535c6c8019220b1f63db7714baa77",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/despill_chroma_edges.py",
+    "bytes": 10839,
+    "sha256": "dc93a5e752f4100e55010205462a8e7272bac451ee7e29b525abd6157a7fe309",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/extract_cardinal_anchors.py",
+    "bytes": 5006,
+    "sha256": "55434d06bc328b1879d98c821f2586963910f89926f4dcbe92682b25555a8cde",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/extract_strip_frames.py",
+    "bytes": 13923,
+    "sha256": "86301292945550c4b2c318815c9bfd97a1f9b3fa4e83aea7b31bcfa2ca20e1f2",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/inspect_frames.py",
+    "bytes": 9454,
+    "sha256": "9ef930151ae845a3c9eb3c10dfc8da95947535d18c72992cff5f65081af4c30a",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/make_contact_sheet.py",
+    "bytes": 3652,
+    "sha256": "51e2085b8acb172dcdd5fff9993bdee413f3851b714229ca095dc99cd551aa96",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/make_direction_blind_qa_sheet.py",
+    "bytes": 5370,
+    "sha256": "52f2a29251872449fed51c7744c3f9f503274ee288eb23efc29a2c568b0d52bd",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/make_direction_qa_sheet.py",
+    "bytes": 4929,
+    "sha256": "823e81e0aece24d1d6537889c9daaa2660208ff52604509b24fd5e24e7302acb",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/measure_direction_continuity.py",
+    "bytes": 6706,
+    "sha256": "e24b7065af82eab5638f1fcdeb627d497391a2f1e9ba19801827d1db3a6d8c2d",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/prepare_pet_run.py",
+    "bytes": 51294,
+    "sha256": "ca9809003e95248339db3c9fe0625e4e871732146bf06e19efc091191bd9da1f",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/render_animation_previews.py",
+    "bytes": 2547,
+    "sha256": "911e8813e1b79b7f9da44fae8a667c044818e8c71f41eaa4b280e91c78cde61e",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/validate_atlas.py",
+    "bytes": 10689,
+    "sha256": "ebbbc77cfbd27ef8476ac6fda716e864cf372a2ed4c2beb27ebdb2487e972194",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/scripts/validate_direction_blind_verdicts.py",
+    "bytes": 3836,
+    "sha256": "7871667432918e0ffcdbb9beaf88a01c0af4b9e2809c5000f7b533a9ddc6e13d",
+    "kind": "script"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/tests/test_assemble_extended_atlas.py",
+    "bytes": 9646,
+    "sha256": "e19458aaa7b35b0bce23b27a906b0680dcc61b69590354ca7f1b2ec07485bfc3",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/tests/test_chroma_matte_decontamination.py",
+    "bytes": 7223,
+    "sha256": "f6221a1d994beb08319b57b4511ab8e375e31e0d3ac4417f9c16dbc35de944ba",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/tests/test_direction_acceptance_policy.py",
+    "bytes": 7826,
+    "sha256": "3c1524ba6d6ccd459ba84bf20580120405085bb8605f93bcc3ac61706d4f48f5",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/tests/test_direction_blind_consensus.py",
+    "bytes": 1502,
+    "sha256": "8c58e1142342e58fd667f34f1f0231a0a218bbc3fd8c5e62be7411d68cc78630",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/tests/test_look_row_safe_box_prompt.py",
+    "bytes": 4285,
+    "sha256": "f6b10800eb7658e2dfdef8d0b88764a0edf6b1210dba0310796b3f96dbe7b0ef",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/hatch-pet/tests/test_single_final_chroma_pass.py",
+    "bytes": 634,
+    "sha256": "0d7a6a93d15d3dc3af52853c61b030acf3974119a447bbca756524d3a8859564",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/LICENSE",
+    "bytes": 1174,
+    "sha256": "c78cf60f55c8fd457ce1a89ae5683cc2f196fa288bdcb69756a5d0f0fe026f73",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/SKILL.md",
+    "bytes": 15157,
+    "sha256": "77be1fdf01cb0aed5753f707191bd7dfdf7054cedf46eb5b2e1d3f10fe506680",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/agents/openai.yaml",
+    "bytes": 192,
+    "sha256": "ab3e5d99f80e9a1bcd50c4c6417a48ecc5ee9b684292a7b4b9ffe4b2036c6e02",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/references/image-assets.md",
+    "bytes": 3622,
+    "sha256": "0ad789823718da7410f42a5c4ed3ff14ad4e0af7014f18181e7d5da0349908b8",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/references/motion.md",
+    "bytes": 4706,
+    "sha256": "74e4b3c2f22da5f0647ceac2ae072df7ff2c5af2781d84e5479c3c509000ab72",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/references/native-controls.md",
+    "bytes": 4565,
+    "sha256": "9d6fd934738e86aba29411511b8e5b20b0ff928d717e9b67245586c7ba2aa302",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/references/performance.md",
+    "bytes": 3293,
+    "sha256": "c6591482adb86e059742a595dafab0f2833da89c0f3e7e16d7ae1c17d16a784b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/mobile-screens/references/simulator-loop.md",
+    "bytes": 4175,
+    "sha256": "bd688ed86551922e4e632cf2f4063bc3847d65f9b972d257d3155a2a41285b2d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/product-language/LICENSE",
+    "bytes": 1105,
+    "sha256": "2e8f897231e8116436d2346a74170ef0b65b0e40cfd9f50dda0fd6f9c45abf76",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/product-language/SKILL.md",
+    "bytes": 4037,
+    "sha256": "a06261e1974ca006408950846292a1b9679607b537d501078440e52285a46979",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/product-language/agents/openai.yaml",
+    "bytes": 227,
+    "sha256": "2dd16516be331f42144cd28bcc5adcd77a8c76701bec650cca35d34bebe22410",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/product-language/references/localization.md",
+    "bytes": 1510,
+    "sha256": "a62d0e42eaa09316a7a49ba2e414a4b758c431621cecf2d93e42aefd10eb0d83",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/product-language/references/terminology-migration.md",
+    "bytes": 1264,
+    "sha256": "c4543276d6ecf82e5d30e7d37c679b5a68ccafae4bd156815fb5b2cf799b9a25",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/think-with-me/SKILL.md",
+    "bytes": 4529,
+    "sha256": "30145fe89b347a51f6f587a60616f83dc286b5b47c987b61486157cb296df50f",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/think-with-me/agents/openai.yaml",
+    "bytes": 280,
+    "sha256": "029ab9c9d8b595c903cfa46f537bccb7ea98fce4c719053e4c8c62143a6538e2",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/ui-craft/LICENSE",
+    "bytes": 1162,
+    "sha256": "a518d702989db19c059d9e8b4232b880007921c15947a6c4fec04b68a4f74d5e",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/ui-craft/SKILL.md",
+    "bytes": 8012,
+    "sha256": "7445c920f332721c90dc217ba66c3430b389948d1b42af8097425568b631a02d",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/ui-craft/agents/openai.yaml",
+    "bytes": 191,
+    "sha256": "685fd284db816b19032a87b69039b58639e7fd04093e555593689bc4e5869f72",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/ui-craft/references/animations.md",
+    "bytes": 7397,
+    "sha256": "907cc7099b9c4033aff2d57bbfb166d3a3b1fd15cc89232bb2ed97f8545f3821",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/ui-craft/references/enter-exit.md",
+    "bytes": 4200,
+    "sha256": "7d8d14b23aacf04a2219eade1b3cddb05f6303d89b904975d79aab6fe8e95555",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/ui-craft/references/icon-transitions.md",
+    "bytes": 4402,
+    "sha256": "86d5d6aecc62df9a6ed1725c50c3a2f724a791a3b0e81125792034d7ab58d670",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/ui-craft/references/icons.md",
+    "bytes": 4613,
+    "sha256": "d95b987b970f52e0917c7a8c9da5152a77e9b2c46c6dafecd50327b63398f7f3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/ui-craft/references/performance.md",
+    "bytes": 3124,
+    "sha256": "cc77fd070eccf78b0793eafe2f973aed29932f7e15602da25e2e9b56e592d972",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/ui-craft/references/surfaces.md",
+    "bytes": 6652,
+    "sha256": "d351c84bb6f4453f6e735b78ca342c32b482135c1bf955562c9b13fd374b70a8",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/ux-heuristics/SKILL.md",
+    "bytes": 3572,
+    "sha256": "52eb62a077fbba4c4c916208f52b85e60c07659e8d2deb1b157dce093579827e",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/ux-heuristics/agents/openai.yaml",
+    "bytes": 199,
+    "sha256": "6545679ce9b965149355b89ff5c29bc97f59454e6c3e61dabcac75611946d7d5",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/ux-heuristics/references/laws-index.md",
+    "bytes": 7281,
+    "sha256": "0a0a5e6f5899f80b1b9b48ae1812f9a3241e295a33db74fd7a5dd70a29308380",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/ux-review/LICENSE",
+    "bytes": 1231,
+    "sha256": "ff780f46c818aefb50d8bf2ebebea87c7b7bbf1276576161d07479ff4907e026",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/ux-review/SKILL.md",
+    "bytes": 2077,
+    "sha256": "63163e730955099abbd9aaeade5c1d620f39b913ac058f2d7012e3dff5391025",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/ux-review/agents/openai.yaml",
+    "bytes": 192,
+    "sha256": "1d7f8cf0f4052be8669c1d9278b545e2fc2d5425339e845f905201c8e05ec8cd",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/ux-review/references/web-interface-guidelines.md",
+    "bytes": 8411,
+    "sha256": "162ffd78c49803d31df645b6cf1c59becf7df995588806e0d238a03c0dd9c16d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/validate-project-claims/SKILL.md",
+    "bytes": 1572,
+    "sha256": "f9f635509fba5b05bef6bb75c3a10428202f09608ba826bc188f4ed2b3ec403d",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/validate-project-claims/agents/openai.yaml",
+    "bytes": 232,
+    "sha256": "e57827cf74bd1a3fea368f1ca07464e4ba2ca899b7de2cdb20e21dabb2a605e0",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/visual-fundamentals-review/LICENSE",
+    "bytes": 1105,
+    "sha256": "2e8f897231e8116436d2346a74170ef0b65b0e40cfd9f50dda0fd6f9c45abf76",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/visual-fundamentals-review/SKILL.md",
+    "bytes": 4394,
+    "sha256": "7c49112bf4cbb11e03d2c026951678b0c3bfbd8f1f12c6ca708287f450e1e1de",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/visual-fundamentals-review/agents/openai.yaml",
+    "bytes": 253,
+    "sha256": "a7461cb3fe26773e7c60137c046313af449aa552d5541aab271da57709f6f887",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/visual-fundamentals-review/references/react-native.md",
+    "bytes": 979,
+    "sha256": "be25145bfd3aaaad13a74ad73f724131b5f2d4e764c51a561d63010d33e875b1",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/visual-fundamentals-review/references/swiftui.md",
+    "bytes": 1250,
+    "sha256": "d51a60558a80b79b49628825619e76c77c4b2c53ac6a89177d78d0ed1e61cbd6",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/visual-fundamentals-review/references/web.md",
+    "bytes": 1557,
+    "sha256": "9bca903d1221a05f0a44ced30d03b5462e8628b9cb45aad2c295d81d50a3694b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/LICENSE",
+    "bytes": 1230,
+    "sha256": "1bba3e302c138bde96345145717714f25a63c3dd3f8bfd2a2665362386324378",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/web-react/SKILL.md",
+    "bytes": 7314,
+    "sha256": "83cadccd7ae2b6f3f2aae581c3efb95ca7a6639b115d678f11849517183bbeb5",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/web-react/agents/openai.yaml",
+    "bytes": 192,
+    "sha256": "38a43c91516fce1c42c87eefc065d7eb2b20588403458e95147fb25a24750d9f",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/web-react/references/advanced-effect-event-deps.md",
+    "bytes": 1802,
+    "sha256": "55ed8f9f27a1bff803d6fa55828176207714b02123cbb97ddb8a90d88024a723",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/advanced-event-handler-refs.md",
+    "bytes": 1483,
+    "sha256": "a3097edeecfb2ff6851cd66ed8cdf0617c3c88180504bee824aa6e75a215bbbc",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/advanced-init-once.md",
+    "bytes": 958,
+    "sha256": "3e4dc22173eb0e2b6dcf583e3babd862b8696328f8f59aee7c4d746c5bc05f6c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/advanced-use-latest.md",
+    "bytes": 1072,
+    "sha256": "8a3f64dfe5a77d1564248faf17fe662ae75b55d497a243cb30b38eb07ccbbf9a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/async-api-routes.md",
+    "bytes": 1125,
+    "sha256": "523338540d73427dc14c0cbb19f2741ebccdf8b105a7b2c1b33d2905cf237a42",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/async-cheap-condition-before-await.md",
+    "bytes": 1220,
+    "sha256": "03107c1f70a293cd58a8abc5474c5548e20ea4efdf01b6d45aae7ad0ac1cb32c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/async-defer-await.md",
+    "bytes": 2208,
+    "sha256": "f3c142d090615abdcc99d31c123be37b31f0f1ed8d9ec9f7789a3bc6883ae0fb",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/async-dependencies.md",
+    "bytes": 1293,
+    "sha256": "16ef469f877e30c6b8e1e1b4bc3e527312fa3c6318cb785a4eca186ea236131a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/async-parallel.md",
+    "bytes": 654,
+    "sha256": "6d2f841896279e976dfcdc1ac89e70771ac188baadfd43c096b5706cb838b961",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/async-suspense-boundaries.md",
+    "bytes": 2510,
+    "sha256": "de05fedac2eb7ae563b887b5a424464ec3dfaf84e5b7797467ebe2a796ac8afc",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/bundle-analyzable-paths.md",
+    "bytes": 2382,
+    "sha256": "62090b5c815fd71bf1133dce754f51abc16a9456d0ccd025fd627de27726e92a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/bundle-barrel-imports.md",
+    "bytes": 2795,
+    "sha256": "e648f6d54525f07a691357040ca5bff6ea3424788a91ff63812adb29622a671b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/bundle-conditional.md",
+    "bytes": 949,
+    "sha256": "09c8259c3efb04fc0abb8e412ccbda217c222ae8118516283e571c995fe3a7d4",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/bundle-defer-third-party.md",
+    "bytes": 920,
+    "sha256": "3719fb47b191e8db4fe22686ec88448ad5af9e6838585425abbe103d0b642e37",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/bundle-dynamic-imports.md",
+    "bytes": 791,
+    "sha256": "401817a7369f315fc5a68a1095742ff7d53d0461906880dc9d64a41495ee1986",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/bundle-preload.md",
+    "bytes": 1149,
+    "sha256": "d1f7cc28da7cd5ab249acd287edc5b761afcfb194e9cb62cd44c5f3543db2de2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/client-event-listeners.md",
+    "bytes": 1969,
+    "sha256": "242a873349febc1ce685e85617994784dbab92c2eaa68aed7fed5a83e7680e93",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/client-localstorage-schema.md",
+    "bytes": 1950,
+    "sha256": "0fb7cdf9dc93fdf22f87e3669f953fb9d4ac9b0be42eec4a29fe9a2560610b88",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/client-passive-event-listeners.md",
+    "bytes": 1644,
+    "sha256": "1f35016f9053de69e884ee9be00654e37979c2ca85f5e57764dc2626ff7acb4b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/client-swr-dedup.md",
+    "bytes": 1159,
+    "sha256": "644652c39c6cc00de8d1c77a7273612e868dc3f7edda30764164c12ec0f764a3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/compiled.md",
+    "bytes": 108261,
+    "sha256": "fc93e7421177bbf869cce892bc60a6c83a4517d974bc3bf65c4e2c1e58a6ccf6",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-batch-dom-css.md",
+    "bytes": 3266,
+    "sha256": "480b891b9eaf96e929dc1e964274a4828e3a78009b7d00ccd965a0d425215959",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-cache-function-results.md",
+    "bytes": 1949,
+    "sha256": "3daaa11d24f4295cb6be8bc6f407f2ce83cc7b5bd1f0e68891ea8ab835721dc7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-cache-property-access.md",
+    "bytes": 532,
+    "sha256": "73e47431e74878a927061bf0ddc7cd91a7556cb35d2573f3421e82300d9ae311",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-cache-storage.md",
+    "bytes": 1651,
+    "sha256": "11b826b0433898c1ece2d3547010d8e77db9fb240185748c45db91493de9b6cc",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-combine-iterations.md",
+    "bytes": 753,
+    "sha256": "71add08aeeb43091d4ff4c0b2842cce8b4bdef8ad3e732cc034bb5a84827e746",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-early-exit.md",
+    "bytes": 1133,
+    "sha256": "925ce5ce87f3347186ca62212f29cc6baa2b8c85a96d2720ad07c3d0abf781c0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-flatmap-filter.md",
+    "bytes": 1411,
+    "sha256": "9e5b166a41914d975bef7635467f8fb32cd98b5c3126c0bc6f163490812fb5f0",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-hoist-regexp.md",
+    "bytes": 1028,
+    "sha256": "f9e9aef2f7c2307dd7310f283df85dcada45fc43e9bb941b0c3aa414dec21ec4",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-index-maps.md",
+    "bytes": 837,
+    "sha256": "5df1bdc2cfabb2c98abd55d26762e5c18189535c2e686184f426082e62920391",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-length-check-first.md",
+    "bytes": 1747,
+    "sha256": "8b54a311c826b299272f29187fc58bc55772a04c4a72eeb29456ee96dc9fc624",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-min-max-loop.md",
+    "bytes": 2290,
+    "sha256": "87dfb67e2f39df6ad8bcfb5b78c5fb364d3c07554ad188a202408d99f3763421",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-request-idle-callback.md",
+    "bytes": 2647,
+    "sha256": "ee08f83905b4011abbc33d594033157d77561b5bbd9b36b04f0f409581ffec32",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-set-map-lookups.md",
+    "bytes": 532,
+    "sha256": "a7fd781a6ba9ad49065961b6f9a90ef486bf6b648390e1a08704025f98e1642b",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/js-tosorted-immutable.md",
+    "bytes": 1782,
+    "sha256": "d0a5e1b0fec48a0a81397957e2f068e224329f7c42cb5feeed8aae6fa64025e8",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-activity.md",
+    "bytes": 564,
+    "sha256": "1e5e7eaf3555e61d6a2e900089c676527d26259501db5594f59544b6c664f85a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-animate-svg-wrapper.md",
+    "bytes": 1185,
+    "sha256": "9c6ae0ca7a51434e803887c64cded760956579a1452ccb80a461a03f9c937c77",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-conditional-render.md",
+    "bytes": 980,
+    "sha256": "2ec2fa23c4148285144687050c52369adba3da2fbe3d486f8d3e0aad8f06f2bc",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-content-visibility.md",
+    "bytes": 815,
+    "sha256": "64eee6d5b916fe74df33363994b27fc7f71bea3bcedc7ee04bda23107ca3e6e4",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-hoist-jsx.md",
+    "bytes": 1039,
+    "sha256": "93b229560fae92005ed9a2a829064607b39b2e984e92d221d05b2d41df2b7c0e",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-hydration-no-flicker.md",
+    "bytes": 2308,
+    "sha256": "dc7ab358c67c177bca6e6f360fbc935ebe4efa928c0ba3ebd3f9f3d9e2000ca3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-hydration-suppress-warning.md",
+    "bytes": 872,
+    "sha256": "915bacb934e2927d84b37a3f3d225a47b309ac8f9e494ed2bcb66ce07c5676a2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-resource-hints.md",
+    "bytes": 2549,
+    "sha256": "351b1095d641717b930f1b2253282b7120af3023bc74e06c17675168d4286864",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-script-defer-async.md",
+    "bytes": 1868,
+    "sha256": "4cea07b7875ba7fc2c7465ff23b63a2bb334f90aaf2d9293d38d67b05fdb32ab",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-svg-precision.md",
+    "bytes": 588,
+    "sha256": "ed468533f6e95f622859c884b122cf21f9f593ed6bb3d500a54de4b9f9bcb9fb",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rendering-usetransition-loading.md",
+    "bytes": 2074,
+    "sha256": "3a1249c3f13026b6f54ab5712c388df219d6af01b12aa542749acd99a46f4bc1",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-defer-reads.md",
+    "bytes": 973,
+    "sha256": "234050a77faf50cb306be10a9e15bd4421134ab5907e75f13e6d78e2bd262dc9",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-dependencies.md",
+    "bytes": 824,
+    "sha256": "17eb5830956fb56486fd3cfc7431f5849d39751730c05ad9e77dd4f0c27169c5",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-derived-state-no-effect.md",
+    "bytes": 1201,
+    "sha256": "cb11ec76f50aa7b6847269f02d79b120c889a30d9ecd2c1d578f75144419c77a",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-derived-state.md",
+    "bytes": 728,
+    "sha256": "1c326bb67b01fb084eb00c8911b0a7cff54681c2315b629f88e49b64eaa6481d",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-functional-setstate.md",
+    "bytes": 2968,
+    "sha256": "5e68df6b2ae8058e67f476ff1ac67bde159f5a9d18df439e46eabcdeb7b52e58",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-lazy-state-init.md",
+    "bytes": 2016,
+    "sha256": "4ae844740f266fc8cbf050701230286624a2440ec5be67b9a63d9edc3c580573",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-memo-with-default-value.md",
+    "bytes": 1173,
+    "sha256": "81c47476564ad8a79fc68fc442734255ca7d6829424359464503fda0a9f9a0dd",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-memo.md",
+    "bytes": 1148,
+    "sha256": "1f258990c2f27ff6256b3cc5c43300631bb3f0d81f749aed08d07fcdcc131dd1",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-move-effect-to-event.md",
+    "bytes": 1268,
+    "sha256": "abc2cbf167bee056743023351e96806a411d3398da8802093620aecf0721f029",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-no-inline-components.md",
+    "bytes": 2135,
+    "sha256": "1cc32907a770272524ba682eef9e7efdd8ad4533b6f89b718a1fcd7d1d0eb6a3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-simple-expression-in-memo.md",
+    "bytes": 1018,
+    "sha256": "5bdcf2d1558ba5204e643c887b7b4060f89630969425651eb68e96427d97f800",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-split-combined-hooks.md",
+    "bytes": 1844,
+    "sha256": "6f45d703343484ef9acef9388397f3642966ae6a5a258899a0cf1f9977cfbf6c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-transitions.md",
+    "bytes": 1055,
+    "sha256": "60f4033909a62df5e5b8c601494f9e50a562e2f8c1c2d81eac24f38142265f1c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-use-deferred-value.md",
+    "bytes": 1846,
+    "sha256": "8c3579576a61a949884167745dcfaf1d5426ba305cc61fd0a79602d70fda4909",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/rerender-use-ref-transient-values.md",
+    "bytes": 1742,
+    "sha256": "f1a649af9d1d0b5c762f6c9c4c1c70c90d7df82aa10296ee87aadb78c1b76c54",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-after-nonblocking.md",
+    "bytes": 2012,
+    "sha256": "d0b8d24a3db9f0f65f9e2bddbf230b0e03a5f60e1229d93a4a18f5e7a991c7c2",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-auth-actions.md",
+    "bytes": 2649,
+    "sha256": "a2ca8aa102839251c7971ec784560fab943c20b36fe6f80365d4110c13260c23",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-cache-lru.md",
+    "bytes": 1353,
+    "sha256": "1924b64561841923b88a657085097a0aeba3e0ba2d5470b9f5c15cc10d6ae70f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-cache-react.md",
+    "bytes": 2228,
+    "sha256": "fddeea6c870bb3da4134b61d54b7d09b83d2603f929b7547cd3dc1dc269edd5c",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-dedup-props.md",
+    "bytes": 2060,
+    "sha256": "c2747424cdac46be62f835f245a0aa887b0090b416d28e2ac8676702645eeb37",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-hoist-static-io.md",
+    "bytes": 4423,
+    "sha256": "5abea4dd882b13661bd5f7dfb93f9e547d5f08176c61c448ade91b210ed5d49f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-no-shared-module-state.md",
+    "bytes": 1766,
+    "sha256": "4d869bf1cd2f1632e5ca4c0e64b1cf0e71c5f5a0f940bc8a22174d205e735ed7",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-parallel-fetching.md",
+    "bytes": 1554,
+    "sha256": "569a2e9fc04f9606686cd75c5894ef8781b502786a7fffe241396846c7733472",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-parallel-nested-fetching.md",
+    "bytes": 992,
+    "sha256": "ad5d9656984d4a959997a2367bf59cc6632297b4634a1dd13a087939d83f30b3",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/web-react/references/server-serialization.md",
+    "bytes": 996,
+    "sha256": "f4c7d68b29c82381baad059c4a7f09e868e71ec9c3115a26ad3ae7d24c0dfe1f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/work-pattern-audit/SKILL.md",
+    "bytes": 4743,
+    "sha256": "fd6a13f3cd3b88fe85f27e5e36b35721adc996972dfeb84c1afa45671277840a",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/work-pattern-audit/agents/openai.yaml",
+    "bytes": 248,
+    "sha256": "2291c4256680726b15e3bfd808f5ebee880ef4870560a94e12049ca1a93df4cf",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/write-readme/SKILL.md",
+    "bytes": 3237,
+    "sha256": "e3d664d3c35f8c4c7dc1d6c7a4081146dad855a3d390e95f822ce05626dba8d7",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/write-readme/agents/openai.yaml",
+    "bytes": 203,
+    "sha256": "442182e92d370708e31cd4f198129e0c31c23a09514de5755dc1d2ae6de4d1fe",
+    "kind": "metadata-or-license"
+  },
+  {
+    "path": ".agents/skills/write-readme/references/audit-checklist.md",
+    "bytes": 2284,
+    "sha256": "1e263b39620da40447c1567b963f88aa32c2a173b14528b829e3cfca2a3bb05f",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/write-readme/references/section-guide.md",
+    "bytes": 4583,
+    "sha256": "2daeb555cc2047febccd3d389ba4f6127e4653c9fab68c9827fafeeabdc78a9e",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/write-readme/references/template.md",
+    "bytes": 2632,
+    "sha256": "99367833d7cedbed63f630a2976cba8a81ebcfcf6895446c09b18c4812f50a25",
+    "kind": "reference"
+  },
+  {
+    "path": ".agents/skills/write-reproducible-demo/SKILL.md",
+    "bytes": 1258,
+    "sha256": "fcb5ba0fa0fbb574ecd4e1c3c7fc1b15fc7d820b2abdc67872a95cab9024c9cb",
+    "kind": "entrypoint"
+  },
+  {
+    "path": ".agents/skills/write-reproducible-demo/agents/openai.yaml",
+    "bytes": 213,
+    "sha256": "f6569212da187627f610ac150f6fb95b5df5f7010fb8f709557b6fb188c8aa3a",
+    "kind": "metadata-or-license"
+  }
+]

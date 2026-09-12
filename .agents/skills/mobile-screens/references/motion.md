@@ -1,5 +1,16 @@
 # Motion — Reanimated patterns that read as native
 
+## Contents
+
+- The two families of motion
+- Springs
+- Gesture → animation, all on the UI thread
+- Entrances, exits, layout
+- Shared-element feel without shared elements
+- Scroll-linked effects
+- Reduce Motion
+- Performance guardrails
+
 Motion quality is judged in the first 10 seconds of using an app. This file is
 the working reference for gesture-driven and system-driven animation.
 

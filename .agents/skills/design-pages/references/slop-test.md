@@ -1,13 +1,26 @@
 # Slop test — 58 gates + pre-emit self-critique
 
-Established product identity and platform/accessibility needs override aesthetic defaults in this reference. During review, flag evidence of user impact or unintended drift, not a technique in isolation. Italic headings, single-family typography, compact density, and readable wrapped controls are valid when they serve the product.
+## Contents
 
+- Pre-emit self-critique (six axes)
+- Visual
+- Structural
+- Microinteractions
+- Variety
+- Implementation gates
+- Hero enrichment gates
+- Layout-safety gates
+- Typography discipline gates
+- Input-state gate
+- Contrast & readability
+- Nav · footer · hero structural slop
+- Honest copy · no fabricated content
+- Re-drawn UI chrome
+- Token discipline
+- Responsive — clickable affordances
+- Mobile-responsiveness — the non-negotiables
 
-Run this list before handing back any output. Every answer must be **no**. Update the Step 5 preview block's `Slop test` row to reflect the actual outcome of this run.
-
-Some gates are **universal** (apply to every genre); some are **genre-scoped** (apply only when the active genre is editorial, atmospheric, modern-minimal, or playful). Genre overrides are noted inline. Where a gate has *no* genre note, treat it as universal.
-
----
+Use these as candidate review questions for the changed surface, not 58 mandatory gates. Report only supported usability, correctness, or brief-fit defects. Catalog color/shape/type choices and numeric layout recipes below are examples; they do not override established identity. Skip unrelated sections. No theme rotation, design log, or prescribed minimum number of style changes is required.
 
 ## Pre-emit self-critique (six axes)
 
@@ -78,13 +91,6 @@ Record the six scores in a one-line stamp comment at the top of the file: `/* de
 29. If the page has an abstract background, is it more than one accent colour, more than ~5 % footprint, or animating mesh-gradient on the whole page? (Aurora blobs and mesh-on-everything fail this gate.) *Genre note: atmospheric allows up to two warm-toned radial blooms covering ~20–30 % of the canvas, fixed-attached, no animation.*
 30. **Icon tells.** Does the page (a) mix two or more icon libraries (Material + Heroicons + Lucide on the same page), OR (b) use an emoji glyph (✨ 🚀 ⚡ 🔥 🎯 ✅) as a feature-card / value-prop / step / pricing-tier icon? Either is an AI-default tell. Pick one icon library (Lucide / Phosphor / Heroicons — see [assets.md](assets.md)), build a custom SVG, or drop the icon and lead with typography.
 31. If the page has illustration, did I default to a Lottie library when a hand-built SVG or pure-CSS shape would have worked? (Lottie is last resort, not the default.)
-
-## Diversification gates
-
-(Cross-reference `.design-pages/log.json` when present.)
-
-32. If I used the same archetype as a previous design-pages output (per `.design-pages/log.json` or the latest macrostructure stamp), did I pick at least one different *variation knob*? Two Bento Grids with `tiles=6, spans=irregular, accent=corner-only` are the same Bento — the within-archetype knobs in [`component-cookbook.md`](component-cookbook.md) exist precisely to prevent that. State the knob deltas in the stamp.
-33. Does any visual-only `<svg>`, custom-art `<div>`, `<canvas>`, or decorative figure lack `aria-label` or `aria-hidden="true"`? Hand-built CSS art and SVG illustrations need an accessible name *or* an explicit hide. Skipping this is the new accessibility tell.
 
 ## Layout-safety gates
 
@@ -158,7 +164,7 @@ Universal. design-pages must reuse the user's existing chrome (browser, OS, IDE)
 
 Universal. The theme picks the palette and font stack at the top of the run; the rest of the run consumes tokens, never invents them.
 
-48. **Mid-render token improvisation.** Did design-pages introduce any colour value (`#hex`, `oklch(...)`, `rgb(...)`, `hsl(...)`) or `font-family` declaration *outside* the design tokens defined in `:root` / `[data-theme="..."]`? If yes, fail. Every colour and every font in the artifact must reference a named token (`var(--color-accent)`, `font-family: var(--font-display)`). Inline OKLCH or one-off hexes are mid-render improvisation — the model picked the theme, then forgot it and freestyled. The fix: lift the value into the token block as a new named variable, or replace it with an existing token. *(See [SKILL.md § Locked tokens](../SKILL.md) and [anti-patterns.md § Mid-render token improvisation](anti-patterns.md).)*
+48. **Mid-render token improvisation.** Did design-pages introduce any colour value (`#hex`, `oklch(...)`, `rgb(...)`, `hsl(...)`) or `font-family` declaration *outside* the design tokens defined in `:root` / `[data-theme="..."]`? If yes, fail. Every colour and every font in the artifact must reference a named token (`var(--color-accent)`, `font-family: var(--font-display)`). Inline OKLCH or one-off hexes are mid-render improvisation — the model picked the theme, then forgot it and freestyled. The fix: lift the value into the token block as a new named variable, or replace it with an existing token. *(See [SKILL.md: existing token sources](../SKILL.md) and [anti-patterns.md § Mid-render token improvisation](anti-patterns.md).)*
 
 ## Responsive — clickable affordances
 
@@ -186,7 +192,7 @@ Universal. Every emitted page must render flawlessly at 320 px, 375 px, 414 px, 
 
 56. **Sticky element at `top: 0` below a sticky page-level nav → bleed.** Does the artifact declare `position: sticky; top: 0;` on any element OTHER than the page's top-level nav / banner / header, when a sticky `<header>` / `<nav>` / `.banner` also exists at `top: 0` (i.e. there are two sticky-at-top-0 elements on the page)? Auto-fail. Both stick to the viewport top during scroll and overlap; the deeper-in-DOM element paints over the nav (visible as a "section header bleeding into the nav bar" glitch). Fix: define a `--banner-height` token (~44–64 px depending on nav design) and offset every secondary sticky to `top: var(--banner-height)`, so it docks **beneath** the nav. Also give the nav a higher z-index than in-page sticky elements — split `--z-sticky` (in-page, e.g. 200) from `--z-sticky-nav` (top nav, e.g. 300) so the nav always out-paints when sticky boxes momentarily overlap. This gate fires only when the page actually has sticky elements (S3 sticky-pinned section heads, F2 sticky-scroll feature stacks, sticky tables-of-contents); pages without sticky behaviour pass trivially.
 
-57. **Studied DNA discarded for a catalog theme.** Did a `study` diagnosis emit earlier in the conversation, AND does the build's CSS stamp's `theme:` field name a catalog theme (Specimen, Midnight, Brutal, Garden, Atelier, Newsprint, Terminal, Manifesto, Almanac, Sport, Studio, Riso, Bloom, Coral, Cobalt, Aurora, Editorial, Carnival, Lumen, Hum) rather than `studied-DNA (source: ...)` — without the user having explicitly pivoted ("use Newsprint instead", "ignore the DNA", "rotate to a different theme")? Auto-fail. The studied DNA was meant to be the system (SKILL.md § 2.6 Condition 0); defaulting back to catalog is the attractor pull. Fix: re-emit using the studied DNA's tokens directly (paper OKLCH, accent OKLCH, named candidate fonts, macrostructure, archetypes) and update the stamp to `theme: studied-DNA (source: <URL or image>)` with the inline values. This gate is trivially passed when no recent study exists in conversation scope.
+57. **Reference fidelity.** Preserve the user’s chosen principles when adapting a reference. A study does not make every source token a required part of the new product, and missing stamps are not defects.
 
 The CSS stamp at Step 6 records mobile pass alongside contrast: `· mobile: pass (34, 49, 50–57)`.
 

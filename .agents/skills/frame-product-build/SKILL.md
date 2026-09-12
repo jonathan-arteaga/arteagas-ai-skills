@@ -1,6 +1,6 @@
 ---
 name: frame-product-build
-description: "Agree what a product is before anyone designs or implements it — audience, problem, non-goals, success, core objects, key flows, and the one-way doors for its platform. Use when the user invokes frame-product-build, or is about to start a web, mobile, or desktop build and the product is not yet pinned down. Do not use to bound an experiment that tests one question (frame-concept-build), for visual direction (design-reference-scout, design-pages, design-with-taste), or for implementation (web-react, apple-swiftui, mobile-screens)."
+description: "Define audience, problem, core flows, success, and platform decisions when a product brief is unresolved. Use before design or implementation, not for already-scoped fixes."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -10,7 +10,7 @@ metadata:
 
 # Frame a product build
 
-Produce a one-page brief a designer and an engineer could both start from. Then stop. Do not design or write code.
+Produce a concise brief a designer and an engineer can start from. For a framing-only request, stop at the brief. If the user also requested design or implementation, complete the framing stage and continue through the appropriate workflow without requiring another approval for that already-authorized work.
 
 If the goal is to test whether an idea works rather than ship a product, use `frame-concept-build` instead.
 
@@ -26,7 +26,7 @@ If the goal is to test whether an idea works rather than ship a product, use `fr
    - Expo, React Native, or native iOS: [references/mobile.md](references/mobile.md)
    - macOS or multi-window desktop: [references/apple-desktop.md](references/apple-desktop.md)
    Multi-platform builds get one section per platform.
-7. Split open questions into "must answer before code" and "can wait." Ask only the first group, one at a time, and only when a wrong guess would change the build.
+7. Split open questions into "must answer before code" and "can wait." Ask only about the first group when a wrong guess would change the build; group related questions when that reduces back-and-forth.
 8. Name the next skill: `design-reference-scout` or `design-pages` for direction; `web-react`, `apple-swiftui`, or `mobile-screens` for implementation.
 
 ## Rules
@@ -36,3 +36,7 @@ If the goal is to test whether an idea works rather than ship a product, use `fr
 - Keep the brief to one page. Detail belongs in the build, not here.
 
 Return: audience and job, problem, non-goals, success, core objects, key flows, one-way doors per platform, open questions (before code / can wait), and the next skill.
+
+## Example
+
+For a small bookshop intake tool: staff record a book’s ISBN, condition, and price at the counter. The first release excludes online sales and multi-store sync. Success is an observed intake task completed within the agreed time. Confirm printer compatibility before committing to label printing. Record storage, device, and offline requirements from the actual shop’s constraints; platform examples are not automatic architecture decisions.

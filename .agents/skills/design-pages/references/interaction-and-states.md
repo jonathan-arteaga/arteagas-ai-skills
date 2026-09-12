@@ -1,6 +1,20 @@
 # Interaction and states
 
-Every interactive element has eight states. Most AI-generated UI styles two (default, hover) and forgets the rest. That's where interfaces break.
+## Contents
+
+- The eight states
+- Focus rings
+- Hit targets
+- Forms
+- Input field states — the exhaustive checklist
+- Modals and overlays
+- Dropdowns, tooltips, popovers
+- Undo over confirm
+- Loading and empty states
+- Bans
+- Contrast discipline
+
+The table lists common states. Implement the states exposed by this component and its task; do not invent loading, error, success, or disabled APIs for an element that does not have them.
 
 ## The eight states
 
@@ -15,11 +29,11 @@ Every interactive element has eight states. Most AI-generated UI styles two (def
 | Error | Failed state | Red border, error icon, message, `aria-invalid` |
 | Success | Completed | Green check, confirmation, auto-dismiss |
 
-If any of these is missing on a production element, the element isn't finished.
+A missing state is a defect only when the component can enter it.
 
 ## Focus rings
 
-Visible, always, on every interactive element. The default focus ring most browsers give you is fine; a custom one is better.
+Visible, always, on every interactive element. A visible browser-native focus ring is sufficient when it works with the design.
 
 ```css
 :focus { outline: none; }
@@ -151,7 +165,7 @@ The outline starts transparent at 2 px so when the focus ring appears, the box g
 
 - **Skeleton** screens over spinners for content that has a predictable shape (lists, cards, tables).
 - **Inline spinners** for in-button state. Replace the label, don't add beside it.
-- **Empty states** always have: an illustration or icon (a small one), a one-line explanation of why it's empty, an action to fix it.
+- **Empty states** explain the situation and provide an available next action. An illustration or icon is optional.
 - Never show a generic "No results" with no context.
 
 ## Bans

@@ -1,5 +1,19 @@
 # Typography
 
+## Contents
+
+- Principles
+- The 2+1 rule — three faces is the ceiling
+- Banned defaults
+- The font catalog
+- Wordmark / logo typography
+- Scale
+- Weights
+- Required features
+- Body text rules
+- Headings rules
+- Bans
+
 Established product identity and platform/accessibility needs override aesthetic defaults in this reference. During review, flag evidence of user impact or unintended drift, not a technique in isolation. Italic headings, single-family typography, compact density, and readable wrapped controls are valid when they serve the product.
 
 

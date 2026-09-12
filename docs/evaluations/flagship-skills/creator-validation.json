@@ -1,0 +1,137 @@
+[
+  {
+    "skill": "apple-review",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "apple-swift",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "apple-swiftui",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "connector-doctor",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "design-md",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "design-pages",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "design-reference-scout",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "design-style-synthesis",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "design-system-consolidator",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "design-with-taste",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "draft-in-authentic-voice",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "edit-in-authentic-voice",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "frame-concept-build",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "frame-product-build",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "hatch-pet",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "mobile-screens",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "product-language",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "think-with-me",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "ui-craft",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "ux-heuristics",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "ux-review",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "validate-project-claims",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "visual-fundamentals-review",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "web-react",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "work-pattern-audit",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "write-readme",
+    "exit": 0,
+    "message": "Skill is valid!"
+  },
+  {
+    "skill": "write-reproducible-demo",
+    "exit": 0,
+    "message": "Skill is valid!"
+  }
+]

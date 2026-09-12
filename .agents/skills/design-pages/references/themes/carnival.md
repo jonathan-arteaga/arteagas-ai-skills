@@ -1,14 +1,29 @@
 # Theme — Carnival
 
+## Contents
+
+- Axes (diversification)
+- Palette drops
+- Reference register
+- Signature moves
+- Layout pitfalls (must avoid)
+- Macrostructure affinity
+- Macrostructure rejection
+- Voice fixtures
+- Anti-patterns (theme-specific)
+- How Carnival differs from neighbouring themes
+- Test brief expectations
+- Build hint
+
 Loud-maximalist editorial. **Duo-tone accent system across six named palette drops** (each its own mood), chunky variable display, decorative ornaments, hard-offset shadows, tinted paper. The loud sibling to Riso / Manifesto / Brutal — but **decorative, not raw**.
 
-Loaded eagerly by SKILL.md Step 3 whenever the catalog pick is `carnival`. The default palette ("Cold Snap") and font stack live in [`site/css/tokens.css`](../../../../site/css/tokens.css) under `[data-theme="carnival"]`; this file carries the **palette drops** (six variants) plus the rules that tokens cannot encode.
+Loaded eagerly by SKILL.md Step 3 whenever the catalog pick is `carnival`. The default palette ("Cold Snap") and font stack live in [`site/css/tokens.css`](https://github.com/Nutlope/hallmark/blob/13ac0ec7e148655948100b6396439e481361d690/site/css/tokens.css) under `[data-theme="carnival"]`; this file carries the **palette drops** (six variants) plus the rules that tokens cannot encode.
 
 ## Axes (diversification)
 
 - **Paper band** — light (`L 88–95%`, tinted — varies by drop)
 - **Display style** — **display-heavy** (Big Shoulders Display 800, variable-width axis)
-- **Accent hue** — **per-drop**. Each drop has its own duo-tone hue pair (warm+warm, cool+warm, warm+cool, etc.). The drop name is recorded alongside the theme name in the diversification log so consecutive builds rotate drops, not just themes.
+- **Accent hue** — **per-drop**. Each drop has its own duo-tone hue pair (warm+warm, cool+warm, warm+cool, etc.). The variation can be documented when requested; it does not require a rotation log.
 
 ## Palette drops
 
@@ -124,7 +139,7 @@ Warm + cool. Amber-gold against slate-blue. 1950s journalism, print shop, broads
 
 ### Drop rotation rule
 
-The diversification log (`/.design-pages/log.json`) records the drop alongside the theme: `"theme": "carnival", "drop": "studio-night"`. **A new Carnival build picks a drop that hasn't appeared in the last 3 entries.** If only Cold Snap is in the log, any of the other five is valid. If the brief contains a strong drop signal (see "when to pick" above), honour the signal even if it tightens diversification.
+Choose the variation that fits the brief. Reuse it for related pages; no log or rotation rule is required.
 
 ### Pick the drop by domain first
 

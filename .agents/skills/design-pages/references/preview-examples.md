@@ -1,6 +1,6 @@
 # Preview-block worked examples
 
-Four sample Step 5 preview blocks, varied across macrostructure types. Load this file only when picking an unusual macrostructure or custom theme and the bullet-list spec in `SKILL.md § 5. Preview` doesn't give enough scaffolding on its own. Most builds don't need to read this file.
+Optional examples of a design preview. Use them only when a preview helps resolve an open direction; adapt the format to the user’s task. They do not require a separate approval for an already-authorized build.
 
 ---
 

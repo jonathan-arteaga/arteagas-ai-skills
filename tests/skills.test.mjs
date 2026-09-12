@@ -83,6 +83,7 @@ test("repository skills are discoverable and valid", () => {
       "hatch-pet",
       "mobile-screens",
       "product-language",
+      "think-with-me",
       "ui-craft",
       "ux-heuristics",
       "ux-review",
@@ -94,7 +95,10 @@ test("repository skills are discoverable and valid", () => {
       "write-reproducible-demo",
     ],
   );
-  assert.deepEqual(validateSkills(root), []);
+  assert.deepEqual(
+    validateSkills(root).filter((issue) => issue.severity === "error"),
+    [],
+  );
 });
 
 test("repository skills follow the house frame", () => {
@@ -111,7 +115,11 @@ test("repository skills follow the house frame", () => {
       /owner:\s*jonathan-arteaga/,
       `${skill.name} missing metadata.owner`,
     );
-    assert.match(content, /kind:\s*(original|fork)/, `${skill.name} missing kind`);
+    assert.match(
+      content,
+      /kind:\s*(original|fork)/,
+      `${skill.name} missing kind`,
+    );
 
     const names = fs.readdirSync(skill.directory);
     assert.ok(

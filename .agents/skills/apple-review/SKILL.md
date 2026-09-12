@@ -1,6 +1,6 @@
 ---
 name: apple-review
-description: "Audit an existing iOS or macOS codebase across architecture, tests, performance, security, release readiness, and product quality. Use when the user invokes apple-review, or asks for a repository audit of a Swift/SwiftUI/UIKit/AppKit app. Do not use for greenfield SwiftUI views (apple-swiftui) or language-level Swift writing (apple-swift)."
+description: "Audit an existing iOS or macOS app for architecture, correctness, performance, accessibility, and release readiness. Use for app audits or scoped improvement reviews."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -34,7 +34,7 @@ metadata:
 | Xcode configuration, dependencies, CI, signing, release readiness | [build-release.md](references/build-release.md) |
 | Maintainability, boundaries, naming, duplication, error handling | [code-quality.md](references/code-quality.md) |
 | Dead code, stale assets, obsolete flags, unused dependencies | [cleanup.md](references/cleanup.md) |
-| README, architecture docs, onboarding, `AGENTS.md` | [documentation.md](references/documentation.md) |
+| README, architecture docs, onboarding, `AGENTS.md`, `CLAUDE.md` | [documentation.md](references/documentation.md) |
 | Launch, rendering, memory, concurrency, stability, perceived speed | [performance-stability.md](references/performance-stability.md) |
 | Secrets, storage, entitlements, permissions, sensitive data | [security-privacy.md](references/security-privacy.md) |
 | SwiftUI state ownership, navigation, tasks, dependencies | [swiftui-architecture.md](references/swiftui-architecture.md) |

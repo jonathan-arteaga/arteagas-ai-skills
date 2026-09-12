@@ -68,6 +68,7 @@ Some workflows are Jonathan's. Attributed forks keep credit in [`origins/`](orig
 
 | Skill | What it does |
 | --- | --- |
+| [`think-with-me`](.agents/skills/think-with-me/SKILL.md) | Explore an unsettled goal or meaningful alternatives, then continue when the next step is clear. |
 | [`frame-concept-build`](.agents/skills/frame-concept-build/SKILL.md) | Test one question with a small artifact before committing to a build. |
 | [`frame-product-build`](.agents/skills/frame-product-build/SKILL.md) | Agree the audience, problem, flows, and one-way doors before design or code. |
 
@@ -100,11 +101,11 @@ Some workflows are Jonathan's. Attributed forks keep credit in [`origins/`](orig
 
 </details>
 
-The library contains 26 owned skills. See [design workflow ownership](docs/design-workflow-ownership.md) for lead skills, supporting handoffs, and optional plugin boundaries. [Evaluation notes](docs/design-skill-evaluation.md) distinguish behavioral trials from structural validation.
+The library contains 27 owned skills. See the [flagship-model audit](docs/flagship-skill-audit.md) for the Astra/Fable instruction changes, Claude PR decisions, and measured trial limits. See [design workflow ownership](docs/design-workflow-ownership.md) for lead skills, supporting handoffs, and optional plugin boundaries. [Evaluation notes](docs/design-skill-evaluation.md) distinguish behavioral trials from structural validation.
 
 ## How To Use
 
-You will need Node 24+ and pnpm 11.17.0. Open this repository in Cursor and ask for the job by name: `ux-review`, `design-pages`, `frame-product-build`. The agent loads the matching folder under `.agents/skills/`.
+The validation and synchronization tools require Node 24+ and pnpm 11.17.0; reading the skill instructions does not. Open this repository in Cursor and ask for the job by name: `ux-review`, `design-pages`, `frame-product-build`. The agent loads the matching folder under `.agents/skills/`.
 
 The same names work in Codex and other tools after a developer installs the folders. From your command line:
 

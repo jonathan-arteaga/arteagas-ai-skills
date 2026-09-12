@@ -1,6 +1,6 @@
 ---
 name: design-system-consolidator
-description: "Audit or consolidate duplicated UI tokens, component variants, and design-system drift in an existing codebase. Use when asked to unify inconsistent styles or reusable patterns, plan a consolidation, or migrate consumers incrementally. Not visual redesign, DESIGN.md-only documentation, or generic code cleanup."
+description: "Audit or consolidate duplicate UI tokens, component variants, and design-system drift. Use for incremental migrations, not visual redesign or documentation-only work."
 license: MIT
 metadata:
   owner: jonathan-arteaga

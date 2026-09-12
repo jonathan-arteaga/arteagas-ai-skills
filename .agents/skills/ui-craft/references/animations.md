@@ -1,5 +1,13 @@
 # Animations
 
+## Contents
+
+- Interruptible animations
+- Scale on press
+- Skip animation on page load
+- Suppress transitions on theme switch
+- Motion restraint
+
 Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
 
 
@@ -205,4 +213,3 @@ Motion is a budget, not a garnish. Three rules decide whether an animation belon
   animation: bounceIn 500ms;
 }
 ```
-

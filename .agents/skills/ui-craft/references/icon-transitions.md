@@ -1,5 +1,13 @@
 # Icon transitions
 
+## Contents
+
+- Contextual icon animations
+- Motion example
+- CSS transition approach (no Motion)
+- Choosing between Motion and CSS
+- When to animate icons
+
 Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
 
 

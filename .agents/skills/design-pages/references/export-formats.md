@@ -1,5 +1,14 @@
 # Implementation token exports
 
+## Contents
+
+- Example token taxonomy for a new standalone page
+- Format 1 — `tokens.css`
+- Format 2 — Tailwind v4 `@theme`
+- Format 3 — DTCG `tokens.json`
+- Format 4 — shadcn/ui CSS variables
+- Output rule
+
 Read only when a requested implementation needs a code export. These are example mappings, not a DESIGN.md schema. Keep the existing source of truth, names, notation, theme behavior, and build conventions. Export only the requested/required format; do not create a parallel token system.
 
 `design-md` alone owns design documentation and its validation exports. Do not append code inventories or an Exports section to that document. A new standalone page without an existing source may use tokens.css; an existing project keeps its own token source.

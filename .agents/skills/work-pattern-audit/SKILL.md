@@ -1,6 +1,6 @@
 ---
 name: work-pattern-audit
-description: "Audit explicitly scoped AI work history to find repeated prompts, manual steps, reusable workflows, recurring corrections, schedule candidates, and stop points. Use when the user invokes work-pattern-audit, or asks what from their Codex or ChatGPT history should become a script, integration, skill, standing instruction, or scheduled task. Do not use to implement recommendations or inspect unrelated employer, client, household, or personal domains."
+description: "Audit scoped AI work history for recurring steps, corrections, and automation opportunities. Recommends changes without implementing them."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -77,9 +77,7 @@ instructions, settings, integrations, records, or automations. Do not install
 or connect tools, initiate or repair authentication, schedule work, send or
 contact anyone, commit, push, or delete anything.
 
-An implementation request is a separate phase. Stop after the audit so the
-user can review the exact proposed changes and explicitly authorize the
-appropriate workflow. Preserve domain boundaries in any handoff.
+Implementation is a separate phase with the same domain boundaries. For an audit-only request, stop at the recommendations. If implementation was already requested, make the proposal concrete and continue through the appropriate workflow for authorized changes. A candidate recommendation is not permission for an unrequested external action.
 
 ## Report
 

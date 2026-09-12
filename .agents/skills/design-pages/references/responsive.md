@@ -1,5 +1,20 @@
 # Responsive
 
+## Contents
+
+- Mobile — non-negotiable
+- Principles
+- Breakpoints
+- Fluid scaling
+- Pointer and hover queries
+- Control text under growth
+- Viewport units
+- Safe areas
+- Tables on small screens
+- Images
+- Internationalisation
+- Bans
+
 Established product identity and platform/accessibility needs override aesthetic defaults in this reference. During review, flag evidence of user impact or unintended drift, not a technique in isolation. Italic headings, single-family typography, compact density, and readable wrapped controls are valid when they serve the product.
 
 

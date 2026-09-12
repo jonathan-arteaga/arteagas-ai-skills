@@ -1,0 +1,245 @@
+[
+  {
+    "skill": "apple-review",
+    "baselineBytes": 4980,
+    "revisedBytes": 4818,
+    "baselineLines": 87,
+    "revisedLines": 87,
+    "baselineDescriptionChars": 343,
+    "revisedDescriptionChars": 168
+  },
+  {
+    "skill": "apple-swift",
+    "baselineBytes": 41934,
+    "revisedBytes": 3391,
+    "baselineLines": 395,
+    "revisedLines": 44,
+    "baselineDescriptionChars": 273,
+    "revisedDescriptionChars": 135
+  },
+  {
+    "skill": "apple-swiftui",
+    "baselineBytes": 7064,
+    "revisedBytes": 10026,
+    "baselineLines": 106,
+    "revisedLines": 126,
+    "baselineDescriptionChars": 281,
+    "revisedDescriptionChars": 94
+  },
+  {
+    "skill": "connector-doctor",
+    "baselineBytes": 5162,
+    "revisedBytes": 5026,
+    "baselineLines": 98,
+    "revisedLines": 96,
+    "baselineDescriptionChars": 407,
+    "revisedDescriptionChars": 165
+  },
+  {
+    "skill": "design-md",
+    "baselineBytes": 16627,
+    "revisedBytes": 16869,
+    "baselineLines": 261,
+    "revisedLines": 261,
+    "baselineDescriptionChars": 347,
+    "revisedDescriptionChars": 146
+  },
+  {
+    "skill": "design-pages",
+    "baselineBytes": 61927,
+    "revisedBytes": 5858,
+    "baselineLines": 543,
+    "revisedLines": 67,
+    "baselineDescriptionChars": 377,
+    "revisedDescriptionChars": 192
+  },
+  {
+    "skill": "design-reference-scout",
+    "baselineBytes": 4462,
+    "revisedBytes": 4119,
+    "baselineLines": 72,
+    "revisedLines": 72,
+    "baselineDescriptionChars": 478,
+    "revisedDescriptionChars": 135
+  },
+  {
+    "skill": "design-style-synthesis",
+    "baselineBytes": 5875,
+    "revisedBytes": 5572,
+    "baselineLines": 62,
+    "revisedLines": 62,
+    "baselineDescriptionChars": 520,
+    "revisedDescriptionChars": 134
+  },
+  {
+    "skill": "design-system-consolidator",
+    "baselineBytes": 4364,
+    "revisedBytes": 4219,
+    "baselineLines": 44,
+    "revisedLines": 44,
+    "baselineDescriptionChars": 313,
+    "revisedDescriptionChars": 168
+  },
+  {
+    "skill": "design-with-taste",
+    "baselineBytes": 3625,
+    "revisedBytes": 3282,
+    "baselineLines": 50,
+    "revisedLines": 50,
+    "baselineDescriptionChars": 474,
+    "revisedDescriptionChars": 119
+  },
+  {
+    "skill": "draft-in-authentic-voice",
+    "baselineBytes": 3064,
+    "revisedBytes": 2906,
+    "baselineLines": 41,
+    "revisedLines": 41,
+    "baselineDescriptionChars": 326,
+    "revisedDescriptionChars": 164
+  },
+  {
+    "skill": "edit-in-authentic-voice",
+    "baselineBytes": 11051,
+    "revisedBytes": 11424,
+    "baselineLines": 102,
+    "revisedLines": 102,
+    "baselineDescriptionChars": 254,
+    "revisedDescriptionChars": 151
+  },
+  {
+    "skill": "frame-concept-build",
+    "baselineBytes": 1043,
+    "revisedBytes": 1403,
+    "baselineLines": 22,
+    "revisedLines": 31,
+    "baselineDescriptionChars": 355,
+    "revisedDescriptionChars": 144
+  },
+  {
+    "skill": "frame-product-build",
+    "baselineBytes": 2431,
+    "revisedBytes": 2758,
+    "baselineLines": 38,
+    "revisedLines": 42,
+    "baselineDescriptionChars": 537,
+    "revisedDescriptionChars": 174
+  },
+  {
+    "skill": "hatch-pet",
+    "baselineBytes": 85398,
+    "revisedBytes": 4067,
+    "baselineLines": 928,
+    "revisedLines": 48,
+    "baselineDescriptionChars": 228,
+    "revisedDescriptionChars": 150
+  },
+  {
+    "skill": "mobile-screens",
+    "baselineBytes": 19443,
+    "revisedBytes": 15157,
+    "baselineLines": 341,
+    "revisedLines": 240,
+    "baselineDescriptionChars": 330,
+    "revisedDescriptionChars": 131
+  },
+  {
+    "skill": "product-language",
+    "baselineBytes": 4229,
+    "revisedBytes": 4037,
+    "baselineLines": 43,
+    "revisedLines": 43,
+    "baselineDescriptionChars": 314,
+    "revisedDescriptionChars": 122
+  },
+  {
+    "skill": "think-with-me",
+    "baselineBytes": 4364,
+    "revisedBytes": 4529,
+    "baselineLines": 81,
+    "revisedLines": 84,
+    "baselineDescriptionChars": 232,
+    "revisedDescriptionChars": 170
+  },
+  {
+    "skill": "ui-craft",
+    "baselineBytes": 8199,
+    "revisedBytes": 8012,
+    "baselineLines": 117,
+    "revisedLines": 117,
+    "baselineDescriptionChars": 337,
+    "revisedDescriptionChars": 150
+  },
+  {
+    "skill": "ux-heuristics",
+    "baselineBytes": 3758,
+    "revisedBytes": 3572,
+    "baselineLines": 50,
+    "revisedLines": 51,
+    "baselineDescriptionChars": 488,
+    "revisedDescriptionChars": 168
+  },
+  {
+    "skill": "ux-review",
+    "baselineBytes": 1895,
+    "revisedBytes": 2077,
+    "baselineLines": 34,
+    "revisedLines": 37,
+    "baselineDescriptionChars": 377,
+    "revisedDescriptionChars": 120
+  },
+  {
+    "skill": "validate-project-claims",
+    "baselineBytes": 954,
+    "revisedBytes": 1572,
+    "baselineLines": 22,
+    "revisedLines": 30,
+    "baselineDescriptionChars": 197,
+    "revisedDescriptionChars": 131
+  },
+  {
+    "skill": "visual-fundamentals-review",
+    "baselineBytes": 4573,
+    "revisedBytes": 4394,
+    "baselineLines": 39,
+    "revisedLines": 39,
+    "baselineDescriptionChars": 326,
+    "revisedDescriptionChars": 147
+  },
+  {
+    "skill": "web-react",
+    "baselineBytes": 7096,
+    "revisedBytes": 7314,
+    "baselineLines": 145,
+    "revisedLines": 147,
+    "baselineDescriptionChars": 322,
+    "revisedDescriptionChars": 170
+  },
+  {
+    "skill": "work-pattern-audit",
+    "baselineBytes": 4925,
+    "revisedBytes": 4743,
+    "baselineLines": 95,
+    "revisedLines": 93,
+    "baselineDescriptionChars": 453,
+    "revisedDescriptionChars": 140
+  },
+  {
+    "skill": "write-readme",
+    "baselineBytes": 3083,
+    "revisedBytes": 3237,
+    "baselineLines": 51,
+    "revisedLines": 53,
+    "baselineDescriptionChars": 370,
+    "revisedDescriptionChars": 176
+  },
+  {
+    "skill": "write-reproducible-demo",
+    "baselineBytes": 844,
+    "revisedBytes": 1258,
+    "baselineLines": 22,
+    "revisedLines": 26,
+    "baselineDescriptionChars": 186,
+    "revisedDescriptionChars": 131
+  }
+]

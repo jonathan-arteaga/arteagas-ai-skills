@@ -1,25 +1,9 @@
-# Output contract & scope
+# Output contract
 
-Loaded once per build, at handoff time.
+Match the project’s framework, component contracts, and token source. Keep semantic tokens in the existing owner; create a token file only for a new standalone surface that needs one. Preserve imports and unrelated rules when editing global CSS. Targeted replacement of obsolete rules is allowed within the requested work; append-only CSS is not required.
 
-## Output contract
+Draft copy from supplied facts when needed. Do not invent metrics, testimonials, customers, or working integrations. Mark missing facts without blocking independent implementation.
 
-When producing new work:
+Implement the requested visual/interaction layer and hand off logic to the project’s engineering conventions. If the user requested both, continue through both stages. Do not add stamps, project memory, export formats, or documents unless requested or already part of the project’s maintained workflow.
 
-- Put design tokens in one place at the top of the stylesheet (`:root` custom properties) or in a `tokens.css` / `tokens.ts` file if the project uses one.
-- Name tokens by semantic role, not value. `--color-ink`, not `--color-black`.
-- If the project uses Tailwind, extend the theme; do not inline arbitrary values across components.
-- If the project uses a framework, match the framework's file conventions — don't reinvent them.
-- **An existing global stylesheet is append-only.** If the project already ships one (`app/globals.css`, `src/index.css`, `src/styles/global.css`), add to it instead of replacing it: keep every `@tailwind` / `@import "tailwindcss"` directive exactly where it is, put design-pages' `:root` tokens and base rules *below* them, and keep any new `@import` (e.g. `tokens.css`) at the very top of the file, above all other rules. Reuse the project's own token names (`--background`, `--foreground`, a Tailwind `@theme`) where they exist rather than shadowing them with a parallel set. Do a full rewrite only when the user explicitly asks for one: silently dropping a framework's CSS entry directives un-styles the entire app.
-- Include a short comment block at the top of the stylesheet naming the genre, the tone the user picked, the palette's anchor hue, and the structural fingerprint. This is the only comment you need.
-
-## Scope and limits
-
-design-pages is a *taste* skill. It will not:
-
-- Invent product copy. If the user hasn't given you the words, ask.
-- Pick a brand identity. It will follow one you give it.
-- Enforce a specific style (dark mode, glassmorphism, brutalism). It will execute whichever genre + tone the user committed to.
-- Build logic — state management, data fetching, business rules. It is a visual / interaction layer only.
-
-If a request falls outside taste — "build the auth flow", "wire up Stripe" — do the work, but apply design-pages to the rendered surface.
+Report the result and relevant verification. An unavailable preview is a verification limitation, not proof that the source is wrong or permission to claim visual success.

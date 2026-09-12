@@ -1,5 +1,16 @@
 # Enter and exit animations
 
+## Contents
+
+- Enter animations: split and stagger
+- Step by step
+- Code example
+- CSS-only stagger
+- Exit animations
+- Subtle exit (recommended)
+- Full exit (when context matters)
+- Good vs. bad
+
 Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
 
 

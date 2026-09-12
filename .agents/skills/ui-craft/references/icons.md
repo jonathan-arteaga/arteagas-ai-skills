@@ -1,5 +1,13 @@
 # Icons
 
+## Contents
+
+- Match icon stroke to text weight
+- One SVG, recolored per state
+- Outline default, fill active
+- Design at render size
+- Icons in RTL
+
 Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
 
 

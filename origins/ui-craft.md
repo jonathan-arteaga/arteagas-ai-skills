@@ -9,3 +9,7 @@
 ## Design ownership revision (2026-09-08)
 
 Changed fixed craft and motion prescriptions into fallback recipes subordinate to project/platform conventions. Updated affected reference prose and handoffs to neutral visual review, platform accessibility, and system consolidation. Original values remain examples; they no longer override approved motion language.
+
+## Flagship-model revision (2026-09-12)
+
+Preserved existing identity/precedence and focused polish; improved navigation in long references.

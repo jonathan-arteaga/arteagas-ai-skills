@@ -1,5 +1,13 @@
 # Anti-patterns — the named tells
 
+## Contents
+
+- Critical (ships as slop)
+- Major (looks AI-generated)
+- Microinteraction tells
+- Minor (small taste issues)
+- How `design-pages audit` should report
+
 Established product identity and platform/accessibility needs override aesthetic defaults in this reference. During review, flag evidence of user impact or unintended drift, not a technique in isolation. Italic headings, single-family typography, compact density, and readable wrapped controls are valid when they serve the product.
 
 
@@ -239,7 +247,7 @@ A theme is selected at the top of the run, but the artifact contains inline colo
 
 **Why it fails.** Token discipline is the difference between a system and a freestyle. Once a theme is locked, every colour and every font in the file must reference a named token (`var(--color-accent)`, `font-family: var(--font-display)`). Inline values are how cohesion erodes — by the third edit pass, the page has eight colours instead of three, and the editorial restraint that made the theme work is gone. Audiences don't see the inline value, but they feel the looseness.
 
-**Fix.** Every colour and every font in the artifact must come through `var(--token-name)`. If you need a value that doesn't exist as a token, add it to the token block first (`--color-accent-warm: oklch(...)`) and then reference it. Inline OKLCH or one-off hex values mid-render are not allowed. *(Slop-test gate 48. See also [SKILL.md § Locked tokens](../SKILL.md).)*
+**Fix.** Every colour and every font in the artifact must come through `var(--token-name)`. If you need a value that doesn't exist as a token, add it to the token block first (`--color-accent-warm: oklch(...)`) and then reference it. Inline OKLCH or one-off hex values mid-render are not allowed. *(Slop-test gate 48. See also [SKILL.md: existing token sources](../SKILL.md).)*
 
 ### Control labels that lose meaning or operability
 

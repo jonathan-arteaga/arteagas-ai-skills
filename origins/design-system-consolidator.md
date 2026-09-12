@@ -7,3 +7,7 @@
 - **What changed:** Retained purpose-before-abstraction, intentional variation, drift classification, consumer mapping, and incremental verification. Removed broad frontend strategy, organization-wide governance, chained plugin/config dependencies, assumed DTCG migrations, mandatory communications, and speculative numerical claims. Kept DESIGN.md-only authoring in design-md.
 - **License:** MIT; source copyright notices retained in the skill LICENSE.
 - **Copyright:** Jonathan Arteaga (adaptation), hueyexe, Murphy Trueman (upstream).
+
+## Flagship-model revision (2026-09-12)
+
+Preserved incremental migration and classification of intentional variants; shortened discovery text.

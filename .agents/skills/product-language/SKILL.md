@@ -1,6 +1,6 @@
 ---
 name: product-language
-description: "Draft, review, or improve interface strings and terminology across web and native apps. Use for UI names, labels, CTAs, instructions, errors, empty states, confirmations, permissions copy, or localization readiness. Not author-voice prose, translation services, accessibility markup, or navigation restructuring."
+description: "Draft, review, or improve UI labels, errors, empty states, permissions copy, and terminology across web and native apps."
 license: MIT
 metadata:
   owner: jonathan-arteaga

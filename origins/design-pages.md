@@ -9,3 +9,7 @@
 ## Design ownership revision (2026-09-08)
 
 Routed neutral reviews to visual-fundamentals-review and all DESIGN.md creation/amendment to design-md. Removed duplicate document templates and automatic inline exports from build, study, and redesign paths. Aesthetic audit findings require evidence of product/user impact; intentional italics, single-family typography, and usable wrapped labels remain valid. Reuse the established token source.
+
+## Flagship-model revision (2026-09-12)
+
+Replaced the itinerary with scope routing; removed theme rotation, mandatory state expansion, duplicate documentation authorship, and stage reapproval.

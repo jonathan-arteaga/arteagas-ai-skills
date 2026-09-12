@@ -1,5 +1,12 @@
 # Surfaces
 
+## Contents
+
+- Concentric border radius
+- Optical alignment
+- Shadows instead of borders
+- Image outlines
+
 Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
 
 

@@ -1,0 +1,137 @@
+[
+  {
+    "skill": "apple-review",
+    "decision": "Keep",
+    "reason": "Preserved evidence-first platform review; shortened trigger and recognized CLAUDE.md."
+  },
+  {
+    "skill": "apple-swift",
+    "decision": "Correct",
+    "reason": "Split language guidance into selective references; made concurrency flag-dependent and preserved project architecture/test conventions."
+  },
+  {
+    "skill": "apple-swiftui",
+    "decision": "Simplify",
+    "reason": "Inlined direct component routing; removed reference-authoring instructions and compulsory tab/router scaffolding."
+  },
+  {
+    "skill": "connector-doctor",
+    "decision": "Correct",
+    "reason": "Kept diagnostic reads scoped; allowed an explicit handoff when the user already authorized repair."
+  },
+  {
+    "skill": "design-md",
+    "decision": "Correct",
+    "reason": "Kept the document schema/ownership; separated missing tooling from failed checks and allowed labeled unvalidated drafts."
+  },
+  {
+    "skill": "design-pages",
+    "decision": "Correct",
+    "reason": "Replaced the itinerary with scope routing; removed theme rotation, mandatory state expansion, duplicate documentation authorship, and stage reapproval."
+  },
+  {
+    "skill": "design-reference-scout",
+    "decision": "Keep",
+    "reason": "Preserved selected-source priority and bounded research; shortened discovery text."
+  },
+  {
+    "skill": "design-style-synthesis",
+    "decision": "Correct",
+    "reason": "Preserved evidence maturity and original identity; continued already-authorized next stages without changing reference projects."
+  },
+  {
+    "skill": "design-system-consolidator",
+    "decision": "Keep",
+    "reason": "Preserved incremental migration and classification of intentional variants; shortened discovery text."
+  },
+  {
+    "skill": "design-with-taste",
+    "decision": "Simplify",
+    "reason": "Kept product distinctness; removed an arbitrary minimum number of identity changes."
+  },
+  {
+    "skill": "draft-in-authentic-voice",
+    "decision": "Keep",
+    "reason": "Preserved evidence-based voice matching, factuality, and channel-specific prose; shortened trigger."
+  },
+  {
+    "skill": "edit-in-authentic-voice",
+    "decision": "Correct",
+    "reason": "Made word lists contextual; preserved technical terms/quotes and removed examples that could manufacture numeric claims."
+  },
+  {
+    "skill": "frame-concept-build",
+    "decision": "Simplify",
+    "reason": "Kept one-question scope; allowed supplied in-scope data and added a concrete evidence example."
+  },
+  {
+    "skill": "frame-product-build",
+    "decision": "Correct",
+    "reason": "Removed the unconditional stop for combined requests; kept consequential questions and platform decisions."
+  },
+  {
+    "skill": "hatch-pet",
+    "decision": "Simplify",
+    "reason": "Routed production, generation, look directions, workers, and acceptance into references; kept v2 invariants and all 17 scripts unchanged."
+  },
+  {
+    "skill": "mobile-screens",
+    "decision": "Correct",
+    "reason": "Removed mandatory ten-screen research, aesthetic counts, state-library migrations, and full-device testing for small edits."
+  },
+  {
+    "skill": "product-language",
+    "decision": "Keep",
+    "reason": "Preserved approved terminology, localization boundaries, and truthful consequence wording; shortened trigger."
+  },
+  {
+    "skill": "think-with-me",
+    "decision": "Correct",
+    "reason": "Kept the calibrated exploration/execute boundary; shortened the trigger and separated fictional subjects from the user\u2019s personal profile."
+  },
+  {
+    "skill": "ui-craft",
+    "decision": "Keep",
+    "reason": "Preserved existing identity/precedence and focused polish; improved navigation in long references."
+  },
+  {
+    "skill": "ux-heuristics",
+    "decision": "Keep",
+    "reason": "Preserved source licensing and graceful unavailable-source handling; declared compatibility."
+  },
+  {
+    "skill": "ux-review",
+    "decision": "Correct",
+    "reason": "Added the dated offline snapshot without losing current scope/identity precedence; reports live versus snapshot use."
+  },
+  {
+    "skill": "validate-project-claims",
+    "decision": "Correct",
+    "reason": "Added examples distinguishing configured CI, actual runs, tested behavior, and acceptance evidence."
+  },
+  {
+    "skill": "visual-fundamentals-review",
+    "decision": "Keep",
+    "reason": "Preserved source/render distinction, identity, and review-only behavior; shortened trigger."
+  },
+  {
+    "skill": "web-react",
+    "decision": "Simplify",
+    "reason": "Preserved selective performance references; prohibited incidental dependency/architecture migration to follow a recipe."
+  },
+  {
+    "skill": "work-pattern-audit",
+    "decision": "Correct",
+    "reason": "Preserved history/domain boundaries; allowed handoff to already-requested implementation."
+  },
+  {
+    "skill": "write-readme",
+    "decision": "Correct",
+    "reason": "Added a small-edit path; fenced destination-repository template links and avoided unrequested whole-file restructuring."
+  },
+  {
+    "skill": "write-reproducible-demo",
+    "decision": "Simplify",
+    "reason": "Made testing proportional; added an example without stale library counts or fabricated CI evidence."
+  }
+]

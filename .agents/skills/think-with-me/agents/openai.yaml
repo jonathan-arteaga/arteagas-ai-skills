@@ -1,0 +1,6 @@
+interface:
+  display_name: "Think With Me"
+  short_description: "Clarify an idea and find a useful way forward"
+  default_prompt: "Use $think-with-me to help clarify this idea, explore the important choices, and find a useful next step."
+policy:
+  allow_implicit_invocation: true

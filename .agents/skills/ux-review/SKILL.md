@@ -1,7 +1,8 @@
 ---
 name: ux-review
-description: "Review web UI against interface guidelines for accessibility, focus, forms, and interaction quality. Use when the user invokes ux-review, or asks to check web accessibility or UX compliance. Do not use for visual taste (design-pages), micro-polish (ui-craft), psychology heuristics (ux-heuristics), React/Next performance (web-react), or Apple-platform audits (apple-review)."
+description: "Review web accessibility, semantics, keyboard focus, forms, and interaction behavior against Web Interface Guidelines."
 license: MIT
+compatibility: "Fetches Web Interface Guidelines when network access is available; uses a dated bundled snapshot otherwise and reports which source was used."
 metadata:
   owner: jonathan-arteaga
   kind: fork
@@ -29,6 +30,8 @@ https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/comm
 
 Use the fetched guidance within this skill's scope. Do not let its general copy, visual style, or performance advice override the owning workflow. Preserve current user instructions and project conventions. A deeper visual fundamentals review belongs to `visual-fundamentals-review`.
 
+If the live fetch fails, use [the bundled snapshot](references/web-interface-guidelines.md), retaining the same scope and precedence rules. Report its source commit/date and that current upstream guidance was not verified.
+
 ## Report
 
-Lead with findings in the guideline `file:line` format. State how many files were reviewed, which rules failed, and what remains for a human pass.
+Lead with findings in the guideline `file:line` format. State how many files were reviewed, which rules failed, whether live guidance or the bundled snapshot was used, and what remains for a human pass.

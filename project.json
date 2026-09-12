@@ -18,7 +18,8 @@
     "write-readme is original; it distills the awesome-readme header funnel from public examples plus Art of README and Standard Readme conventions, with no content copied",
     "Visual fundamentals and product language adapt pinned MIT Jakub Krehel guidance; product language also extracts the owned Apple review workflow",
     "Design-system consolidation adapts pinned MIT hueyexe and Murphy Trueman workflows; source/license/deltas in origins/",
-    "Synthetic validation fixtures"
+    "Synthetic validation fixtures",
+    "think-with-me is original guided discovery; conceptual inspiration and boundaries are recorded in origins/think-with-me.md"
   ],
   "exclusions": [
     "Employer or customer material",
@@ -33,6 +34,8 @@
     "Dry-run-first synchronization command",
     "Automated parser and validation tests",
     "Documented Cursor symlink and backup workflow",
-    "26 owned skills with documented design workflow ownership; behavioral evaluation notes distinguish source trials from runtime verification"
+    "27 owned skills with documented design workflow ownership; behavioral evaluation notes distinguish source trials from runtime verification",
+    "Parsed YAML and Markdown validation with classified format, packaging, host, and editorial diagnostics",
+    "Opt-in matched model-trial fixtures and runner; results and limitations in docs/flagship-skill-audit.md"
   ]
 }

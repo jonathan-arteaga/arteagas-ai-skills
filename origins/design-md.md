@@ -9,3 +9,7 @@
 ## Design ownership revision (2026-09-08)
 
 Preserved the schema, evidence/validation contract, and documentation-only boundary. Named design-md as the document owner for design-pages and consolidation handoffs; proposed migrations do not become current source truth.
+
+## Flagship-model revision (2026-09-12)
+
+Kept the document schema/ownership; separated missing tooling from failed checks and allowed labeled unvalidated drafts.

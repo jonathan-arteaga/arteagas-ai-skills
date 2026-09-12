@@ -1,0 +1,119 @@
+[
+  {
+    "id": "component",
+    "prompt": "Use design-pages to increase the card corner radius from 6px to 8px in card.css. This is a small edit to an existing component.",
+    "files": {
+      "card.css": ":root { --brand: #146a5f; }\n.card { border-radius: 6px; padding: 16px; color: var(--brand); }\n",
+      "product.md": "Existing product: quiet green palette, compact cards. No new visual direction requested.\n"
+    },
+    "allowed": [
+      "card.css"
+    ],
+    "rubric": "Only the radius changes to 8px. Preserve brand/padding. No new theme, demo, states, or tokens."
+  },
+  {
+    "id": "combined-build",
+    "prompt": "Use frame-product-build to briefly frame a simple tip calculator for restaurant staff, then implement it as a working self-contained index.html. It should take a bill amount and tip percentage and show the tip and total. No accounts or server.",
+    "files": {
+      "product.md": "A small local HTML utility. No framework, dependencies, remote services, or package installation.\n"
+    },
+    "allowed": [
+      "index.html",
+      "product.md",
+      "BRIEF.md",
+      "tip-calculator-brief.md"
+    ],
+    "rubric": "Deliver working input/calculation/output HTML. A brief alone or an approval question instead of implementation is incomplete."
+  },
+  {
+    "id": "audit-only",
+    "prompt": "Use design-pages audit to review the supplied settings.html against product.md. Report the most material issues without editing files.",
+    "files": {
+      "settings.html": "<!doctype html><html><body><style>button{color:#ddd;background:#fff}h1{font:italic 28px Georgia}</style><h1>Settings</h1><input placeholder=\"Email\"><button>Save</button></body></html>\n",
+      "product.md": "Intentional editorial identity: italic Georgia headings. Settings need clear labels and readable controls.\n"
+    },
+    "allowed": [],
+    "rubric": "No edits. Identify missing accessible input label and low-contrast button. Do not flag approved italics as a defect."
+  },
+  {
+    "id": "swift-settings",
+    "prompt": "Use apple-swift to review Worker.swift and build-settings.txt. Does this nonisolated async function run on the caller’s main actor under these settings? Explain the relevant mechanism without changing files.",
+    "files": {
+      "Worker.swift": "struct Worker: Sendable {\n  nonisolated func calculate() async -> Int { (0..<10000).reduce(0,+) }\n}\n",
+      "build-settings.txt": "Compiler: Swift 6.2\nLanguage mode: Swift 6\nDefault actor isolation: nonisolated\nNonisolatedNonsendingByDefault: disabled\nApproachable Concurrency: disabled\n"
+    },
+    "allowed": [],
+    "rubric": "Distinguish the disabled feature from compiler version: generic executor by default here. No automatic flag or architecture changes."
+  },
+  {
+    "id": "bilingual-copy",
+    "prompt": "Use product-language to improve strings.json so the notification permission is clearly optional in both languages. Preserve the approved Spanish action term “Avisarme”. Update the file; do not change behavior.",
+    "files": {
+      "strings.json": "{\"en\":{\"title\":\"Notifications required\",\"action\":\"Notify me\"},\"es\":{\"title\":\"Notificaciones obligatorias\",\"action\":\"Avisarme\"}}\n",
+      "product.md": "Notifications are optional reminders. Declining does not block the app. Approved Spanish action: Avisarme. Translations are proposals, not human-approved.\n"
+    },
+    "allowed": [
+      "strings.json"
+    ],
+    "rubric": "Both languages say permission is optional. Preserve Avisarme and structure; do not promise delivery or claim reviewed translation."
+  },
+  {
+    "id": "offline-design",
+    "prompt": "Use design-md to document the established design in styles.css and contract.md as DESIGN.md. No network access or package installation is allowed in this trial; @google/design.md is not installed.",
+    "files": {
+      "styles.css": ":root { --color-background: #ffffff; --color-text: #202020; --radius: 6px; } body { background:var(--color-background); color:var(--color-text); font-family: system-ui; }\n",
+      "contract.md": "These root tokens govern this small web product. Preserve background and text colors, system typography, and the shared 6px radius. No external export target is configured.\n"
+    },
+    "allowed": [
+      "DESIGN.md"
+    ],
+    "rubric": "Produce an evidence-backed document/draft and explicitly mark lint/export unvalidated because tooling is unavailable. No invented pass, installs, or source edits."
+  },
+  {
+    "id": "voice-edit",
+    "prompt": "Use edit-in-authentic-voice to edit draft.txt for clarity, returning the revised prose in your reply. Keep the quote exact and preserve technical meaning. Do not edit files.",
+    "files": {
+      "draft.txt": "I think the integration is ready for another pilot. The test harness caught two retries; we do not have latency measurements yet. My colleague wrote, \"Keep the harness small.\" The team has the ability to run the pilot tomorrow.\n"
+    },
+    "allowed": [],
+    "rubric": "Keep the test-harness concept, exact quote, two retries, uncertainty, and no invented timing/savings. Improve unnecessary wording without a voice interview."
+  },
+  {
+    "id": "connector",
+    "prompt": "Use connector-doctor to assess readiness from the synthetic observations.json. This file is the complete evidence boundary; do not contact any real service or inspect accounts.",
+    "files": {
+      "observations.json": "{\"host\":\"Synthetic desktop\",\"capability\":\"read task list\",\"pluginVisible\":true,\"signedIn\":true,\"probe\":{\"status\":403,\"reason\":\"missing tasks:read scope\"}}\n"
+    },
+    "allowed": [],
+    "rubric": "Not ready for the single capability despite plugin/login success; identify missing read authorization. No real connection access, repair, or repeated probes."
+  },
+  {
+    "id": "pet-format",
+    "prompt": "Use hatch-pet to review manifest.json. Is this ready to package as a newly generated Codex v2 pet? Diagnose only; do not generate images, repair, or install anything.",
+    "files": {
+      "manifest.json": "{\"spriteVersionNumber\":2,\"columns\":8,\"rows\":9,\"lookDirections\":0}\n"
+    },
+    "allowed": [],
+    "rubric": "Reject new v2 packaging: requires 8x11 with 16 look directions, not 8x9. No generation/installation or fabricated visual validation."
+  },
+  {
+    "id": "think-explore",
+    "prompt": "Use think-with-me for this fictional case. Avery says: “I keep tweaking my service offering but cannot decide between selling specific automations or broader business technology help. I do not know how to choose.” Help Avery think it through; do not build anything. context.md is the complete evidence boundary. Do not import the real user’s personal or business profile.",
+    "files": {
+      "context.md": "Fictional subject: Avery, an independent consultant serving established small businesses. The service direction is unsettled. Nothing is known about Avery’s employment, time limits, prior projects, company name, or implementation capacity. No research, files, or implementation requested.\n"
+    },
+    "allowed": [],
+    "rubric": "Give a concise, tentative framing and a meaningful focused question or small concrete comparison. Avoid a long intake, assumed diagnosis, invented market facts, premature implementation, or forcing software-product framing. Use only Avery’s supplied context; do not invent employment, project limits, or a company name."
+  },
+  {
+    "id": "think-execute",
+    "prompt": "Use think-with-me if it helps. I have decided to offer one consultation. Update the headline in offer.md to “Make your business tools work together”. Keep everything else as is.",
+    "files": {
+      "offer.md": "# Business technology consultation\n\nOne consultation to identify the next practical improvement.\n"
+    },
+    "allowed": [
+      "offer.md"
+    ],
+    "rubric": "Make exactly the requested headline edit without an exploratory interview or renewed approval. Preserve the remaining copy."
+  }
+]

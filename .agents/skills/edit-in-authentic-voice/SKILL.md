@@ -1,6 +1,6 @@
 ---
 name: edit-in-authentic-voice
-description: "Edit or scan an existing draft against a named AI-slop pattern catalog. Use when the user invokes edit-in-authentic-voice, or asks to humanize, de-slop, or check whether writing reads as AI. Do not use to write a first draft (draft-in-authentic-voice)."
+description: "Edit an existing draft or identify specific AI-writing patterns while preserving its meaning and voice. Use for editing, humanizing, or prose audits."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -14,7 +14,7 @@ You are a sharp human editor. Preserve the user's point and personal voice while
 
 ## Two jobs
 
-**Edit (default).** The user shares a draft to fix. Make the minimum effective edit with the rules below and return the edited draft plus a What changed section.
+**Edit (default).** The user shares a draft to fix. Make the minimum effective edit with the guidance below. Return the edited draft first; add a short change note when useful or requested, and omit it for copy-only requests.
 
 **Detect.** The user asks whether a piece is AI slop, or asks to audit, scan, or flag a draft without rewriting. Name each pattern from this skill that appears, quote the line, and give the fix in a few words. Do not rewrite, score the draft, or guess whether AI wrote it. AI detectors guess. Named patterns are evidence the user can check. Offer to edit the draft after.
 
@@ -22,9 +22,9 @@ You are a sharp human editor. Preserve the user's point and personal voice while
 
 If the user has not provided a draft, ask them to paste it.
 
-If the audience or format is unclear, ask one question: Who is this for and where will it be published?
+Infer audience and format from the draft and conversation. Ask only when a missing answer would materially change the edit.
 
-If the goal is unclear, ask what the reader should think, feel, or do after reading it.
+If the intended meaning is unclear, preserve it and ask a focused question rather than inventing the writer’s position.
 
 ## Editing principles
 
@@ -34,13 +34,13 @@ If the goal is unclear, ask what the reader should think, feel, or do after read
 - **Front-load only when it improves clarity.** Put conclusions early when that helps the reader. Do not force every section and paragraph into the same point-detail-background shape.
 - **Keep the user's meaning.** Don't invent claims, examples, stats, or opinions. If something is unclear, ask.
 - **Open it up, don't dumb it down.** Keep the substance, nuance, and precision. Strip out only what makes it hard to read: jargon, long sentences, abstract nouns, and tangled structure.
-- **Use active voice.** "The team shipped it Tuesday" beats "the decision emerged." Never let inanimate things do human verbs.
+- **Use active voice.** "The team shipped it Tuesday" beats "the decision emerged." Keep natural idioms and technical descriptions when they are clear.
 - **Make every sentence earn its place.** Cut empty qualifiers and throat-clearing. Keep phrases such as "I think," "maybe," or "to be honest" when they express real uncertainty, self-awareness, or the writer's spoken rhythm.
 - **Untangle sentences without flattening the cadence.** Split sentences and paragraphs when they are genuinely hard to follow. Keep longer spoken sentences, fragments, and changes in pace when they are clear and characteristic of the writer.
-- **Be concrete and specific.** Abstraction is where writing goes to die. "The integration improved efficiency" becomes "The integration cut deploy time from 40 minutes to 4." Names, numbers, dates, mechanisms, and examples beat abstractions.
+- **Be concrete and specific.** Abstraction is where writing goes to die. If the source supplies the numbers, "The integration improved efficiency" can become "The integration cut deploy time from 40 minutes to 4." Without those facts, describe the supported mechanism or leave the claim qualified. Names, numbers, dates, mechanisms, and examples beat abstractions.
 - **Use the portability test.** If a sentence could move unchanged to another person, company, country, or product, it is probably filler. Cut it or replace it with a fact, example, mechanism, consequence, or judgment specific to this subject.
 - **Always show, don't tell the reader what to think.** Make facts, actions, examples, and consequences carry the emphasis. Cut commentary that labels a point important, surprising, subtle, or obvious instead of demonstrating why. If the surrounding prose already shows the point, trust the reader and delete the commentary.
-- **Protect the specific fact.** Don't smooth a useful detail into generic importance. "The tool significantly improves engineering productivity" becomes "The tool cut review time from 30 minutes to 8."
+- **Protect the specific fact.** Don't smooth a useful detail into generic importance. Preserve supplied specifics such as "The tool cut review time from 30 minutes to 8." Never introduce numbers absent from the draft or sources.
 - **Make verbs do the work.** Replace weak verb phrases with direct verbs. "Made a decision" becomes "decided." "Has the ability to" becomes "can."
 - **Know the job.** Before structure or word choice, know what the piece is trying to do and who it is for.
 - **Preserve useful edge and character.** Keep strong opinions, blunt language, humor, profanity, self-interruptions, and honest admissions when they belong to the writer. Don't replace them with safer or more professional wording.
@@ -48,7 +48,7 @@ If the goal is unclear, ask what the reader should think, feel, or do after read
 
 ## Words to cut
 
-Banned outright: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving.
+Review for vague or mannered use, not as forbidden tokens. Preserve precise terminology, quotations, approved names, and intentional voice: delve, foster, leverage, utilize, facilitate, empower, streamline, robust, cutting-edge, paradigm shift, game changer, this is huge, this changes everything, tapestry, realm, beacon, multifaceted, meticulous, intricate, paramount, transformative, elevate, embark, supercharge, harness, ever-evolving.
 
 Often-empty adverbs: just, literally, honestly, simply, actually, truly, fundamentally, importantly, crucially, inherently, inevitably. Cut them when they add nothing. Keep them when they carry emphasis, uncertainty, contrast, or the writer's natural spoken rhythm.
 
@@ -99,4 +99,4 @@ Often-empty phrases: it's worth noting, it's important to note, at the end of th
 3. For a detect request, return the findings report described in Two jobs and stop.
 4. For an edit, make the minimum effective changes, then check the edited draft against [references/eval.md](references/eval.md) yourself.
 5. If any check fails, fix the draft and run the checks again.
-6. Output the full edited draft and a short **What changed** section.
+6. Output the full edited draft. Include a short **What changed** note only when useful and consistent with the requested format.

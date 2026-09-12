@@ -1,5 +1,16 @@
 # Motion
 
+## Contents
+
+- Principles
+- Easings
+- Durations
+- Page-load orchestration
+- Scroll-linked motion
+- State transitions
+- Reduced motion
+- Bans
+
 Most AI-generated motion is scattered — hover lifts on every card, fade-in on every scroll, bouncing icons. Quiet it. One orchestrated moment beats ten small ones.
 
 > For per-interaction recipes (button press, focus, modal, toast, optimistic update, command palette, drag handle, etc.), see [`microinteractions.md`](microinteractions.md). This file is the *language* of motion; that file is the *vocabulary*.
