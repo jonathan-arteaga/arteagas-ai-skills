@@ -1,5 +1,20 @@
 # Responsive
 
+## Contents
+
+- Mobile — non-negotiable
+- Principles
+- Breakpoints
+- Fluid scaling
+- Pointer and hover queries
+- Clickable text — never wraps
+- Viewport units
+- Safe areas
+- Tables on small screens
+- Images
+- Internationalisation
+- Bans
+
 Mobile-first. Content-driven breakpoints. No desktop-only interactions.
 
 ## Mobile — non-negotiable

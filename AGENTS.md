@@ -41,8 +41,17 @@ project. It applies to the entire repository unless a more specific
   Never place an `AGENTS.md` inside a skill folder. Cursor treats that
   filename as a repository rule and will inject it into every chat.
 - Put both capability and trigger conditions in the frontmatter `description`.
-  Keep `SKILL.md` concise and route substantial detail to directly linked,
-  one-level-deep `references/` files.
+  Keep the `SKILL.md` body under 500 lines and route substantial detail to
+  directly linked, one-level-deep `references/` files. Reference files over
+  100 lines open with a `## Contents` list so a partial read still shows the
+  scope.
+- Stay inside the portable Agent Skills frontmatter (`name`, `description`,
+  `license`, `compatibility`, `metadata`, `allowed-tools`). Declare network or
+  runtime needs in `compatibility` (max 500 characters) instead of naming a
+  host's tools in the body. Host-specific tokens such as `CODEX_HOME`,
+  `$imagegen`, `${CLAUDE_*}`, `$ARGUMENTS`, and inline shell injection raise
+  validator warnings; `hatch-pet` is the known Codex-only exception. A skill
+  that fetches at runtime bundles or names an offline fallback.
 - Prefer instructions over scripts unless deterministic behavior is needed.
   Add focused tests for scripts and repository tooling.
 - When `agents/openai.yaml` exists, keep it aligned with the skill and include
@@ -69,7 +78,8 @@ pnpm sync:dry-run
 ```
 
 - `pnpm check` is the full local and CI gate: tests, validation, and a Codex
-  sync preview.
+  sync preview. `pnpm validate` fails on spec errors and prints portability
+  warnings; `pnpm validate --strict` fails on warnings too.
 - For a targeted preview, run
   `node tools/sync-skills.mjs --dry-run --target codex --skill <name>`.
 - Synchronization writes to user-level directories only with `--apply`. Do not

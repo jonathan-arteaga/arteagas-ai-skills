@@ -36,3 +36,19 @@ If the goal is to test whether an idea works rather than ship a product, use `fr
 - Keep the brief to one page. Detail belongs in the build, not here.
 
 Return: audience and job, problem, non-goals, success, core objects, key flows, one-way doors per platform, open questions (before code / can wait), and the next skill.
+
+## Example
+
+```markdown
+# Product brief: Shelfmark (iOS)
+
+Audience and job: independent bookshop staff who need to log a used book's condition and price in under a minute at the counter.
+Problem: the current spreadsheet needs a laptop, so books pile up unpriced.
+Non-goals: online sales, customer accounts, multi-store sync in the first release.
+Success: a staff member prices ten books in ten minutes without help. Not measured yet: revenue lift.
+Core objects: Book, Copy, Condition grade, Price rule, Shelf.
+Key flows: scan or type an ISBN → grade condition → accept or override the suggested price → print label; browse a shelf; edit a price rule.
+One-way doors (iOS): local-first storage with SwiftData; no account at launch; barcode scanning via VisionKit, so iOS 17 minimum.
+Open questions — before code: does the label printer expose a documented protocol? Can wait: which condition scale to adopt.
+Next skill: apple-swiftui.
+```

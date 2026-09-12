@@ -1,5 +1,19 @@
 # Custom theme — protocol
 
+## Contents
+
+- Two routes, plain English
+- When to surface this fork — Step 1 trigger signals
+- § A · The one follow-up question
+- § Bespoke depth — custom that designs the whole page
+- § B · Palette construction
+- § C · Font pairing
+- § D · Custom-axis computation
+- § E · Stamp format
+- § F · `.design-pages/log.json` entry shape
+- § G · Three worked examples
+- What custom does **not** do (worth restating)
+
 Loaded only when the user has opted into the **custom** theme route in Step 1 of the Design flow. Custom is **made-to-measure for one brief**, written inline into the page's `:root`, never a permanent catalog entry. It spans a **spectrum of depth**: at its lightest, a complete OKLCH palette + free-font pairing tuned to the brief while keeping design-pages' structures (the *combination* is per-brief); at its fullest — **bespoke** — the page's *structure and composition* are designed from first principles too, bound to no catalog theme, genre, or macrostructure. One route, chosen depth.
 
 **The freedom is the combination — and, at the bespoke depth, the whole structure — but never the floor.** Every constraint in [`color.md`](color.md), [`typography.md`](typography.md), and [`anti-patterns.md`](anti-patterns.md) still applies, and **every slop-test gate fires unchanged at every depth** — the gates are the floor that never moves. The Step 5 preview surfaces the palette + pairing (plus the bespoke structure, when there is one) in plain text *before* any code is emitted, so the user can redirect.

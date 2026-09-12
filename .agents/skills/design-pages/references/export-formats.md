@@ -1,5 +1,14 @@
 # Export formats
 
+## Contents
+
+- Token taxonomy — design-pages' source of truth
+- Format 1 — `tokens.css`
+- Format 2 — Tailwind v4 `@theme`
+- Format 3 — DTCG `tokens.json`
+- Format 4 — shadcn/ui CSS variables
+- Output rule
+
 Loaded by [`SKILL.md`](../SKILL.md) Step 6 when emitting the design system as portable tokens. Defines the four canonical formats design-pages always writes:
 
 1. **`tokens.css`** — the source of truth. Always emitted alongside the page CSS.

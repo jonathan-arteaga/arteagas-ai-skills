@@ -1,5 +1,13 @@
 # Icon transitions
 
+## Contents
+
+- Contextual icon animations
+  - Motion example
+  - CSS transition approach (no Motion)
+  - Choosing between Motion and CSS
+  - When to animate icons
+
 Cross-fading an icon when it changes contextually or by state, with and without a motion library. Icon weight, color and direction live in [icons.md](icons.md).
 
 ## Contextual icon animations

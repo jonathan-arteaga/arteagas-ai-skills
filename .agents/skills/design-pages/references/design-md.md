@@ -1,5 +1,15 @@
 # design.md — opt-in portable design system
 
+## Contents
+
+- Triggers (phrase-only — no new verb)
+- Two emission paths (default vs study)
+- Scope
+- CTA — surface the offer in the Step 5 preview
+- Format (the tight version)
+- After the file is written
+- Why opt-in (not auto-emit)
+
 Loaded by [`SKILL.md`](../SKILL.md) Step 6 ONLY when the user explicitly asks design-pages to lock the current build's design system into a portable file. The default verb does NOT auto-emit `design.md`. The user iterates freely until they say the system is settled, then asks for it.
 
 This file is **also** loaded by [`study.md`](study.md) when the user — after a successful `study` diagnosis — asks for the DNA to be emitted as a portable system. The format below is shared between the two paths; the only differences are spelled out in § Two emission paths (default vs study) and in [`study.md`](study.md) § Emitting a `design.md` from `study`.

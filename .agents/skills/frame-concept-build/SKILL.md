@@ -20,3 +20,18 @@ metadata:
 
 Return a one-page brief with: question, scenario, sources, assumptions, build
 boundary, evidence, limitations, and next test.
+
+## Example
+
+```markdown
+# Concept build: can a skill validator catch format drift before install?
+
+Question: Does a 60-line validator catch every frontmatter error in the agentskills.io spec?
+Scenario: Twelve synthetic skill folders, each breaking one rule (bad name, long description, missing body).
+Sources: agentskills.io/specification; three real skills copied from the library as controls.
+Assumptions: (independent) hosts reject the same errors the spec lists.
+Build boundary: a Node script and a test file. No sync, no install, no CI wiring.
+Evidence: the test prints one line per fixture with the rule it tripped; controls pass.
+Limitations: does not test host-specific fields or body quality.
+Next test: run the validator against a skill from another author's repo.
+```

@@ -1,5 +1,12 @@
 # `design-pages redesign`
 
+## Contents
+
+- Non-destructive implementation rule
+- Step 0 · Detect scope first
+- § Multi-page flow — design.md first, then redesign
+- § Single-page flow
+
 The user wants a different page from the same content. They are not happy with the current visual structure — typically because it reads as templated, generic, or AI-shaped. Your job is to redesign the page's structure, rhythm, and component voice while respecting the existing implementation boundaries unless the user explicitly confirms a full rebuild.
 
 ## Non-destructive implementation rule

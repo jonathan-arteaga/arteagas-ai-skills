@@ -20,3 +20,15 @@ metadata:
 
 Return setup, run command, expected result, evidence location, and limitations.
 Never require credentials for the default demo path.
+
+## Example
+
+```markdown
+## Demo
+
+Setup: Node 24+, `pnpm install --frozen-lockfile`. No accounts or keys.
+Run: `pnpm demo`
+Expected: `Validated 23 skill(s).` followed by a dry-run sync table with 23 rows and zero writes.
+Evidence: `tests/skills.test.mjs` asserts the validator output; CI runs the same command on every push.
+Not established: that `--apply` writes correctly to a real home directory. That path is untested.
+```

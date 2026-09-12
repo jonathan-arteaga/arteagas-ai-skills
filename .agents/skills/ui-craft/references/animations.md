@@ -1,5 +1,13 @@
 # Animations
 
+## Contents
+
+- Interruptible animations
+- Scale on press
+- Skip animation on page load
+- Suppress transitions on theme switch
+- Motion restraint
+
 Interruptible transitions, press feedback and the restraint that decides whether to animate at all. Staged entrances and exits live in [enter-exit.md](enter-exit.md); icon swaps in [icon-transitions.md](icon-transitions.md).
 
 ## Interruptible animations

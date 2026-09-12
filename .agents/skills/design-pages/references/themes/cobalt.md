@@ -1,5 +1,20 @@
 # Theme — Cobalt
 
+## Contents
+
+- Axes (diversification)
+- Reference register
+- Required dependencies
+- The signature moves
+- Motion
+- Anti-patterns
+- Macrostructure affinity
+- Macrostructure rejection
+- Voice fixtures
+- How Cobalt differs from neighbouring themes
+- Test brief expectations
+- Build hint
+
 Modern-minimal, dev-tool register. The page for an **API, an SDK, a CLI, a docs home, a developer platform** — the GitBook / Firecrawl / Vercel school, executed in **cool cobalt-on-light, not orange**. A calm cool-white ground, ruler-drawn hairlines, exactly ONE electric cobalt signal accent, and **code as the hero**. It reads like good infrastructure: calm, precise, fast.
 
 Loaded eagerly by SKILL.md Step 3 whenever the catalog pick is `cobalt`. The OKLCH palette + font stack live in [`site/css/tokens.css`](../../../../site/css/tokens.css) under `[data-theme="cobalt"]`. Canonical build: [`site/examples/cobalt-01/`](../../../../site/examples/cobalt-01/) (an API product landing with a request/response hero).

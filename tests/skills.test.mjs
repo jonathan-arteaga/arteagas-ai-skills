@@ -5,11 +5,27 @@ import path from "node:path";
 import test from "node:test";
 import {
   discoverSkills,
+  lintReferenceFiles,
+  lintSkillContent,
   parseFrontmatter,
   validateOpenAiMetadata,
   validateSkillContent,
+  validateSkillLinks,
   validateSkills,
+  validationErrors,
 } from "../tools/lib/skills.mjs";
+
+function fixture(name, description = "Use when a synthetic fixture is needed.", extra = "") {
+  return `---
+name: ${name}
+description: ${description}
+${extra}---
+
+# ${name}
+
+Follow the steps.
+`;
+}
 
 test("frontmatter parser keeps the portable fields", () => {
   const parsed = parseFrontmatter(`---
@@ -91,7 +107,96 @@ test("repository skills are discoverable and valid", () => {
       "write-reproducible-demo",
     ],
   );
-  assert.deepEqual(validateSkills(root), []);
+  assert.deepEqual(validationErrors(root), []);
+
+  const warnedSkills = new Set(
+    validateSkills(root)
+      .filter((issue) => issue.severity === "warning")
+      .map((issue) => issue.skill),
+  );
+  assert.ok(
+    [...warnedSkills].every((name) => name === "hatch-pet"),
+    `portability warnings outside hatch-pet: ${[...warnedSkills].join(", ")}`,
+  );
+});
+
+test("validator enforces the spec limits on frontmatter", () => {
+  assert.deepEqual(validateSkillContent(fixture("claude-helper"), "claude-helper"), [
+    'name must not contain the reserved word "claude"',
+  ]);
+  assert.deepEqual(
+    validateSkillContent(fixture("tagged", "Use <b>this</b> skill."), "tagged"),
+    ["description must not contain XML tags"],
+  );
+  assert.deepEqual(
+    validateSkillContent(
+      fixture("needy", undefined, `compatibility: "${"x".repeat(501)}"\n`),
+      "needy",
+    ),
+    ["compatibility must be 500 characters or fewer"],
+  );
+  assert.deepEqual(
+    validateSkillContent(fixture("fine", undefined, 'compatibility: "Needs network access."\n'), "fine"),
+    [],
+  );
+});
+
+test("validator resolves relative links inside the skill folder", (context) => {
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "skill-links-"));
+  context.after(() => fs.rmSync(tempRoot, { recursive: true, force: true }));
+  fs.mkdirSync(path.join(tempRoot, "references"));
+  fs.writeFileSync(path.join(tempRoot, "references", "present.md"), "# Present\n");
+
+  const content = [
+    "See [present](references/present.md), [missing](references/missing.md),",
+    "[anchor](references/present.md#top), [web](https://example.com/x.md),",
+    "and the placeholder `references/<name>.md` pattern [p](references/<name>.md).",
+  ].join("\n");
+
+  assert.deepEqual(validateSkillLinks(content, tempRoot), [
+    "broken relative link: references/missing.md",
+  ]);
+});
+
+test("linter warns on long bodies, host-specific tokens, and positional dollars", () => {
+  const longBody = fixture("long") + "line\n".repeat(600);
+  assert.match(lintSkillContent(longBody)[0], /^SKILL.md body is 60\d lines/);
+
+  const hostBound = fixture("bound") + [
+    'SKILL_DIR="${CODEX_HOME:-$HOME/.codex}/skills/bound"',
+    "Use $imagegen for art. Review $ARGUMENTS.",
+    "Price it at $4.99, or escaped \\$4.99.",
+    "!`git status`",
+  ].join("\n");
+  const warnings = lintSkillContent(hostBound);
+  assert.ok(warnings.some((w) => w.includes("CODEX_HOME at line")), warnings.join("; "));
+  assert.ok(warnings.some((w) => w.includes("$imagegen at line")));
+  assert.ok(warnings.some((w) => w.includes("$ARGUMENTS at line")));
+  assert.ok(warnings.some((w) => w.includes("inline shell injection")));
+  assert.ok(warnings.some((w) => w.includes('"$<digit>" at line')));
+  assert.deepEqual(lintSkillContent(fixture("clean") + "Escaped \\$4.99 only.\n"), []);
+});
+
+test("linter asks long reference files for a contents list", (context) => {
+  const tempRoot = fs.mkdtempSync(path.join(os.tmpdir(), "skill-refs-"));
+  context.after(() => fs.rmSync(tempRoot, { recursive: true, force: true }));
+  const refs = path.join(tempRoot, "references", "nested");
+  fs.mkdirSync(refs, { recursive: true });
+  const sections = "## One\n\n## Two\n\n### Three\n\n";
+  fs.writeFileSync(path.join(refs, "no-toc.md"), "# Title\n\n" + sections + "text\n".repeat(120));
+  fs.writeFileSync(
+    path.join(refs, "with-toc.md"),
+    "# Title\n\n## Contents\n\n- One\n\n" + sections + "text\n".repeat(120),
+  );
+  fs.writeFileSync(
+    path.join(refs, "single-section.md"),
+    "# Title\n\n## Only\n\n" + "text\n".repeat(120),
+  );
+  fs.writeFileSync(path.join(tempRoot, "references", "short.md"), "# Short\n");
+
+  assert.deepEqual(lintReferenceFiles(tempRoot), [
+    'references/nested/no-toc.md is 128 lines without a "## Contents" list',
+  ]);
 });
 
 test("repository skills follow the house frame", () => {
@@ -138,4 +243,5 @@ test("validator reports an invalid synthetic fixture", (context) => {
   const issues = validateSkills(tempRoot);
   assert.equal(issues.length, 1);
   assert.equal(issues[0]?.message, "missing YAML frontmatter");
+  assert.equal(issues[0]?.severity, "error");
 });

@@ -20,3 +20,11 @@ metadata:
 
 Return a table with: claim, evidence, status, needed change, and verification
 command. Do not upgrade a status because the copy sounds finished.
+
+## Example
+
+| Claim | Evidence | Status | Needed change | Verification |
+| --- | --- | --- | --- | --- |
+| "Validates every skill folder in CI" | `.github/workflows/ci.yml` runs `pnpm check` | Supported | None | `pnpm check` |
+| "Syncs to Codex, Claude, Cursor, Copilot" | `tools/sync-skills.mjs` maps four targets; only the dry run is tested | Partly supported | Say "previews a sync"; `--apply` is untested | `pnpm sync:dry-run` |
+| "Complete" status label | No release tag; README says archive merged last month | Unsupported | Relabel `Prototype` or cut a tagged release | `git tag --list` |

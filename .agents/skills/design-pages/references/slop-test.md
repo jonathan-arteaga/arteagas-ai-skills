@@ -1,5 +1,26 @@
 # Slop test — 58 gates + pre-emit self-critique
 
+## Contents
+
+- Pre-emit self-critique (six axes)
+- Visual
+- Structural
+- Microinteractions
+- Variety
+- Implementation gates
+- Hero enrichment gates
+- Diversification gates
+- Layout-safety gates
+- Typography discipline gates
+- Input-state gate
+- Contrast & readability
+- Nav · footer · hero structural slop
+- Honest copy · no fabricated content
+- Re-drawn UI chrome
+- Token discipline
+- Responsive — clickable affordances
+- Mobile-responsiveness — the non-negotiables
+
 Run this list before handing back any output. Every answer must be **no**. Update the Step 5 preview block's `Slop test` row to reflect the actual outcome of this run.
 
 Some gates are **universal** (apply to every genre); some are **genre-scoped** (apply only when the active genre is editorial, atmospheric, modern-minimal, or playful). Genre overrides are noted inline. Where a gate has *no* genre note, treat it as universal.

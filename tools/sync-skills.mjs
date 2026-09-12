@@ -88,7 +88,9 @@ if (options.help) {
   process.exit(0);
 }
 
-const issues = validateSkills(skillsRoot);
+const issues = validateSkills(skillsRoot).filter(
+  (issue) => issue.severity === "error",
+);
 if (issues.length > 0) {
   console.error("Fix validation errors before synchronizing.");
   process.exit(1);

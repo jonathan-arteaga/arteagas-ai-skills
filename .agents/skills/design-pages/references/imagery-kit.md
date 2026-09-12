@@ -1,5 +1,13 @@
 # Imagery kit — curated abstract assets, hosted, ready
 
+## Contents
+
+- Categories
+- Manifest (placeholder until generation pass ships)
+- Usage patterns — how a senior engineer would compose these
+- Anti-patterns
+- Generation pipeline (out-of-band, one-time)
+
 A small set of pre-generated abstract / decorative imagery that any design-pages output can pull from when a brief allows non-photographic imagery. The kit lives at:
 
 ```

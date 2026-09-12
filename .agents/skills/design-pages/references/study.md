@@ -1,5 +1,18 @@
 # Study — extracting design DNA from a screenshot or URL
 
+## Contents
+
+- Source mode — image or URL
+- Refusal — when not to study
+- The five-step protocol
+- The structured fields
+- Theme mapping
+- The diagnosis report
+- Worked example
+- Limits and disclaimers
+- Emitting a `design.md` from `study`
+- When `study` should hand off
+
 This file is loaded when the `design-pages study` verb runs. It defines the protocol for reading a reference the user supplied — either a screenshot they attached or a URL to a live page — naming what makes it work, and producing a *diagnosis report* the user can accept or amend before any code is built.
 
 **The promise.** `study` extracts the **DNA** of a design — its macrostructure, its component archetypes, its type-pairing, its colour anchor, its rhythm — and lets the user apply that DNA to their own content. It does not copy pixels. It does not output a façade of the source.

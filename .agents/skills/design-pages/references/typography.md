@@ -1,5 +1,19 @@
 # Typography
 
+## Contents
+
+- Principles
+- The 2+1 rule — three faces is the ceiling
+- Banned defaults
+- The font catalog
+- Wordmark / logo typography
+- Scale
+- Weights
+- Required features
+- Body text rules
+- Headings rules
+- Bans
+
 Type carries the design. If the type is wrong, nothing else matters.
 
 ## Principles

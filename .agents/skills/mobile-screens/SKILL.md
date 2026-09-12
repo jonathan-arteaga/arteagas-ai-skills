@@ -90,7 +90,7 @@ Violating any of them is a finding, not a style preference.
     light impact when something snaps home, notification success/error for
     outcomes — on the same frame as the visual, one per user action, never
     the only feedback. Never on scroll, never in loops.
-11. **Format numbers like a product, not a database**: 1.4M, 38k, $4.99. Trim
+11. **Format numbers like a product, not a database**: 1.4M, 38k, \$4.99. Trim
     trailing zeros. Localize dates.
 12. **Root scroll behavior**: screens that can ever overflow wrap content in a
     ScrollView (first component in the route) with

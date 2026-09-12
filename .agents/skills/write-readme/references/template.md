@@ -1,5 +1,14 @@
 # README template
 
+## Contents
+
+- Features
+- How To Use
+- Resources
+- Contributing
+- License
+- Optional swaps
+
 Copy this shape into `README.md`. Delete any optional block that lacks evidence. Replace `[bracket]` tokens. Do not leave brackets in the published file.
 
 <h1 align="center">

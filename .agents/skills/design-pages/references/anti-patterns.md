@@ -1,5 +1,13 @@
 # Anti-patterns — the named tells
 
+## Contents
+
+- Critical (ships as slop)
+- Major (looks AI-generated)
+- Microinteraction tells
+- Minor (small taste issues)
+- How `design-pages audit` should report
+
 The `design-pages audit` verb flags these by name. Every one of these is a signature of AI-generated UI. Seeing one is a problem; seeing two in the same view is a confirmation.
 
 Each entry: the tell, why it reads as AI-generated, and the fix.

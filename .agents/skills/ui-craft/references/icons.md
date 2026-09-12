@@ -1,5 +1,13 @@
 # Icons
 
+## Contents
+
+- Match icon stroke to text weight
+- One SVG, recolored per state
+- Outline default, fill active
+- Design at render size
+- Icons in RTL
+
 Icon weight, states, sizing and direction, the details that make icons sit naturally in an interface.
 
 ## Match icon stroke to text weight

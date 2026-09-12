@@ -1,5 +1,19 @@
 # Interaction and states
 
+## Contents
+
+- The eight states
+- Focus rings
+- Hit targets
+- Forms
+- Input field states — the exhaustive checklist
+- Modals and overlays
+- Dropdowns, tooltips, popovers
+- Undo over confirm
+- Loading and empty states
+- Bans
+- Contrast discipline
+
 Every interactive element has eight states. Most AI-generated UI styles two (default, hover) and forgets the rest. That's where interfaces break.
 
 ## The eight states

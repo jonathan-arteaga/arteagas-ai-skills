@@ -1,5 +1,25 @@
 # Theme — Hum
 
+## Contents
+
+- Axes (diversification)
+- Reference register
+- Palette
+- Typography
+- The seven signature moves
+- Motion direction
+- Required dependencies
+- Macrostructure affinity
+- Macrostructure rejection
+- Layout & emphasis discipline (non-negotiable)
+- Not-AI discipline — make every build read as a different studio (non-negotiable)
+- Voice fixtures
+- Anti-patterns (theme-specific)
+- How Hum differs from neighbouring themes
+- Test brief expectations
+- Build hint
+- What Hum refuses (restated)
+
 The playful, vibrant, **alive** register. Cream paper, multi-accent palette (pear-yellow primary, sky-cyan secondary, coral-red pop), rounded sans typography, generous radii, soft lifting shadows, mandatory hover-and-on-paint motion. Hum is the catalog theme for products that don't take themselves too seriously — daily-curiosity apps, learning platforms, habit trackers, friendship apps, kids' tools, indie creative software. Sites that should feel like the room is warm and someone smart is smiling.
 
 Loaded eagerly by SKILL.md Step 3 whenever the catalog pick is `hum`. The palette + font stack live in [`site/css/tokens.css`](../../../../site/css/tokens.css) under `[data-theme="hum"]`. This file carries signature moves, motion direction, voice fixtures, anti-patterns, and how Hum holds its identity against neighbouring themes. Hum is the catalog's only playful theme — its closest siblings are Coral (single-accent restraint, modern-minimal) and Bloom (warm-light atmospheric), not another playful register.

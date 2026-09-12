@@ -34,7 +34,7 @@ metadata:
 | Xcode configuration, dependencies, CI, signing, release readiness | [build-release.md](references/build-release.md) |
 | Maintainability, boundaries, naming, duplication, error handling | [code-quality.md](references/code-quality.md) |
 | Dead code, stale assets, obsolete flags, unused dependencies | [cleanup.md](references/cleanup.md) |
-| README, architecture docs, onboarding, `AGENTS.md` | [documentation.md](references/documentation.md) |
+| README, architecture docs, onboarding, agent instruction files (`AGENTS.md`, `CLAUDE.md`) | [documentation.md](references/documentation.md) |
 | Launch, rendering, memory, concurrency, stability, perceived speed | [performance-stability.md](references/performance-stability.md) |
 | Secrets, storage, entitlements, permissions, sensitive data | [security-privacy.md](references/security-privacy.md) |
 | SwiftUI state ownership, navigation, tasks, dependencies | [swiftui-architecture.md](references/swiftui-architecture.md) |

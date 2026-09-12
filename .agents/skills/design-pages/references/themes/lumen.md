@@ -1,5 +1,24 @@
 # Theme — Lumen
 
+## Contents
+
+- Axes (diversification)
+- Reference register
+- Palette drops
+- The apparatus family
+- The seven signature moves
+- Motion direction
+- Required dependencies
+- Macrostructure affinity
+- Macrostructure rejection
+- Voice fixtures
+- Anti-patterns (theme-specific)
+- Macrostructure pitfalls
+- How Lumen differs from neighbouring themes
+- Test brief expectations
+- Build hint
+- What Lumen refuses (restated)
+
 Premium AI-tool register, built around a **hand-engineered apparatus** rather than a glowing orb. One precision SVG/CSS object per page, with leader-line callouts in mono micro-type, set against dead space alongside a **lowercase classical-serif headline** and a technical mono eyebrow. Three font families. Two palette drops (Night Foundry / Day Foundry) with different physics — Night emits, Day refracts — and entirely different visual languages, not the same shape in two colours.
 
 Lumen runs a strict **two-register typography system**: all prose is **lowercase** (hero titles, section titles, lede, body, buttons, nav, brand, footer copy — even acronyms when they appear in body text); all mono labels are **UPPERCASE** (eyebrows, callouts, meter labels, stat labels). The contrast between quiet lowercase prose and loud UPPERCASE machine-readout is the typographic signature.

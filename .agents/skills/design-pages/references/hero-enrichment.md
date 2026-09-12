@@ -1,5 +1,18 @@
 # Hero enrichment — when, what, and how much
 
+## Contents
+
+- Image-need detection — does this brief need imagery at all?
+- The enrichment hierarchy
+- Eyeball or ask — the decision protocol
+- Eight enrichment archetypes
+- Hero shape polish — patterns beyond enrichment
+- Hero space discipline
+- Animation discipline (hero specifically)
+- Quality bar — eight pre-flight questions
+- Output stamp
+- Common mistakes — and the fixes
+
 This file is loaded after the macrostructure pick (Step 3 in the design flow), when you reach Step 4: "Decide on hero enrichment." It tells you whether to enrich the hero with media at all, and if so, which archetype and how to build it.
 
 **The promise.** Enrichment is an option, not a default. A typographic-only hero is *always* an acceptable answer. Visual enrichment — demo video, illustration, mockup, animated loop, abstract background, photography — has to *earn its place*. If the hero can be deleted of its enrichment and still works, the enrichment earned its place. If the hero collapses without the enrichment, you propped weak typography on a crutch.

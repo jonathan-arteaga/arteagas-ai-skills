@@ -1,5 +1,17 @@
 # Design DNA
 
+## Contents
+
+- Shared craftsmanship
+- Color and typography tendencies
+- Surfaces, icons, and motion
+- Software and SaaS mode
+- Consumer mode
+- Identity variables
+- Creative thesis
+- Anti-sameness checks
+- Inspiration map
+
 Use this as a taste profile, not a recipe. Preserve the shared craftsmanship while letting each product develop its own identity.
 
 ## Shared craftsmanship

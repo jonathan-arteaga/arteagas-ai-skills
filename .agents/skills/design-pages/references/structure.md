@@ -1,5 +1,13 @@
 # Structure
 
+## Contents
+
+- The six axes
+- Picking a fingerprint
+- Theme-suggested fingerprints
+- Anti-patterns of structural sameness
+- When you don't know
+
 Most AI-generated UIs are visually distinct but structurally identical: hero → three features → CTA → footer. Same heading positions, same column counts, same component vocabulary. **Structural sameness is the AI fingerprint, not visual sameness.** design-pages' job is to break it.
 
 This file catalogues the **primitive axes** of structural variety. For most builds you should NOT compose a fingerprint axis-by-axis from this file — instead pick a named whole-page shape from [`macrostructures.md`](macrostructures.md), which is faster and prevents default-attractor sameness. Use this file when you need to deviate from a macrostructure's defaults on one or two axes, or when you're auditing an existing page and need vocabulary for what you see.

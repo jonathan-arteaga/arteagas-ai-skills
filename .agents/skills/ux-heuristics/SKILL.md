@@ -2,6 +2,7 @@
 name: ux-heuristics
 description: "Review a flow or screen against named UX psychology laws — choice count, grouping, feedback timing, progress, memory limits, and end moments — citing lawsofux.com at runtime. Use when the user invokes ux-heuristics, or asks why a flow feels confusing, slow, or overwhelming, or wants a psychology-grounded reason for a UX decision. Do not use for code-level accessibility and forms compliance (ux-review), polish values (ui-craft), or visual direction (design-pages, design-with-taste)."
 license: MIT
+compatibility: "Fetches law pages from lawsofux.com at review time. Without network access it degrades to the law name plus URL and marks takeaways Not fetched."
 metadata:
   owner: jonathan-arteaga
   kind: original

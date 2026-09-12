@@ -1,5 +1,16 @@
 # Custom craft — how to hand-build hero artwork
 
+## Contents
+
+- Tier A · Pure CSS art
+- Tier B · Hand-built SVG illustration
+- Tier C · Declarative animation (CSS-first, JS-when-needed)
+- Tier D · Three.js / WebGL / shaders
+- Tier E · Generated stills (Nanobanana / Recraft V4 / Midjourney)
+- Tier F · Library illustrations + Lottie (last resort)
+- The bakery worked example, end-to-end
+- Recipe library
+
 This file is loaded only when an enrichment archetype requires construction (Tier A or B in [`hero-enrichment.md`](hero-enrichment.md)). It tells you *which technique* to reach for at *which complexity tier* — and what each looks like done well.
 
 **The principle.** Custom-built artwork is the design. Library-picked artwork is a shortcut, and a good audience reads it as one. The skill's job is to make custom-build the path of least resistance — by knowing when CSS alone suffices, when SVG is right, when JS-driven animation earns its bundle cost, and when (rarely) Three.js is justified.

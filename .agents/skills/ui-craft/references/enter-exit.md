@@ -1,5 +1,16 @@
 # Enter and exit animations
 
+## Contents
+
+- Enter animations: split and stagger
+  - Step by step
+  - Code example
+  - CSS-only stagger
+- Exit animations
+  - Subtle exit (recommended)
+  - Full exit (when context matters)
+  - Good vs. bad
+
 Staged entrances and the exits that follow them. For interactive state feedback see [animations.md](animations.md); for icon swaps see [icon-transitions.md](icon-transitions.md).
 
 ## Enter animations: split and stagger
