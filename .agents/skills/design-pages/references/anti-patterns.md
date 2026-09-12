@@ -1,5 +1,8 @@
 # Anti-patterns — the named tells
 
+Established product identity and platform/accessibility needs override aesthetic defaults in this reference. During review, flag evidence of user impact or unintended drift, not a technique in isolation. Italic headings, single-family typography, compact density, and readable wrapped controls are valid when they serve the product.
+
+
 The `design-pages audit` verb flags these by name. Every one of these is a signature of AI-generated UI. Seeing one is a problem; seeing two in the same view is a confirmation.
 
 Each entry: the tell, why it reads as AI-generated, and the fix.
@@ -138,9 +141,9 @@ Headline centred, body centred, button centred, section after section of centred
 
 ### Italic headers
 
-A roman headline with one word flipped to italic — *"Built to think in real time"* — or an all-italic display face used on every heading. The italicised emphasis-word-in-a-header is among the most reliable AI tells: it reads as "trying to look editorial" and appears on a huge share of generated pages.
+Review italic headings against the approved identity, real font faces, and readability. Deliberate editorial emphasis is valid.
 
-**Fix.** Headers are roman (`font-style: normal`). Carry emphasis with weight, an accent colour, or a drawn underline beneath the word. Keep italic for body-copy emphasis inside running paragraphs only.
+**Fix.** Correct unsupported face synthesis, collision, or accidental role drift; preserve intentional typography.
 
 ### Eyebrow on every section
 
@@ -238,13 +241,11 @@ A theme is selected at the top of the run, but the artifact contains inline colo
 
 **Fix.** Every colour and every font in the artifact must come through `var(--token-name)`. If you need a value that doesn't exist as a token, add it to the token block first (`--color-accent-warm: oklch(...)`) and then reference it. Inline OKLCH or one-off hex values mid-render are not allowed. *(Slop-test gate 48. See also [SKILL.md § Locked tokens](../SKILL.md).)*
 
-### Wrap-to-two-lines clickable text
+### Control labels that lose meaning or operability
 
-A button label, nav link, footer link, breadcrumb, or CTA reads on two lines because the viewport got narrow and the label was long. Visually, the affordance now looks broken — readers can't tell whether the line break is intentional. Worst case: the second line is one word ("free", "more", "started"), which reads as a styling error.
+Wrapped labels are acceptable when the control remains readable and coherent. Flag clipping, overlap, missing words, inconsistent grouping, or inaccessible actions rather than line count.
 
-**Why it fails.** Clickable affordances are one-line objects. The reader scans the label, decides whether to click, moves on. A two-line label slows the scan, breaks the row's vertical rhythm (button height grows, sibling buttons stay the same), and signals "this page wasn't tested at this width". It's a responsive-discipline tell.
-
-**Fix.** In order of preference: (1) shorten the label — *"Get started free" → "Start free"*; *"Read the documentation" → "Read docs"*. Most CTA labels are too long. (2) Set `white-space: nowrap` on the affordance and let the parent flex container reflow. (3) Drop a non-essential nav item at narrow widths via `hidden=until-found` or `display: none`. (4) Collapse the nav into a sheet/menu under a threshold. *Never* let a primary CTA or nav link wrap. *(Slop-test gate 49. See [responsive.md § Clickable text — never wraps](responsive.md).)*
+**Fix.** Reflow the container or control, preserve full wording, and use an accessible navigation adaptation when needed. Shorten copy only when meaning survives and wording changes are in scope. Never hide a useful label or disable zoom to satisfy an aesthetic preference. See [responsive.md](responsive.md).
 
 ### Lottie shortcut
 

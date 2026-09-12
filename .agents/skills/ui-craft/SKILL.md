@@ -14,11 +14,11 @@ Polish comes from a pile of small details that compound. This skill is the refer
 
 When reviewing, slow the interface down. What feels off at 10% speed is what is subtly wrong at full speed.
 
-Keep the project's component library, tokens and density, and match its motion language except where a rule below prescribes an exact interaction. Prefer the components and semantic role tokens the system marks current: do not polish a deprecated variant, and do not reach for a primitive (`gray-500`) where a role token (`text-secondary`, `border-muted`) exists. When the system leaves the rule unstated, flag it in the report instead of guessing.
+Keep the project's component library, tokens and density, and match its motion language. Established project and platform conventions take precedence over every generic recipe in this skill and its references. Prefer the components and semantic role tokens the system marks current: do not polish a deprecated variant, and do not reach for a primitive (`gray-500`) where a role token (`text-secondary`, `border-muted`) exists. When the system leaves the rule unstated, flag it in the report instead of guessing.
 
-Every duration, curve, scale and blur below is a specific value, not a range to approximate. `cubic-bezier(0.2, 0, 0, 1)` is not `cubic-bezier(0.4, 0, 0.2, 1)`, and `0.96` is not `0.95`. Use what is written.
+Durations, curves, scale, blur, radius, and stroke values below are fallback examples. Use them only where the product has no governing choice and the effect serves the interaction. Preserve reduced-motion needs and existing system feedback; do not add motion merely to demonstrate a recipe.
 
-Typography, layout grouping, and accessibility (hit areas, focus, keyboard, ARIA, reduced motion) are out of scope here. Use `ux-review` for accessibility and interaction audits, and `design-pages` when the work is a page or visual system.
+Typography, layout grouping, and accessibility (hit areas, focus, keyboard, ARIA, reduced motion) are out of scope here. Use `ux-review` for accessibility and interaction audits, `apple-review` for Apple accessibility, `visual-fundamentals-review` for existing-screen typography/grouping, and `design-system-consolidator` for shared-system drift.
 
 ## Concentric border radius
 
@@ -46,19 +46,19 @@ Use a small fixed `translateY` rather than full height. Exits should be softer t
 
 ## Contextual icon animations
 
-Animate icons with `opacity`, `scale` and `blur` rather than toggling visibility. Use exactly these values: scale `0.25` to `1`, opacity `0` to `1`, blur `4px` to `0px`.
+Animate icons with `opacity`, `scale` and `blur` rather than toggling visibility. One fallback recipe uses scale `0.25` to `1`, opacity `0` to `1`, blur `4px` to `0px`.
 
-With a motion library (`motion` or `framer-motion` in `package.json`), match that package's import path, or nearby imports where both exist. Use `transition: { type: "spring", duration: 0.3, bounce: 0 }`. Bounce is always `0`.
+With a motion library (`motion` or `framer-motion` in `package.json`), match that package's import path, or nearby imports where both exist. Use `transition: { type: "spring", duration: 0.3, bounce: 0 }`. Prefer no bounce when the project has no motion convention; preserve an intentional existing spring.
 
 Without one, keep both icons in the DOM with one absolutely positioned, and cross-fade with `cubic-bezier(0.2, 0, 0, 1)`. That gives you enter and exit with no dependency. Both recipes are in [icon-transitions.md](references/icon-transitions.md).
 
 ## Image outlines
 
-Give images a `1px` outline at low opacity for consistent depth. Pure black in light mode (`oklch(0 0 0 / 0.1)`), pure white in dark (`oklch(1 0 0 / 0.1)`). Never a near-black like slate or zinc and never a tinted neutral. A tinted outline picks up the surface underneath and reads as dirt on the image edge.
+Give images a `1px` outline at low opacity for consistent depth. Pure black in light mode (`oklch(0 0 0 / 0.1)`), pure white in dark (`oklch(1 0 0 / 0.1)`). Keep an established project outline token; the neutral example is only a fallback. A tinted outline picks up the surface underneath and reads as dirt on the image edge.
 
 ## Scale on press
 
-A `scale(0.96)` on click gives a button tactile feedback. Always `0.96`; anything below `0.95` feels exaggerated. Add a `static` prop to switch it off where motion would distract. See [recipes for CSS, Tailwind and Motion](references/animations.md#scale-on-press).
+A `scale(0.96)` on click gives a button tactile feedback. Use the project's press feedback first; `0.96` is a fallback example, not a required override. Add a `static` prop to switch it off where motion would distract. See [recipes for CSS, Tailwind and Motion](references/animations.md#scale-on-press).
 
 ## Skip animation on page load
 

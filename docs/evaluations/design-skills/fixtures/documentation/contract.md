@@ -1,0 +1,1 @@
+The current named colors are action (#183f75) and text (#182a40). Both are global roles. The existing Georgia family and italic editorial headings remain approved. Update the document to include the text role.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design System Consolidator"
+  short_description: "Unify UI patterns while preserving useful variants"
+  default_prompt: "Use $design-system-consolidator to audit these UI inconsistencies and propose an incremental consolidation."

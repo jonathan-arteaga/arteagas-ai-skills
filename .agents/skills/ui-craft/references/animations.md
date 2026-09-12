@@ -1,5 +1,8 @@
 # Animations
 
+Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
+
+
 Interruptible transitions, press feedback and the restraint that decides whether to animate at all. Staged entrances and exits live in [enter-exit.md](enter-exit.md); icon swaps in [icon-transitions.md](icon-transitions.md).
 
 ## Interruptible animations
@@ -41,7 +44,7 @@ Prefer CSS transitions for interactive elements. Reserve keyframes for one-shot 
 
 ## Scale on press
 
-A subtle scale-down on click gives buttons tactile feedback. Always `scale(0.96)`, never below `0.95`, which feels exaggerated. Use CSS transitions so a release mid-press returns smoothly.
+A subtle scale-down on click gives buttons tactile feedback. Use the established press feedback; `scale(0.96)` is a fallback example when none exists. Use CSS transitions so a release mid-press returns smoothly.
 
 Not every button needs it. Add a `static` prop that disables the scale where the motion would distract.
 

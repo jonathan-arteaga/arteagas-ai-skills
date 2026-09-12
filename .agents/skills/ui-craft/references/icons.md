@@ -1,5 +1,8 @@
 # Icons
 
+Project and platform conventions take precedence over the numerical and aesthetic recipes below; use these examples only where the system leaves a choice open. Preserve reduced-motion behavior.
+
+
 Icon weight, states, sizing and direction, the details that make icons sit naturally in an interface.
 
 ## Match icon stroke to text weight

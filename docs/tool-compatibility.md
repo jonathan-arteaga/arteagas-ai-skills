@@ -43,3 +43,12 @@ Always preview with `--dry-run`. Applying a sync skips existing destination
 folders unless `--force` is supplied. For Cursor, prefer a symlink from
 `~/.cursor/skills/<name>` to `.agents/skills/<name>` so the repo stays the
 only copy. `--force` replaces a destination folder and will clobber a symlink.
+
+
+## Design skill ownership
+
+The 26-skill portable inventory includes visual-fundamentals-review, product-language, and design-system-consolidator. Their frontmatter remains normally discoverable; no explicit-only policy or new runtime dependency is introduced. Platform-specific visual guidance is loaded selectively.
+
+See [design workflow ownership](design-workflow-ownership.md) for one lead per phase. Product Design and design-taste-frontend are optional external capabilities, not repository dependencies. Leave plugin caches and installed extras unchanged. Documentation authoring remains design-md-only.
+
+Structural validation is not behavioral or device verification. See [evaluation notes](design-skill-evaluation.md) for the tested inputs and limits. Before syncing, inspect the target preview and compare existing destinations; a default dry run may report an existing copy as skipped even when its contents differ. Cursor symlinks already pointing into this repo reflect canonical edits without a copy operation.

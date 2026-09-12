@@ -39,12 +39,14 @@ metadata:
 | Secrets, storage, entitlements, permissions, sensitive data | [security-privacy.md](references/security-privacy.md) |
 | SwiftUI state ownership, navigation, tasks, dependencies | [swiftui-architecture.md](references/swiftui-architecture.md) |
 | Unit, integration, UI, regression, and performance tests | [testing.md](references/testing.md) |
-| Terminology, UX writing, errors, empty states, localization | [product-language.md](references/product-language.md) |
+| Apple-specific product wording, permissions, and localization resources; general copy goes to `product-language` | [product-language.md](references/product-language.md) |
 | Product coherence, hierarchy, components, motion, platform fit | [ui-ux.md](references/ui-ux.md) |
 
 For a comprehensive review, start with build/release, architecture, testing,
 security/privacy, and performance/stability. Add the product-facing areas when
 the request includes experience or polish.
+
+For experience work, use `product-language` for shared terminology and interface copy, `visual-fundamentals-review` for neutral visual clarity, and `design-system-consolidator` for system-wide token/component migration. Keep Apple platform findings here and combine repeated root causes into one report. Load supporting workflows only when the requested scope needs them.
 
 ## Audit
 

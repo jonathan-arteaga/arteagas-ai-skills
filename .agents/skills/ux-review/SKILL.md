@@ -15,8 +15,8 @@ Review files against current Web Interface Guidelines for accessibility, focus, 
 ## How It Works
 
 1. Fetch the current guidelines from the source URL below.
-2. Read the specified files. If none were specified, ask the user which files to review.
-3. Check them against every rule in the fetched guidelines.
+2. Read the specified files or resolve the named surface from the project. Ask only when the target remains ambiguous.
+3. Check the relevant accessibility, semantic, focus, form, and interaction rules. Scope the fetched guidance: established capitalization/voice policy overrides generic copy-style defaults. Route wording and terminology work to `product-language`; still check labels, accessible names, instructions, and error announcements for usability and accessibility.
 4. Output findings in the terse `file:line` format the guidelines specify.
 
 ## Guidelines Source
@@ -27,7 +27,7 @@ Fetch fresh guidelines before each review:
 https://raw.githubusercontent.com/vercel-labs/web-interface-guidelines/main/command.md
 ```
 
-The fetched content contains all the rules and output format instructions.
+Use the fetched guidance within this skill's scope. Do not let its general copy, visual style, or performance advice override the owning workflow. Preserve current user instructions and project conventions. A deeper visual fundamentals review belongs to `visual-fundamentals-review`.
 
 ## Report
 

@@ -35,7 +35,8 @@ Some workflows are Jonathan's. Attributed forks keep credit in [`origins/`](orig
 | [`design-with-taste`](.agents/skills/design-with-taste/SKILL.md) | Keep two products from sharing one interchangeable look. |
 | [`design-style-synthesis`](.agents/skills/design-style-synthesis/SKILL.md) | Compare selected local projects and turn shared craft patterns into an original app direction; stops before external research or implementation. |
 | [`design-reference-scout`](.agents/skills/design-reference-scout/SKILL.md) | Find a few current visual references before anyone picks a direction. |
-| [`design-md`](.agents/skills/design-md/SKILL.md) | Write down an interface's design language in a `DESIGN.md`. |
+| [`design-md`](.agents/skills/design-md/SKILL.md) | Document the governing design system in `DESIGN.md`; documentation only. |
+| [`design-system-consolidator`](.agents/skills/design-system-consolidator/SKILL.md) | Audit and consolidate duplicate tokens/components through incremental consumer migration. |
 | [`ui-craft`](.agents/skills/ui-craft/SKILL.md) | Tighten radii, alignment, surfaces, icons, and motion on a screen that already exists. |
 
 </details>
@@ -45,6 +46,7 @@ Some workflows are Jonathan's. Attributed forks keep credit in [`origins/`](orig
 
 | Skill | What it does |
 | --- | --- |
+| [`visual-fundamentals-review`](.agents/skills/visual-fundamentals-review/SKILL.md) | Review existing visual hierarchy, typography, spacing, color, and adaptability while preserving identity. |
 | [`ux-review`](.agents/skills/ux-review/SKILL.md) | Check a web interface for accessibility, focus, forms, and interaction quality. |
 | [`ux-heuristics`](.agents/skills/ux-heuristics/SKILL.md) | Check why a flow feels confusing, slow, or heavy, using named UX psychology laws. It reads [lawsofux.com](https://lawsofux.com) at runtime and copies nothing. |
 
@@ -55,6 +57,7 @@ Some workflows are Jonathan's. Attributed forks keep credit in [`origins/`](orig
 
 | Skill | What it does |
 | --- | --- |
+| [`product-language`](.agents/skills/product-language/SKILL.md) | Draft, review, or improve interface words and terminology across web and native apps. |
 | [`draft-in-authentic-voice`](.agents/skills/draft-in-authentic-voice/SKILL.md) | Write a first draft that sounds like you, from examples of your writing. |
 | [`edit-in-authentic-voice`](.agents/skills/edit-in-authentic-voice/SKILL.md) | Edit an existing draft, or flag AI writing patterns, without flattening the voice. |
 
@@ -96,6 +99,8 @@ Some workflows are Jonathan's. Attributed forks keep credit in [`origins/`](orig
 | [`hatch-pet`](.agents/skills/hatch-pet/SKILL.md) | Create, repair, and package a Codex v2 animated pet. |
 
 </details>
+
+The library contains 26 owned skills. See [design workflow ownership](docs/design-workflow-ownership.md) for lead skills, supporting handoffs, and optional plugin boundaries. [Evaluation notes](docs/design-skill-evaluation.md) distinguish behavioral trials from structural validation.
 
 ## How To Use
 

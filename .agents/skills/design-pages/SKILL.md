@@ -1,6 +1,6 @@
 ---
 name: design-pages
-description: "Anti-AI-slop design for greenfield web pages, landing pages, and site redesigns. Use when the user invokes design-pages, or asks to audit, redesign, or study a web page or site. Do not use for Expo/React Native or SwiftUI screens, React/Next implementation, DESIGN.md extraction (design-md), open-ended reference research (design-reference-scout), or identity-only direction (design-with-taste)."
+description: "Design, redesign, or study web pages and their visual direction. Use for greenfield pages, landing pages, site redesigns, reference study, or an explicit design-pages audit of product-specific composition. Neutral existing-screen fundamentals go to visual-fundamentals-review; DESIGN.md authoring goes to design-md. Not native screen implementation or React/Next engineering."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -16,6 +16,14 @@ The differentiator is **structural variety**, not just visual variety. Two pages
 
 ---
 
+## Ownership and precedence
+
+Current user instructions, established product identity, and platform/accessibility requirements take precedence over catalogue defaults and aesthetic gates throughout this skill and its references. Do not treat italic headings, a single-family type system, compact density, or understandable wrapped labels as defects by themselves. In audits, a finding needs evidence of user impact or a mismatch with the actual brief; do not guess whether AI made the page.
+
+One workflow leads each phase. Use `visual-fundamentals-review` for a neutral existing-screen check; keep this skill's explicit audit for page composition and product fit. A requested build may be followed by a separate fundamentals pass. Use `product-language` for substantive UI wording and `design-system-consolidator` for cross-component drift. Summarize overlapping findings once.
+
+`design-md` is the sole author of `DESIGN.md` (including a project's existing lowercase spelling). Read an existing document as evidence; route every requested creation, amendment, or export-section update to its owner. Do not emit a competing schema or embed token-export blocks into that document. If the skill is unavailable, report the handoff and continue any independent authorized page work.
+
 ## How to use this skill
 
 design-pages has one default behaviour and three explicit verbs.
@@ -23,9 +31,9 @@ design-pages has one default behaviour and three explicit verbs.
 | Invocation | What it does |
 | --- | --- |
 | *(default)* | The user asked you to design or build something new. Follow the **Design flow** below. |
-| `design-pages audit <target>` | Read the target, score it against the anti-pattern list, return a ranked punch list. **Do not edit.** |
+| `design-pages audit <target>` | Review product-specific composition against the brief and established identity; return evidence-backed findings without edits. Route neutral readability, spacing, and type review to `visual-fundamentals-review`. |
 | `design-pages redesign <target> [--mood <name>]` | Take the target's content and intent, then redesign the visual structure **inside the existing implementation boundaries unless the user explicitly confirms a full rebuild.** New section rhythm, new heading placement, new component voice. Preserve existing routes, component ownership, copy intent, brand, and information architecture; replace only the visual/interaction layer needed for the requested scope. |
-| `design-pages study <screenshot \| URL>` | The user pasted or attached an image of a design they admire, **or** pasted a URL to a live page. Extract the **DNA** — macrostructure, archetypes, type-pairing, colour anchor — and produce a diagnosis report, then optionally rebuild the user's content using the extracted DNA **or** emit a portable `design.md` of the DNA. Detection is automatic: a URL (`http://` / `https://` prefix) routes to URL mode; anything else routes to image mode. **URL mode** reads the page's HTML and CSS via WebFetch — it can name exact fonts and exact colour values, but can't judge rhythm. After the diagnosis, the user has three follow-ups: build with the DNA (handoff to default), lock the DNA into a portable `design.md` (opt-in via "lock the DNA" / "give me a design.md"), or stop at the diagnosis. **Never copies pixels. Refuses template-marketplace URLs. Tighter refusal layer for `design.md` emission than for the diagnosis itself — URL-mode emission requires attestation that the source is the user's own or a public reference for their own brand. Falls back to asking for a screenshot if the URL is auth-walled, a JS-only SPA shell, or otherwise un-readable.** Load [`references/study.md`](references/study.md) before this verb runs. |
+| `design-pages study <screenshot \| URL>` | Extract composition, typography roles, color relationships, and reference principles without copying identity. Load [study.md](references/study.md). Diagnosis is the output; requested builds use the design/redesign flow, and requested `DESIGN.md` documents hand off to `design-md`. |
 
 If the user types anything that does not clearly map to `audit`, `redesign`, or `study`, treat it as default. If the user attaches an image or pastes a URL without a verb prefix, ask: *"Should I `study` this (extract the DNA), or should I treat it as a reference for a fresh build?"*
 
@@ -51,9 +59,9 @@ These six disciplines are **not** verb-specific. They apply to default Design, `
 
 4. **Re-drawn chrome forbidden.** design-pages must not hand-build fake browser bars (URL pill + traffic-light dots), fake phone frames, fake code-block windows (mock title bar + dots wrapping a `<pre>`), or fake IDE chrome — the user's environment already supplies real chrome. Use real screenshots wrapped in a `<figure>` (with at most a hairline border), or omit the chrome and let the content stand on its own. See [`references/anti-patterns.md` § Re-drawn UI chrome](references/anti-patterns.md) and slop-test gate **47**.
 
-5. **Mobile responsiveness — every emit verified at 320 / 375 / 414 / 768 px.** design-pages' output must render flawlessly at all four widths. The non-negotiables: no horizontal scroll + root `overflow-x: clip` on both `html` and `body`, never `hidden` (gate 34); no two-line clickable text — buttons, primary nav links, footer links, breadcrumbs, CTAs (gate 49); image-bearing grid tracks use `minmax(0, 1fr)`, never bare `1fr` (gate 50); display headers wrap inside long words via `overflow-wrap: anywhere; min-width: 0` (gate 51); section heads collapse to one column on mobile across every theme variant (gate 52); radio-tab patterns don't scroll-jump (gate 53). See [`references/responsive.md` § Mobile — non-negotiable](references/responsive.md). This is a hard floor, not a wish list.
+5. **Mobile responsiveness.** Check the supported widths, using 320 / 375 / 414 / 768 px as a fallback when none are specified, and relevant zoom/text growth. Fix overlap, clipping, lost actions, and unintended horizontal scroll at the cause. Labels may wrap if meaning, grouping, and operability survive. Do not shrink text, hide useful labels, or clip overflow merely to satisfy a one-line aesthetic. See [responsive.md](references/responsive.md).
 
-6. **Typography purity — no italic headers.** Headings and display type are always roman (`font-style: normal`). An italicised emphasis word inside an otherwise-upright heading (`Built to <em>think</em>`) is one of the most reliable AI tells; so is an all-italic display face on headings. Carry emphasis with weight, accent colour, or a drawn underline. Italic survives only as *body-copy* emphasis inside running paragraphs. See [`references/anti-patterns.md` § Italic headers](references/anti-patterns.md) and slop-test gate **38a**.
+6. **Typography follows identity.** Preserve intentional italic headings and single-family systems. Use real faces, a readable hierarchy, and appropriate measure/line height. Flag rendering failures or unsupported stylistic changes rather than a type treatment in isolation.
 
 ---
 
@@ -150,7 +158,7 @@ If the project already has code — a `package.json`, a `tailwind.config.*`, an 
 
 **Six signal sources, scanned in order:**
 
-0. **`design.md`** — at the project root (or `DESIGN.md`). If present, this is the **locked design system for the project** — written by a previous `design-pages redesign` run on the whole app, or by hand. **Read it first; it overrides everything else.** Subsequent picks (genre, theme, type, motion) defer to it. The diversification rule is *inverted* on `design.md`-managed projects: pages must share the system, not differ from each other. See [`verbs/redesign.md`](references/verbs/redesign.md) § Multi-page flow for how the file is produced and amended.
+0. **`DESIGN.md`** — read the current document (including an existing lowercase spelling) before choosing a direction. It records governing product decisions; verify conflicts against current source and user instructions. Shared pages preserve the system rather than rotating identity. `design-md` owns document creation and amendment; see [the handoff](references/design-md.md).
 1. **Font stack** — `package.json` for `next/font`, `@fontsource/*`, `expo-google-fonts`, `geist`; any `<link rel="stylesheet" href="...fonts.googleapis.com/...">` in HTML / layout files; `tailwind.config.{js,ts}` `theme.extend.fontFamily`; `@import url("fonts.googleapis.com/...")` in any stylesheet.
 2. **Palette** — OKLCH / HSL / hex values inside `:root` blocks; `tailwind.config` `theme.extend.colors`; any `tokens.json`, `design-tokens.{json,yaml}`, or DTCG-shaped file.
 3. **Microinteraction stance** — `package.json` dependencies for `framer-motion`, `gsap`, `motion`, `lenis`, `lottie-react`, `@react-spring/*`, `auto-animate`. Any one of those = "motion-on" project. None = "motion-cut" project.
@@ -361,7 +369,7 @@ The rules live in [`references/`](references/). Load only what each step below c
 **Load-at-the-end (Step 7 only):**
 - [`slop-test.md`](references/slop-test.md) — load at Step 7, after Build. The gates are a post-emit check; `anti-patterns.md` is the pre-emit reference.
 - [`contract.md`](references/contract.md) — load at handoff time for output-contract + scope rules.
-- [`export-formats.md`](references/export-formats.md) — load at Step 6 only when the project warrants multi-format exports (i.e. has a `design.md`). Single-page builds emit `tokens.css` from the in-memory token state and don't need this file.
+- [`export-formats.md`](references/export-formats.md) — load only when a requested implementation needs a specific code export. Preserve the existing token source. DESIGN.md authoring belongs to design-md.
 
 **Verb-specific:**
 - [`verbs/audit.md`](references/verbs/audit.md), [`verbs/redesign.md`](references/verbs/redesign.md) — load only when that verb runs.
@@ -427,7 +435,7 @@ Always:
 - **Section tags / eyebrows — default OFF.** Do NOT emit `01 · THE TOUR`, `02 / FEATURES`, `Chapter Three`, or any uppercase mono-cap section number / kicker / label unless either (a) the user explicitly asked for chapter / step / section numbering, OR (b) the macrostructure is Long Document, Manifesto, or Catalogue numbered AND the content is genuinely ordinal. Cap at 1–2 per page even then. **When a tag IS used, always stack vertical — tag above, heading directly underneath in the same column.** The tag-left / heading-right two-column pattern (a.k.a. hanging header, left-margin label) is banned outright — it is the single most reliable templated-editorial tell, and slop-test gate **54** auto-fails it.
 - Use OKLCH for every colour. Declare tokens as CSS custom properties at `:root`.
 - Use a 4pt spacing scale with semantic names (`--space-sm`, `--space-md`, …).
-- Pick a distinctive display face and a refined body face. Pairings, not single-font pages — *unless* the single-font choice IS the design (a true terminal-aesthetic page is monospace-only on purpose; that's allowed).
+- Choose typography that supports the brief and established identity. One family or a deliberate pairing can work; verify hierarchy and readability rather than counting fonts.
 - Design every interactive element for its full eight states (see [`interaction-and-states.md`](references/interaction-and-states.md)).
 - Animate `transform` and `opacity` only — never layout properties.
 - Use the three named easings (`--ease-out`, `--ease-in`, `--ease-in-out`) — never the browser default `ease`, never bounce/overshoot on UI state.
@@ -438,9 +446,9 @@ Always:
 - **Stamp the output.** The first non-empty line of the produced CSS file (or the top of `<style>` if inline) is a comment of the form: `/* design-pages · macrostructure: <name> · tone: <tone> · anchor hue: <hue> */`. This stamp is the durable record of what you chose. The next time design-pages runs in this project, it reads the stamp and picks a *different* macrostructure. **For custom themes**, the stamp also carries the vibe, paper + accent OKLCH values, the chosen display + body fonts, and the three diversification axes — the full multi-line format is in [`custom-theme.md`](references/custom-theme.md) § E. **For studied-DNA builds** (Step 2.6 Condition 0 routed here from a `study` diagnosis), the stamp's `theme:` field is `studied-DNA (source: <URL or "image">)` followed by the paper OKLCH, accent OKLCH, and display + body fonts pulled directly from the diagnosis — not a catalog theme name. Diversification stays suspended for the run; the log entry below records `theme: studied-DNA` so Step 2.5 on the next run knows not to rotate against it.
 - **Append to project memory.** After you write the stamp, update (or create) `.design-pages/log.json` at the project root. Append a new entry at the **front** of the array: `{ "date": "<YYYY-MM-DD>", "macrostructure": "<name>", "theme": "<name>", "enrichment": "<E# name or 'none'>", "brief": "<one-line summary>" }`. **Custom entries** also carry `"theme": "custom"` plus `"theme_axes": "<paper-band> / <display-style> / <accent-hue>"` and an optional `"vibe": "<4–8 words>"` — see [`custom-theme.md`](references/custom-theme.md) § F. Trim the file to the last 20 entries (rotate the oldest off). Create `.design-pages/` and the file if they don't exist; respect any existing `.gitignore` (the user may or may not want this committed). This file is what Step 2.5 reads on the next run.
 - **Never clobber an existing global stylesheet.** When the project already ships an entry stylesheet (`app/globals.css`, `src/index.css`, `src/styles/global.css`), it is **append-only**: keep its `@tailwind` / `@import "tailwindcss"` directives in place, add design-pages' `:root` block and base rules below them, keep any new `@import` at the very top above all rules, and reuse the project's own token names (`--background`, `--foreground`, a Tailwind `@theme`) where they exist. Overwrite the file only if the user explicitly asks: silently removing a framework's CSS entry directives un-styles the entire app. See [`contract.md`](references/contract.md).
-- **Always emit `tokens.css`.** After writing the page CSS, also write `tokens.css` at the project root containing every `--color-*`, `--font-*`, `--space-*`, `--text-*`, `--ease-*`, `--dur-*`, `--rule-*`, and `--radius-*` token used in the build. The page CSS imports `tokens.css` (or, on framework projects, the project's existing entry-point includes it) — the page CSS must reference tokens by name, never inline raw values. Even single-page builds get a `tokens.css`. This is what makes the design system portable to the next project. Load [`export-formats.md`](references/export-formats.md) at this point only when the project warrants additional formats — see below.
-- **Multi-format exports on `design.md` projects.** If a `design.md` exists at the project root (a system-managed project), append all four export formats — `tokens.css`, Tailwind v4 `@theme`, DTCG `tokens.json`, shadcn/ui CSS variables — into `design.md`'s `## Exports` section. Load [`export-formats.md`](references/export-formats.md) for the canonical mapping from design-pages tokens to each format. Single-page projects skip this step (they get only `tokens.css`).
-- **Opt-in `design.md` (lock-the-system flow).** If the user explicitly asks design-pages to lock the build's design system into a portable file (phrases: *"lock the system"*, *"give me a design.md"*, *"make this portable"*, etc.), load [`design-md.md`](references/design-md.md) and follow it. Page-scope only; component-scope skips. **The default verb does NOT auto-emit `design.md`** — users iterate freely first, then ask for it once the system is settled. If `design.md` already exists, refresh its `## Exports` section instead of overwriting. The Step 5 preview block carries a one-line CTA surfacing this option after every page-build.
+- **Use the existing token source.** Reuse the project's current tokens and import path. For a new standalone page without a token source, `tokens.css` is a reasonable implementation default. Do not create parallel token files or schema tiers merely to match a recipe.
+- **Requested implementation exports.** Read [export-formats.md](references/export-formats.md) only when a target format is requested or required by the implementation. Emit the needed code asset in the existing architecture. `design-md` owns documentation and its validation-only exports; do not append an Exports section here.
+- **Document the system when requested.** For “lock the system,” “give me a design.md,” or similar requests, hand governing evidence to `design-md` using [design-md.md](references/design-md.md). A multi-page redesign does not itself authorize a new document schema or speculative tokens.
 
 ### 7. The slop test
 
@@ -492,7 +500,7 @@ If the user's input starts with `http://` or `https://` → **URL mode**. Otherw
 
 5. **Branch on the user's response:**
    - **"Build with this DNA"** → run the build step below. Pick the closest matching theme from the catalog. Stamp the comment with the inferred macrostructure + archetypes + theme + source mode. The user's content goes in; the source's content does not.
-   - **"Lock the DNA"** (or any other emission trigger phrase per `study.md` § Trigger phrases) → emit a portable `design.md` of the DNA per `study.md` § Emitting a `design.md` from `study`. **In URL mode, run the attestation step first** — ask whether the source is (a) user's own, (b) public reference for the user's brand, or (c) something else. (c) refuses emission; (a) and (b) write the file with a `## Provenance` block recording the answer. **Image mode emits without asking** — the user owns the screenshot. The emitted file becomes the project's locked system; subsequent runs defer to it.
+   - **"Lock the DNA"** (or a request for DESIGN.md) → hand the selected product and observed evidence to `design-md`, following [design-md.md](references/design-md.md). Do not author a parallel document, infer exact tokens from a screenshot, or add an independent attestation/template flow.
    - **"Just the diagnosis was enough"** / silence → stop. The diagnosis is a complete deliverable.
 
 ### Output contract for `study`

@@ -1,0 +1,49 @@
+[
+  {
+    "id": "web",
+    "prompt": "Review settings.html for visual clarity and layout quality. Return findings only.",
+    "files": [
+      "settings.html"
+    ]
+  },
+  {
+    "id": "swiftui",
+    "prompt": "Review Settings.swift for visual clarity and layout quality. Return findings only.",
+    "files": [
+      "Settings.swift"
+    ]
+  },
+  {
+    "id": "editorial",
+    "prompt": "Use design-pages audit on editorial.html. Report actionable findings and preserve the approved product direction.",
+    "files": [
+      "editorial.html"
+    ]
+  },
+  {
+    "id": "language",
+    "prompt": "Review copy.json across web, iOS, and Spanish for product-language consistency and recoverability. Propose corrected strings; do not edit the fixture.",
+    "files": [
+      "copy.json"
+    ]
+  },
+  {
+    "id": "consolidation",
+    "prompt": "Review the system directory for duplicated design patterns and propose a consolidation plan. Do not change code.",
+    "files": [
+      "system"
+    ]
+  },
+  {
+    "id": "documentation",
+    "prompt": "Update only documentation/DESIGN.md from the provided current contract. Do not change product code. If required validation cannot run, state the limitation and do not claim a validated deliverable.",
+    "files": [
+      "documentation"
+    ]
+  },
+  {
+    "id": "routing",
+    "prompt": "For each independent request below, select a lead skill and any necessary sequence. Explain any clarification needed. Do not implement: (a) Make this prettier. (b) Audit this flow. (c) Lock the design system into DESIGN.md. (d) Fix the wording of these empty states. (e) This feels like every other SaaS. (f) Build a marketing page, then check its visual hierarchy. (g) Polish our buttons while preserving the documented motion values.",
+    "files": []
+  }
+]

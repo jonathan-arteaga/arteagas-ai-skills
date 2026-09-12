@@ -1,19 +1,12 @@
-# Export formats
+# Implementation token exports
 
-Loaded by [`SKILL.md`](../SKILL.md) Step 6 when emitting the design system as portable tokens. Defines the four canonical formats design-pages always writes:
+Read only when a requested implementation needs a code export. These are example mappings, not a DESIGN.md schema. Keep the existing source of truth, names, notation, theme behavior, and build conventions. Export only the requested/required format; do not create a parallel token system.
 
-1. **`tokens.css`** — the source of truth. Always emitted alongside the page CSS.
-2. **Tailwind v4 `@theme`** — for projects on Tailwind. Emitted into `design.md`'s Exports section on multi-page projects.
-3. **DTCG `tokens.json`** — for projects using a token pipeline (Style Dictionary, Token Studio, Cobalt). Emitted into `design.md`.
-4. **shadcn/ui CSS variables** — for projects using shadcn/ui's component library. Emitted into `design.md`.
+`design-md` alone owns design documentation and its validation exports. Do not append code inventories or an Exports section to that document. A new standalone page without an existing source may use tokens.css; an existing project keeps its own token source.
 
-The output rule: `tokens.css` is always written. The other three live inline in `design.md` so the user copies whichever they need into a new project. **No new verb.** This is a side effect of every build.
+## Example token taxonomy for a new standalone page
 
----
-
-## Token taxonomy — design-pages' source of truth
-
-Every design-pages output writes these tokens (or a subset, if the page doesn't use one). The names are the source; every other format is a translation.
+The examples below illustrate one theme. Translate from actual governing tokens rather than adopting these names or values in an existing system.
 
 | design-pages token | Type | Example value |
 | --- | --- | --- |
@@ -40,13 +33,13 @@ Every design-pages output writes these tokens (or a subset, if the page doesn't 
 | `--radius-card` / `--radius-pill` / `--radius-input` | length | varies per theme |
 | `--shadow-card` | shadow | varies per theme |
 
-If the page introduces *additional* tokens, name them by role and add to `tokens.css`. Don't make up token names downstream that aren't in `tokens.css` — the source of truth is the source of truth.
+If the authorized implementation needs an additional recurring role, add it to the established token source. Don't make up token names downstream that aren't in `tokens.css` — the source of truth is the source of truth.
 
 ---
 
 ## Format 1 — `tokens.css`
 
-The source. Plain CSS custom properties at `:root`. Every design-pages page CSS imports this file at the top:
+For a standalone project that chose tokens.css as its source, plain CSS custom properties at :root may be imported like this:
 
 ```css
 @import "tokens.css";
@@ -321,9 +314,9 @@ If the user wants a dark variant, mirror with the dark theme tokens under a `.da
 
 When SKILL.md Step 6 emits exports:
 
-1. **Always** write `tokens.css` next to the page CSS (or in the project root for multi-file projects). Format 1.
-2. **On `design.md`-managed projects** (multi-page), embed all four formats inline in `design.md`'s Exports section. The user copies whichever they need.
-3. **On Tailwind projects** (detected at pre-flight), additionally surface the Tailwind `@theme` block in the build output so the user knows where to paste it (typically into `app/globals.css` or the equivalent).
+1. Reuse the existing token source. Only a new standalone page without one needs to choose a source such as tokens.css. Format 1 is an example.
+2. Export only requested or required implementation formats to the existing code/configuration asset locations. Documentation is a separate design-md handoff.
+3. On Tailwind projects, update the existing theme only when needed for the requested implementation; do not emit unused alternate formats.
 4. **Merge into an existing entry stylesheet; never overwrite it.** When the target project already has `app/globals.css` (or `src/index.css`, `src/styles/global.css`): keep its existing `@import "tailwindcss"` / `@tailwind base|components|utilities` directives exactly as they are, append design-pages' `:root` tokens and base rules *after* them, and keep any `@import "tokens.css"` at the very top of the file (CSS parses `@import` only before other rules, so a misplaced one is silently dropped and your tokens vanish). If the project already defines brand tokens (`--background`, `--foreground`, a Tailwind `@theme`), map design-pages' roles onto those names rather than adding a parallel set, or scope design-pages' tokens under a wrapper class. Replace the file outright only when the user has asked for a full takeover.
 
-Don't blanket-emit tokens.json or shadcn variables on single-page projects — the user can copy them out of `design.md` if they upgrade to a multi-page system.
+Do not blanket-emit unused formats; keep documentation updates with design-md.

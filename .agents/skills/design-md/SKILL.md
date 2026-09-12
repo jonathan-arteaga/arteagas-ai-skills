@@ -1,6 +1,6 @@
 ---
 name: design-md
-description: "Create or update a DESIGN.md from a product repository or public website. Use when the user invokes design-md, or asks to document an interface's design language or extract tokens into DESIGN.md. Do not use for design-pages study/redesign, or open-ended reference research (design-reference-scout)."
+description: "Create or update a DESIGN.md from a product repository or public website. Use when the user invokes design-md, or asks to document an interface's design language or extract tokens into DESIGN.md. Do not use for code/token/component migration (design-system-consolidator), page redesign, or open-ended reference research (design-reference-scout)."
 license: MIT
 metadata:
   owner: jonathan-arteaga
@@ -18,6 +18,8 @@ Create a `DESIGN.md` for one product or coherent website. Record the design lang
 - Use the DESIGN.md format contract below. Do not invent a competing schema.
 - Do not copy every discovered token or component into the document.
 - Do not convert repetition, local styling, or visual preference into product intent.
+
+For a request to unify duplicate styles, components, or consumers, use `design-system-consolidator`. This skill documents only the governing system established by the source and accepted decisions; proposed migrations are not current truth. It is also the document owner for handoffs from `design-pages`. Those handoffs do not change the schema, evidence gates, or documentation-only boundary below.
 
 ## 1. Choose the mode
 
